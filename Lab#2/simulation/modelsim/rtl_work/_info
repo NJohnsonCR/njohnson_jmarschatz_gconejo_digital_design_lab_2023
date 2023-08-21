@@ -1,0 +1,63 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/XPC/Desktop/ProyectosQuartus/Lab 2/simulation/modelsim
+vbinary_to_hex_converter
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1692560694
+!i10b 1
+!s100 7[I;<f08^lLD3cgj>9jRS2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I:A:MfUkE`IIfccJDcP^<a3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1692560329
+8C:/Users/XPC/Desktop/ProyectosQuartus/Lab 2/binary_to_hex_converter.sv
+FC:/Users/XPC/Desktop/ProyectosQuartus/Lab 2/binary_to_hex_converter.sv
+!i122 0
+L0 1 27
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1692560693.000000
+!s107 C:/Users/XPC/Desktop/ProyectosQuartus/Lab 2/binary_to_hex_converter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Desktop/ProyectosQuartus/Lab 2|C:/Users/XPC/Desktop/ProyectosQuartus/Lab 2/binary_to_hex_converter.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work {+incdir+C:/Users/XPC/Desktop/ProyectosQuartus/Lab 2}
+Z8 tCvgOpt 0
+vbinary_to_hex_converter_tb
+R1
+R2
+!i10b 1
+!s100 N>DIMLW63iEmjgPWifn=Z2
+R3
+IW?Hlc0<hB]BT2WJZJlA?S3
+R4
+S1
+R0
+w1692560299
+8C:/Users/XPC/Desktop/ProyectosQuartus/Lab 2/binary_to_hex_converter_tb.sv
+FC:/Users/XPC/Desktop/ProyectosQuartus/Lab 2/binary_to_hex_converter_tb.sv
+!i122 1
+L0 1 29
+R5
+r1
+!s85 0
+31
+!s108 1692560694.000000
+!s107 C:/Users/XPC/Desktop/ProyectosQuartus/Lab 2/binary_to_hex_converter_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Desktop/ProyectosQuartus/Lab 2|C:/Users/XPC/Desktop/ProyectosQuartus/Lab 2/binary_to_hex_converter_tb.sv|
+!i113 1
+R6
+R7
+R8
