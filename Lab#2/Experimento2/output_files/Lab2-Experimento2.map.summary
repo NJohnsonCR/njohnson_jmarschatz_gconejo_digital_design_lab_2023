@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Mon Aug 21 15:44:05 2023
+Analysis & Elaboration Status : Successful - Mon Aug 21 20:02:12 2023
 Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 Revision Name : Lab2-Experimento2
-Top-level Entity Name : SevenSegCodec
+Top-level Entity Name : OneBitFullAdder
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

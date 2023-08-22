@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Lab2-Experimento2
-Mon Aug 21 15:44:05 2023
+Mon Aug 21 20:02:12 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -37,10 +37,10 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Aug 21 15:44:05 2023          ;
+; Analysis & Elaboration Status ; Successful - Mon Aug 21 20:02:12 2023          ;
 ; Quartus Prime Version         ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                 ; Lab2-Experimento2                              ;
-; Top-level Entity Name         ; SevenSegCodec                                  ;
+; Top-level Entity Name         ; OneBitFullAdder                                ;
 ; Family                        ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
 ; Total registers               ; N/A until Partition Merge                      ;
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; SevenSegCodec      ; Lab2-Experimento2  ;
+; Top-level entity name                                                           ; OneBitFullAdder    ; Lab2-Experimento2  ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -161,17 +161,23 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Mon Aug 21 15:43:58 2023
+    Info: Processing started: Mon Aug 21 20:02:05 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2-Experimento2 -c Lab2-Experimento2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file sevensegcodec.vhd
     Info (12022): Found design unit 1: SevenSegCodec-Display File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/SevenSegCodec.vhd Line: 14
     Info (12023): Found entity 1: SevenSegCodec File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/SevenSegCodec.vhd Line: 4
-Info (12127): Elaborating entity "SevenSegCodec" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file onebitfulladder.vhd
+    Info (12022): Found design unit 1: OneBitFullAdder-Structural File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/OneBitFullAdder.vhd Line: 15
+    Info (12023): Found entity 1: OneBitFullAdder File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/OneBitFullAdder.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file onebitfulladder_tb.vhd
+    Info (12022): Found design unit 1: OneBitFullAdder_tb-behavior File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/OneBitFullAdder_tb.vhd Line: 7
+    Info (12023): Found entity 1: OneBitFullAdder_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/OneBitFullAdder_tb.vhd Line: 4
+Info (12127): Elaborating entity "OneBitFullAdder" for the top level hierarchy
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4838 megabytes
-    Info: Processing ended: Mon Aug 21 15:44:05 2023
+    Info: Peak virtual memory: 4846 megabytes
+    Info: Processing ended: Mon Aug 21 20:02:12 2023
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:17
 
