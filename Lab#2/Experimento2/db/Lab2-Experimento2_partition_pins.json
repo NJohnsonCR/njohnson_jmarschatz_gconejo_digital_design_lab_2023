@@ -1,0 +1,89 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sum4bits[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sum4bits[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sum4bits[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sum4bits[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sum4bits[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sum4bits[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sum4bits[6]",
+					"strict" : false
+				},
+				{
+					"name" : "cout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "cout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "cout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "cout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "bitA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bitB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cin",
+					"strict" : false
+				},
+				{
+					"name" : "bitA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bitB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bitA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bitB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bitA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bitB[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

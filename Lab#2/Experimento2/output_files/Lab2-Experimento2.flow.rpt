@@ -1,5 +1,5 @@
 Flow report for Lab2-Experimento2
-Mon Aug 21 20:02:12 2023
+Mon Aug 21 22:01:09 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-----------------------------+------------------------------------------------+
-; Flow Status                 ; Successful - Mon Aug 21 20:02:12 2023          ;
+; Flow Status                 ; Successful - Mon Aug 21 22:01:09 2023          ;
 ; Quartus Prime Version       ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name               ; Lab2-Experimento2                              ;
 ; Top-level Entity Name       ; OneBitFullAdder                                ;
@@ -63,37 +63,41 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/21/2023 20:02:05 ;
+; Start date & time ; 08/21/2023 22:01:02 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab2-Experimento2   ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                         ;
-+--------------------------------------+----------------------------------------+-------------------+-----------------+--------------------+
-; Assignment Name                      ; Value                                  ; Default Value     ; Entity Name     ; Section Id         ;
-+--------------------------------------+----------------------------------------+-------------------+-----------------+--------------------+
-; COMPILER_SIGNATURE_ID                ; 185410942947171.169266972517532        ; --                ; --              ; --                 ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                ; --              ; OneBitFullAdder_tb ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; OneBitFullAdder_tb                     ; --                ; --              ; eda_simulation     ;
-; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                   ; --                ; --              ; eda_simulation     ;
-; EDA_SIMULATION_TOOL                  ; ModelSim (VHDL)                        ; <None>            ; --              ; --                 ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --                ; --              ; eda_simulation     ;
-; EDA_TEST_BENCH_FILE                  ; OneBitFullAdder_tb.vhd                 ; --                ; --              ; OneBitFullAdder_tb ;
-; EDA_TEST_BENCH_MODULE_NAME           ; OneBitFullAdder_tb                     ; --                ; --              ; OneBitFullAdder_tb ;
-; EDA_TEST_BENCH_NAME                  ; OneBitFullAdder_tb                     ; --                ; --              ; eda_simulation     ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --                ; --              ; eda_simulation     ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --                ; --              ; --                 ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --                ; --              ; --                 ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --                ; OneBitFullAdder ; Top                ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --                ; OneBitFullAdder ; Top                ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --                ; OneBitFullAdder ; Top                ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --                ; --              ; --                 ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                ; --              ; --                 ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --                ; --              ; --                 ;
-; TOP_LEVEL_ENTITY                     ; OneBitFullAdder                        ; Lab2-Experimento2 ; --              ; --                 ;
-+--------------------------------------+----------------------------------------+-------------------+-----------------+--------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                          ;
++--------------------------------------+----------------------------------------+-------------------+-----------------+---------------------+
+; Assignment Name                      ; Value                                  ; Default Value     ; Entity Name     ; Section Id          ;
++--------------------------------------+----------------------------------------+-------------------+-----------------+---------------------+
+; COMPILER_SIGNATURE_ID                ; 185410942947171.169267686213064        ; --                ; --              ; --                  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                ; --              ; OneBitFullAdder_tb  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                ; --              ; FourBitFullAdder_tb ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; OneBitFullAdder_tb                     ; --                ; --              ; eda_simulation      ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                   ; --                ; --              ; eda_simulation      ;
+; EDA_SIMULATION_TOOL                  ; ModelSim (VHDL)                        ; <None>            ; --              ; --                  ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --                ; --              ; eda_simulation      ;
+; EDA_TEST_BENCH_FILE                  ; OneBitFullAdder_tb.vhd                 ; --                ; --              ; OneBitFullAdder_tb  ;
+; EDA_TEST_BENCH_FILE                  ; FourBitFullAdder_tb.vhd                ; --                ; --              ; FourBitFullAdder_tb ;
+; EDA_TEST_BENCH_MODULE_NAME           ; OneBitFullAdder_tb                     ; --                ; --              ; OneBitFullAdder_tb  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; FourBitFullAdder_tb                    ; --                ; --              ; FourBitFullAdder_tb ;
+; EDA_TEST_BENCH_NAME                  ; OneBitFullAdder_tb                     ; --                ; --              ; eda_simulation      ;
+; EDA_TEST_BENCH_NAME                  ; FourBitFullAdder_tb                    ; --                ; --              ; eda_simulation      ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --                ; --              ; eda_simulation      ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --                ; --              ; --                  ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --                ; --              ; --                  ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --                ; OneBitFullAdder ; Top                 ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --                ; OneBitFullAdder ; Top                 ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --                ; OneBitFullAdder ; Top                 ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --                ; --              ; --                  ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                ; --              ; --                  ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --                ; --              ; --                  ;
+; TOP_LEVEL_ENTITY                     ; OneBitFullAdder                        ; Lab2-Experimento2 ; --              ; --                  ;
++--------------------------------------+----------------------------------------+-------------------+-----------------+---------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -101,7 +105,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4846 MB             ; 00:00:17                           ;
+; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4849 MB             ; 00:00:17                           ;
 ; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:17                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
