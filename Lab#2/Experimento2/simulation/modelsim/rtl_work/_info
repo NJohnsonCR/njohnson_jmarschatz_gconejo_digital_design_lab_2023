@@ -1,0 +1,175 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/simulation/modelsim
+Efourbitsfulladder
+Z1 w1692852386
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z4 8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/fourBitsFullAdder.vhd
+Z5 FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/fourBitsFullAdder.vhd
+l0
+L4 1
+VW[9OdfenIYU>5DbDAJ^892
+!s100 7eDbcTG<34`magIN@I^T^2
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1692852466
+!i10b 1
+Z8 !s108 1692852466.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/fourBitsFullAdder.vhd|
+Z10 !s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/fourBitsFullAdder.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aarch_fourbitsfulladder
+R2
+R3
+DEx4 work 17 fourbitsfulladder 0 22 W[9OdfenIYU>5DbDAJ^892
+!i122 2
+l38
+L16 67
+VY2C=ChaSQ;3BAYoz9oNl]0
+!s100 @5F^f1kn5fz8Q]l]T5[Z82
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efourbitsfulladder_tb
+Z13 w1692852334
+R2
+R3
+!i122 3
+R0
+Z14 8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/fourBitsFullAdder_tb.vhd
+Z15 FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/fourBitsFullAdder_tb.vhd
+l0
+L4 1
+VzOM9k;Y0656jPOO8?VR:D2
+!s100 F_AGoEe2o>]SdQN_9:>S40
+R6
+31
+Z16 !s110 1692852467
+!i10b 1
+Z17 !s108 1692852467.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/fourBitsFullAdder_tb.vhd|
+!s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/fourBitsFullAdder_tb.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 20 fourbitsfulladder_tb 0 22 zOM9k;Y0656jPOO8?VR:D2
+!i122 3
+l22
+L7 48
+V^Ba6Fd`>NSLW5KDCFH5W^3
+!s100 71zI>=D4I=79HKJ8;WXGU3
+R6
+31
+R16
+!i10b 1
+R17
+R18
+Z19 !s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/fourBitsFullAdder_tb.vhd|
+!i113 1
+R11
+R12
+Eonebitfulladder
+Z20 w1692852143
+R2
+R3
+!i122 0
+R0
+Z21 8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/oneBitFullAdder.vhd
+Z22 FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/oneBitFullAdder.vhd
+l0
+L5 1
+Vc6R:FLLY7Qo33NSXX:Ucg3
+!s100 :<0Q9=489mVZl4LiL@3?b3
+R6
+31
+R7
+!i10b 1
+R8
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/oneBitFullAdder.vhd|
+Z24 !s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/oneBitFullAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 15 onebitfulladder 0 22 c6R:FLLY7Qo33NSXX:Ucg3
+!i122 0
+l13
+L12 11
+VdLU`lD5<K@G0h0H?AL9mK0
+!s100 9IKlMW3e6_6`g;kbJiJYm2
+R6
+31
+R7
+!i10b 1
+R8
+R23
+R24
+!i113 1
+R11
+R12
+Esevensegcodec
+Z25 w1692852240
+R2
+R3
+!i122 1
+R0
+Z26 8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/SevenSegCodec.vhd
+Z27 FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/SevenSegCodec.vhd
+l0
+L4 1
+Va;^EE=_JK7BfYc?LbM5MQ2
+!s100 K]VQ=MHbd`F=`l]3o`52C1
+R6
+31
+R7
+!i10b 1
+R8
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/SevenSegCodec.vhd|
+Z29 !s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento2/SevenSegCodec.vhd|
+!i113 1
+R11
+R12
+Adisplay
+R2
+R3
+DEx4 work 13 sevensegcodec 0 22 a;^EE=_JK7BfYc?LbM5MQ2
+!i122 1
+l16
+L14 30
+VG`bK5ScY]7>cd@FF_c2ME1
+!s100 LX89gVeOEXbXa@@VRk]I32
+R6
+31
+R7
+!i10b 1
+R8
+R28
+R29
+!i113 1
+R11
+R12
