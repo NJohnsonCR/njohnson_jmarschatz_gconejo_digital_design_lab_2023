@@ -3,12 +3,12 @@ use IEEE.std_logic_1164.all;
 
 entity fourBitsFullAdder is
     port (
-        sVect : out std_logic_vector (3 downto 0);
+        sumFinal : out std_logic_vector (3 downto 0);
         mainCarryOut : out std_logic;
 		  sum4bits :  out STD_LOGIC_VECTOR (6 downto 0);
 		  cout :  out STD_LOGIC_VECTOR(6 downto 0);
-        aVect : in std_logic_vector (3 downto 0);
-        bVect : in std_logic_vector (3 downto 0);
+        aSum : in std_logic_vector (3 downto 0);
+        bSum : in std_logic_vector (3 downto 0);
         mainCarryIn : in std_logic
     );
 end entity;
@@ -42,38 +42,38 @@ begin
     bit_s0: oneBitFullAdder port map (
         sum => sfinal(0),
         carryOut => auxCarry(1),
-        a => aVect(0),
-        b => bVect(0),
+        a => aSum(0),
+        b => bSum(0),
         carryIn => auxCarry(0)
     );
 
     bit_s1: oneBitFullAdder port map (
         sum => sfinal(1),
         carryOut => auxCarry(2),
-        a => aVect(1),
-        b => bVect(1),
+        a => aSum(1),
+        b => bSum(1),
         carryIn => auxCarry(1)
     );
 
     bit_s2: oneBitFullAdder port map (
         sum => sfinal(2),
         carryOut => auxCarry(3),
-        a => aVect(2),
-        b => bVect(2),
+        a => aSum(2),
+        b => bSum(2),
         carryIn => auxCarry(2)
     );
 
     bit_s3: oneBitFullAdder port map (
         sum => sfinal(3),
         carryOut => auxCarry(4),
-        a => aVect(3),
-        b => bVect(3),
+        a => aSum(3),
+        b => bSum(3),
         carryIn => auxCarry(3)
     );
 
     mainCarryOut <= auxCarry(4);
 	 concat <= "000" & auxCarry(4);
-	 sVect <= sfinal;
+	 sumFinal <= sfinal;
 	  
 	 conv0: SevenSegCodec port map(sfinal, sum4bits);
 

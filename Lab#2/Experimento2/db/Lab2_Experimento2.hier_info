@@ -1,8 +1,8 @@
 |fourBitsFullAdder
-sVect[0] <= oneBitFullAdder:bit_s0.sum
-sVect[1] <= oneBitFullAdder:bit_s1.sum
-sVect[2] <= oneBitFullAdder:bit_s2.sum
-sVect[3] <= oneBitFullAdder:bit_s3.sum
+sumFinal[0] <= oneBitFullAdder:bit_s0.sum
+sumFinal[1] <= oneBitFullAdder:bit_s1.sum
+sumFinal[2] <= oneBitFullAdder:bit_s2.sum
+sumFinal[3] <= oneBitFullAdder:bit_s3.sum
 mainCarryOut <= oneBitFullAdder:bit_s3.carryOut
 sum4bits[0] <= SevenSegCodec:conv0.seg7[0]
 sum4bits[1] <= SevenSegCodec:conv0.seg7[1]
@@ -18,14 +18,14 @@ cout[3] <= SevenSegCodec:conv1.seg7[3]
 cout[4] <= SevenSegCodec:conv1.seg7[4]
 cout[5] <= SevenSegCodec:conv1.seg7[5]
 cout[6] <= SevenSegCodec:conv1.seg7[6]
-aVect[0] => oneBitFullAdder:bit_s0.a
-aVect[1] => oneBitFullAdder:bit_s1.a
-aVect[2] => oneBitFullAdder:bit_s2.a
-aVect[3] => oneBitFullAdder:bit_s3.a
-bVect[0] => oneBitFullAdder:bit_s0.b
-bVect[1] => oneBitFullAdder:bit_s1.b
-bVect[2] => oneBitFullAdder:bit_s2.b
-bVect[3] => oneBitFullAdder:bit_s3.b
+aSum[0] => oneBitFullAdder:bit_s0.a
+aSum[1] => oneBitFullAdder:bit_s1.a
+aSum[2] => oneBitFullAdder:bit_s2.a
+aSum[3] => oneBitFullAdder:bit_s3.a
+bSum[0] => oneBitFullAdder:bit_s0.b
+bSum[1] => oneBitFullAdder:bit_s1.b
+bSum[2] => oneBitFullAdder:bit_s2.b
+bSum[3] => oneBitFullAdder:bit_s3.b
 mainCarryIn => oneBitFullAdder:bit_s0.carryIn
 
 

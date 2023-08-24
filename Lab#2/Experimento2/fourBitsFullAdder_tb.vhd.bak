@@ -8,10 +8,10 @@ architecture arch of fourBitsFullAdder_tb is
 
     component fourBitsFullAdder is
         port (
-            sumFinal : out std_logic_vector (3 downto 0);
+            sVect : out std_logic_vector (3 downto 0);
             mainCarryOut : out std_logic;
-            aSum : in std_logic_vector (3 downto 0);
-            bSum  : in std_logic_vector (3 downto 0);
+            aVect : in std_logic_vector (3 downto 0);
+            bVect : in std_logic_vector (3 downto 0);
             mainCarryIn : in std_logic
         );
     end component;
@@ -22,11 +22,11 @@ architecture arch of fourBitsFullAdder_tb is
 begin
 
     unit_under_test : fourBitsFullAdder port map (
-        sumFinal => testFourBitsSum,
+        sVect => testFourBitsSum,
         mainCarryOut => testCarryOut,
 
-        aSum => testFourBitsA,
-        bSum  => testFourBitsB,
+        aVect => testFourBitsA,
+        bVect => testFourBitsB,
         mainCarryIn => testCarryIn
     );
 
