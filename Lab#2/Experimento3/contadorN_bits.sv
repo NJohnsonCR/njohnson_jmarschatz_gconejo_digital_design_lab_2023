@@ -15,8 +15,8 @@ module contadorN_bits
 
 	reg[N-1:0] countdown = (2**N)-1;   
 
-	display_converter SevenSegCodec(registroContador[3], registroContador[2], registroContador[1], registroContador[0], sSegment1);
-	display_converter SevenSegCodec(1'b0, 1'b0, registroContador[5], registroContador[4], sSegment2);
+	SevenSegCodec converter4led1(registroContador[3], registroContador[2], registroContador[1], registroContador[0], sSegment1);
+	SevenSegCodec converter4led2(1'b0, 1'b0, registroContador[5], registroContador[4], sSegment2);
 		
 	always @(posedge clock or posedge reset) 
 		begin

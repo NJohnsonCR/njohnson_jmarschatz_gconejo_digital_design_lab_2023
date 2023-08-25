@@ -1,0 +1,85 @@
+# Reading pref.tcl
+# do Lab2-Experimento3_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3 {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:09:20 on Aug 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits.sv 
+# -- Compiling module contadorN_bits
+# 
+# Top level modules:
+# 	contadorN_bits
+# End time: 20:09:20 on Aug 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3 {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/SevenSegCodec.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:09:20 on Aug 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/SevenSegCodec.sv 
+# -- Compiling module SevenSegCodec
+# 
+# Top level modules:
+# 	SevenSegCodec
+# End time: 20:09:20 on Aug 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3 {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:09:21 on Aug 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv 
+# -- Compiling module contadorN_bits_tb
+# 
+# Top level modules:
+# 	contadorN_bits_tb
+# End time: 20:09:21 on Aug 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  contadorN_bits_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" contadorN_bits_tb 
+# Start time: 20:09:21 on Aug 24,2023
+# Loading sv_std.std
+# Loading work.contadorN_bits_tb
+# Loading work.contadorN_bits
+# Loading work.SevenSegCodec
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'countdown2bits'.  Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /contadorN_bits_tb/countdown2bits File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv Line: 16
+# ** Error: (vsim-3063) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /contadorN_bits_tb/countdown2bits File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv Line: 16
+# ** Error: (vsim-3063) Port 'countdownOut' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /contadorN_bits_tb/countdown2bits File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv Line: 16
+# ** Warning: (vsim-3722) C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv(16): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv(16): [TFMPC] - Missing connection for port 'registroContador'.
+# ** Warning: (vsim-3722) C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv(16): [TFMPC] - Missing connection for port 'sSegment1'.
+# ** Warning: (vsim-3722) C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv(16): [TFMPC] - Missing connection for port 'sSegment2'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'countdown4bits'.  Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /contadorN_bits_tb/countdown4bits File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv Line: 24
+# ** Error: (vsim-3063) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /contadorN_bits_tb/countdown4bits File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv Line: 24
+# ** Error: (vsim-3063) Port 'countdownOut' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /contadorN_bits_tb/countdown4bits File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv Line: 24
+# ** Warning: (vsim-3722) C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv(24): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3722) C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv(24): [TFMPC] - Missing connection for port 'registroContador'.
+# ** Warning: (vsim-3722) C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv(24): [TFMPC] - Missing connection for port 'sSegment1'.
+# ** Warning: (vsim-3722) C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv(24): [TFMPC] - Missing connection for port 'sSegment2'.
+# ** Error: (vsim-3063) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /contadorN_bits_tb/countdown6bits File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv Line: 32
+# ** Error: (vsim-3063) Port 'countdownOut' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /contadorN_bits_tb/countdown6bits File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv Line: 32
+# ** Error: (vsim-3063) Port 'led1' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /contadorN_bits_tb/countdown6bits File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv Line: 32
+# ** Error: (vsim-3063) Port 'led2' not found in the connected module (5th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /contadorN_bits_tb/countdown6bits File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv Line: 32
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Lab2-Experimento3_run_msim_rtl_verilog.do PAUSED at line 13
+# End time: 20:09:34 on Aug 24,2023, Elapsed time: 0:00:13
+# Errors: 8, Warnings: 10

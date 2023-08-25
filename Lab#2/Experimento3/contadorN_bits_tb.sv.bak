@@ -13,7 +13,7 @@ parameter CLK = 10;
 	wire [6:0] led2;
 
 
-	contadorN_bits #(.N(2)) countdown2bits
+	countdown_nbits #(.N(2)) countdown2bits
 	
 	(
 	  .clk(clk),
@@ -21,7 +21,7 @@ parameter CLK = 10;
 	  .countdownOut(countdownOut2bits)
 	);
 	
-	contadorN_bits #(.N(4)) countdown4bits
+	countdown_nbits #(.N(4)) countdown4bits
 	
 	(
 	  .clk(clk),
@@ -29,7 +29,7 @@ parameter CLK = 10;
 	  .countdownOut(countdownOut4bits)
 	);
 
-	contadorN_bits #(.N(6)) countdown6bits
+	countdown_nbits #(.N(6)) countdown6bits
 	
 	(
 	  .clk(clk),
