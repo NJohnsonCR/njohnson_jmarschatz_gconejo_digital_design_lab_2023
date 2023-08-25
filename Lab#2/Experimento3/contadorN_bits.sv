@@ -4,7 +4,8 @@ module contadorN_bits
 
 (
 	input logic clock,        
-	input logic reset,        
+	input logic reset,
+	input logic resetNum,
 	output reg[N-1:0] registroContador,
 	output logic [6:0] sSegment1,
 	output logic [6:0] sSegment2
@@ -25,7 +26,13 @@ module contadorN_bits
 					countdown = (2**N)-1;
 					registroContador = countdown;
 				end
+			else if(resetNum)
+				begin 
 				
+				countdown = 40;
+				registroContador = countdown;
+				
+				end
 			else
 				begin
 					if (countdown == 0) 

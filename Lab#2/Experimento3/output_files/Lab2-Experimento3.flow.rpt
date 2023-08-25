@@ -1,6 +1,6 @@
 Flow report for Lab2-Experimento3
-Thu Aug 24 21:17:53 2023
-Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Thu Aug 24 23:21:20 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,29 +38,24 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Flow Summary                                                                     ;
-+---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Thu Aug 24 21:17:53 2023          ;
-; Quartus Prime Version           ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
-; Revision Name                   ; Lab2-Experimento3                              ;
-; Top-level Entity Name           ; contadorN_bits                                 ;
-; Family                          ; Cyclone V                                      ;
-; Device                          ; 5CSEMA5F31C6                                   ;
-; Timing Models                   ; Final                                          ;
-; Logic utilization (in ALMs)     ; 9 / 32,070 ( < 1 % )                           ;
-; Total registers                 ; 9                                              ;
-; Total pins                      ; 22 / 457 ( 5 % )                               ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                          ;
-; Total DSP Blocks                ; 0 / 87 ( 0 % )                                 ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0 / 6 ( 0 % )                                  ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                  ;
-+---------------------------------+------------------------------------------------+
++---------------------------------------------------------------------------+
+; Flow Summary                                                              ;
++-----------------------------+---------------------------------------------+
+; Flow Status                 ; Successful - Thu Aug 24 23:21:20 2023       ;
+; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name               ; Lab2-Experimento3                           ;
+; Top-level Entity Name       ; contadorN_bits                              ;
+; Family                      ; Cyclone V                                   ;
+; Device                      ; 5CSEMA5F31C6                                ;
+; Timing Models               ; Final                                       ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -68,74 +63,70 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/24/2023 21:17:02 ;
+; Start date & time ; 08/24/2023 23:21:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab2-Experimento3   ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                       ;
-+--------------------------------------+----------------------------------------+-------------------+----------------+-------------------+
-; Assignment Name                      ; Value                                  ; Default Value     ; Entity Name    ; Section Id        ;
-+--------------------------------------+----------------------------------------+-------------------+----------------+-------------------+
-; COMPILER_SIGNATURE_ID                ; 185410942947171.169293342208788        ; --                ; --             ; --                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                ; --             ; contadorN_bits_tb ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; contadorN_bits_tb                      ; --                ; --             ; eda_simulation    ;
-; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --                ; --             ; eda_simulation    ;
-; EDA_SIMULATION_TOOL                  ; ModelSim (SystemVerilog)               ; <None>            ; --             ; --                ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --                ; --             ; eda_simulation    ;
-; EDA_TEST_BENCH_FILE                  ; contadorN_bits_tb.sv                   ; --                ; --             ; contadorN_bits_tb ;
-; EDA_TEST_BENCH_MODULE_NAME           ; contadorN_bits_tb                      ; --                ; --             ; contadorN_bits_tb ;
-; EDA_TEST_BENCH_NAME                  ; contadorN_bits_tb                      ; --                ; --             ; eda_simulation    ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --                ; --             ; eda_simulation    ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --                ; --             ; --                ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --                ; --             ; --                ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --                ; contadorN_bits ; Top               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --                ; contadorN_bits ; Top               ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --                ; contadorN_bits ; Top               ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --                ; --             ; --                ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                ; --             ; --                ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --                ; --             ; --                ;
-; TOP_LEVEL_ENTITY                     ; contadorN_bits                         ; Lab2-Experimento3 ; --             ; --                ;
-+--------------------------------------+----------------------------------------+-------------------+----------------+-------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                        ;
++--------------------------------------+----------------------------------------+-------------------+----------------+--------------------+
+; Assignment Name                      ; Value                                  ; Default Value     ; Entity Name    ; Section Id         ;
++--------------------------------------+----------------------------------------+-------------------+----------------+--------------------+
+; COMPILER_SIGNATURE_ID                ; 264086602265196.169294087416572        ; --                ; --             ; --                 ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                ; --             ; contadorN6_bits_tb ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                ; --             ; contadorN4_bits_tb ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                ; --             ; contadorN2_bits_tb ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; contadorN2_bits_tb                     ; --                ; --             ; eda_simulation     ;
+; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --                ; --             ; eda_simulation     ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>            ; --             ; --                 ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --                ; --             ; eda_simulation     ;
+; EDA_TEST_BENCH_FILE                  ; contadorN6_bits_tb.sv                  ; --                ; --             ; contadorN6_bits_tb ;
+; EDA_TEST_BENCH_FILE                  ; contadorN4_bits_tb.sv                  ; --                ; --             ; contadorN4_bits_tb ;
+; EDA_TEST_BENCH_FILE                  ; contadorN2_bits_tb.sv                  ; --                ; --             ; contadorN2_bits_tb ;
+; EDA_TEST_BENCH_MODULE_NAME           ; contadorN6_bits_tb                     ; --                ; --             ; contadorN6_bits_tb ;
+; EDA_TEST_BENCH_MODULE_NAME           ; contadorN4_bits_tb                     ; --                ; --             ; contadorN4_bits_tb ;
+; EDA_TEST_BENCH_MODULE_NAME           ; contadorN2_bits_tb                     ; --                ; --             ; contadorN2_bits_tb ;
+; EDA_TEST_BENCH_NAME                  ; contadorN2_bits_tb                     ; --                ; --             ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; contadorN4_bits_tb                     ; --                ; --             ; eda_simulation     ;
+; EDA_TEST_BENCH_NAME                  ; contadorN6_bits_tb                     ; --                ; --             ; eda_simulation     ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --                ; --             ; eda_simulation     ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --                ; --             ; --                 ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --                ; --             ; --                 ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --                ; contadorN_bits ; Top                ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --                ; contadorN_bits ; Top                ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --                ; contadorN_bits ; Top                ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --                ; --             ; --                 ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                ; --             ; --                 ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --                ; --             ; --                 ;
+; TOP_LEVEL_ENTITY                     ; contadorN_bits                         ; Lab2-Experimento3 ; --             ; --                 ;
++--------------------------------------+----------------------------------------+-------------------+----------------+--------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4850 MB             ; 00:00:18                           ;
-; Fitter               ; 00:00:30     ; 1.0                     ; 6726 MB             ; 00:01:18                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4878 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 5165 MB             ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4726 MB             ; 00:00:01                           ;
-; Total                ; 00:00:47     ; --                      ; --                  ; 00:01:46                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:06     ; 1.0                     ; 4766 MB             ; 00:00:14                           ;
+; Total                  ; 00:00:06     ; --                      ; --                  ; 00:00:14                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-N4CT73P  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-N4CT73P  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-N4CT73P  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-N4CT73P  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-N4CT73P  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++------------------------+------------------+------------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++------------------------+------------------+------------+------------+----------------+
+; Analysis & Elaboration ; DESKTOP-KQDE7IA  ; Windows 10 ; 10.0       ; x86_64         ;
++------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off Lab2-Experimento3 -c Lab2-Experimento3
-quartus_fit --read_settings_files=off --write_settings_files=off Lab2-Experimento3 -c Lab2-Experimento3
-quartus_asm --read_settings_files=off --write_settings_files=off Lab2-Experimento3 -c Lab2-Experimento3
-quartus_sta Lab2-Experimento3 -c Lab2-Experimento3
-quartus_eda --read_settings_files=off --write_settings_files=off Lab2-Experimento3 -c Lab2-Experimento3
+quartus_map --read_settings_files=on --write_settings_files=off Lab2-Experimento3 -c Lab2-Experimento3 --analysis_and_elaboration
 
 
 

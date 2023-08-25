@@ -23,6 +23,12 @@ reset => countdown[2].PRESET
 reset => countdown[3].PRESET
 reset => countdown[4].PRESET
 reset => countdown[5].PRESET
+resetNum => registroContador.OUTPUTSELECT
+resetNum => registroContador.OUTPUTSELECT
+resetNum => registroContador.OUTPUTSELECT
+resetNum => registroContador.OUTPUTSELECT
+resetNum => registroContador.OUTPUTSELECT
+resetNum => registroContador.OUTPUTSELECT
 registroContador[0] << registroContador[0].DB_MAX_OUTPUT_PORT_TYPE
 registroContador[1] << registroContador[1].DB_MAX_OUTPUT_PORT_TYPE
 registroContador[2] << registroContador[2].DB_MAX_OUTPUT_PORT_TYPE
