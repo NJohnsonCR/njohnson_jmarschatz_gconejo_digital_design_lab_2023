@@ -8,60 +8,60 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/simulation/modelsim
+Z0 dC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/simulation/modelsim
 vcontadorN_bits
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1692929360
+Z2 !s110 1692930541
 !i10b 1
 !s100 @i:a2NV4AGc@`:R9G?3KF3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IG=^a24260``eS03Y9abBH3
+Ii@j1AG`k9VAlMz]knTPDL3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1692927925
-8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits.sv
-FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits.sv
+Z5 w1692930354
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits.sv
 !i122 0
 L0 1 49
-Z5 OV;L;2020.1;71
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1692929360.000000
-!s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits.sv|
+Z7 !s108 1692930541.000000
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3
-Z9 tCvgOpt 0
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3
+Z10 tCvgOpt 0
 ncontador@n_bits
 vcontadorN_bits_tb
 R1
-!s110 1692929361
+R2
 !i10b 1
 !s100 mhgSXo0nd7d[`>d7bn?:a3
 R3
-Ik:NRB_H6zE`UOTChbg=DO1
+ISaN13=b991TE[?RiUIkcW0
 R4
 S1
 R0
-w1692927869
-8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv
-FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv
+R5
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv
 !i122 2
 L0 2 72
-R5
+R6
 r1
 !s85 0
 31
-!s108 1692929361.000000
-!s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv|
-!i113 1
 R7
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/contadorN_bits_tb.sv|
+!i113 1
 R8
 R9
+R10
 ncontador@n_bits_tb
 vSevenSegCodec
 R1
@@ -69,24 +69,24 @@ R2
 !i10b 1
 !s100 Z3<M5>fmPzZAE5PSLfSEl3
 R3
-Iz3;<LnbIL]c`AaM3bBk:^0
+Ie51ST9XMoMEaeS?FV:3V>0
 R4
 S1
 R0
-w1692927609
-8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/SevenSegCodec.sv
-FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/SevenSegCodec.sv
+R5
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/SevenSegCodec.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/SevenSegCodec.sv
 !i122 1
 L0 1 11
-R5
+R6
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/SevenSegCodec.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/SevenSegCodec.sv|
-!i113 1
 R7
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/SevenSegCodec.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#2/Experimento3/SevenSegCodec.sv|
+!i113 1
 R8
 R9
+R10
 n@seven@seg@codec

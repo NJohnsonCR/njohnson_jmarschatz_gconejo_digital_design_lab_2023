@@ -23,26 +23,26 @@ reset => countdown[2].PRESET
 reset => countdown[3].PRESET
 reset => countdown[4].PRESET
 reset => countdown[5].PRESET
-registroContador[0] <= registroContador[0].DB_MAX_OUTPUT_PORT_TYPE
-registroContador[1] <= registroContador[1].DB_MAX_OUTPUT_PORT_TYPE
-registroContador[2] <= registroContador[2].DB_MAX_OUTPUT_PORT_TYPE
-registroContador[3] <= registroContador[3].DB_MAX_OUTPUT_PORT_TYPE
-registroContador[4] <= registroContador[4].DB_MAX_OUTPUT_PORT_TYPE
-registroContador[5] <= registroContador[5].DB_MAX_OUTPUT_PORT_TYPE
-sSegment1[0] <= SevenSegCodec:converter4led1.port4
-sSegment1[1] <= SevenSegCodec:converter4led1.port4
-sSegment1[2] <= SevenSegCodec:converter4led1.port4
-sSegment1[3] <= SevenSegCodec:converter4led1.port4
-sSegment1[4] <= SevenSegCodec:converter4led1.port4
-sSegment1[5] <= SevenSegCodec:converter4led1.port4
-sSegment1[6] <= SevenSegCodec:converter4led1.port4
-sSegment2[0] <= SevenSegCodec:converter4led2.port4
-sSegment2[1] <= SevenSegCodec:converter4led2.port4
-sSegment2[2] <= SevenSegCodec:converter4led2.port4
-sSegment2[3] <= SevenSegCodec:converter4led2.port4
-sSegment2[4] <= SevenSegCodec:converter4led2.port4
-sSegment2[5] <= SevenSegCodec:converter4led2.port4
-sSegment2[6] <= SevenSegCodec:converter4led2.port4
+registroContador[0] << registroContador[0].DB_MAX_OUTPUT_PORT_TYPE
+registroContador[1] << registroContador[1].DB_MAX_OUTPUT_PORT_TYPE
+registroContador[2] << registroContador[2].DB_MAX_OUTPUT_PORT_TYPE
+registroContador[3] << registroContador[3].DB_MAX_OUTPUT_PORT_TYPE
+registroContador[4] << registroContador[4].DB_MAX_OUTPUT_PORT_TYPE
+registroContador[5] << registroContador[5].DB_MAX_OUTPUT_PORT_TYPE
+sSegment1[0] << SevenSegCodec:converter4led1.port4
+sSegment1[1] << SevenSegCodec:converter4led1.port4
+sSegment1[2] << SevenSegCodec:converter4led1.port4
+sSegment1[3] << SevenSegCodec:converter4led1.port4
+sSegment1[4] << SevenSegCodec:converter4led1.port4
+sSegment1[5] << SevenSegCodec:converter4led1.port4
+sSegment1[6] << SevenSegCodec:converter4led1.port4
+sSegment2[0] << SevenSegCodec:converter4led2.port4
+sSegment2[1] << SevenSegCodec:converter4led2.port4
+sSegment2[2] << SevenSegCodec:converter4led2.port4
+sSegment2[3] << SevenSegCodec:converter4led2.port4
+sSegment2[4] << SevenSegCodec:converter4led2.port4
+sSegment2[5] << SevenSegCodec:converter4led2.port4
+sSegment2[6] << SevenSegCodec:converter4led2.port4
 
 
 |contadorN_bits|SevenSegCodec:converter4led1
