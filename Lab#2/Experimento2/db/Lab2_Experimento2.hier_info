@@ -1,0 +1,191 @@
+|fourBitsFullAdder
+sumFinal[0] <= oneBitFullAdder:bit_s0.sum
+sumFinal[1] <= oneBitFullAdder:bit_s1.sum
+sumFinal[2] <= oneBitFullAdder:bit_s2.sum
+sumFinal[3] <= oneBitFullAdder:bit_s3.sum
+mainCarryOut <= oneBitFullAdder:bit_s3.carryOut
+sum4bits[0] <= SevenSegCodec:conv0.seg7[0]
+sum4bits[1] <= SevenSegCodec:conv0.seg7[1]
+sum4bits[2] <= SevenSegCodec:conv0.seg7[2]
+sum4bits[3] <= SevenSegCodec:conv0.seg7[3]
+sum4bits[4] <= SevenSegCodec:conv0.seg7[4]
+sum4bits[5] <= SevenSegCodec:conv0.seg7[5]
+sum4bits[6] <= SevenSegCodec:conv0.seg7[6]
+cout[0] <= SevenSegCodec:conv1.seg7[0]
+cout[1] <= SevenSegCodec:conv1.seg7[1]
+cout[2] <= SevenSegCodec:conv1.seg7[2]
+cout[3] <= SevenSegCodec:conv1.seg7[3]
+cout[4] <= SevenSegCodec:conv1.seg7[4]
+cout[5] <= SevenSegCodec:conv1.seg7[5]
+cout[6] <= SevenSegCodec:conv1.seg7[6]
+aSum[0] => oneBitFullAdder:bit_s0.a
+aSum[1] => oneBitFullAdder:bit_s1.a
+aSum[2] => oneBitFullAdder:bit_s2.a
+aSum[3] => oneBitFullAdder:bit_s3.a
+bSum[0] => oneBitFullAdder:bit_s0.b
+bSum[1] => oneBitFullAdder:bit_s1.b
+bSum[2] => oneBitFullAdder:bit_s2.b
+bSum[3] => oneBitFullAdder:bit_s3.b
+mainCarryIn => oneBitFullAdder:bit_s0.carryIn
+
+
+|fourBitsFullAdder|oneBitFullAdder:bit_s0
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+a => sum.IN0
+a => sum.IN0
+a => carryOut.IN0
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => carryOut.IN0
+b => carryOut.IN1
+b => sum.IN1
+b => sum.IN1
+carryIn => sum.IN1
+carryIn => sum.IN1
+carryIn => carryOut.IN1
+carryIn => sum.IN1
+carryIn => sum.IN1
+
+
+|fourBitsFullAdder|oneBitFullAdder:bit_s1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+a => sum.IN0
+a => sum.IN0
+a => carryOut.IN0
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => carryOut.IN0
+b => carryOut.IN1
+b => sum.IN1
+b => sum.IN1
+carryIn => sum.IN1
+carryIn => sum.IN1
+carryIn => carryOut.IN1
+carryIn => sum.IN1
+carryIn => sum.IN1
+
+
+|fourBitsFullAdder|oneBitFullAdder:bit_s2
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+a => sum.IN0
+a => sum.IN0
+a => carryOut.IN0
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => carryOut.IN0
+b => carryOut.IN1
+b => sum.IN1
+b => sum.IN1
+carryIn => sum.IN1
+carryIn => sum.IN1
+carryIn => carryOut.IN1
+carryIn => sum.IN1
+carryIn => sum.IN1
+
+
+|fourBitsFullAdder|oneBitFullAdder:bit_s3
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+a => sum.IN0
+a => sum.IN0
+a => carryOut.IN0
+a => sum.IN0
+a => sum.IN0
+b => sum.IN1
+b => sum.IN1
+b => carryOut.IN0
+b => carryOut.IN1
+b => sum.IN1
+b => sum.IN1
+carryIn => sum.IN1
+carryIn => sum.IN1
+carryIn => carryOut.IN1
+carryIn => sum.IN1
+carryIn => sum.IN1
+
+
+|fourBitsFullAdder|SevenSegCodec:conv0
+sum4[0] => Mux0.IN19
+sum4[0] => Mux1.IN19
+sum4[0] => Mux2.IN19
+sum4[0] => Mux3.IN19
+sum4[0] => Mux4.IN19
+sum4[0] => Mux5.IN19
+sum4[0] => Mux6.IN19
+sum4[1] => Mux0.IN18
+sum4[1] => Mux1.IN18
+sum4[1] => Mux2.IN18
+sum4[1] => Mux3.IN18
+sum4[1] => Mux4.IN18
+sum4[1] => Mux5.IN18
+sum4[1] => Mux6.IN18
+sum4[2] => Mux0.IN17
+sum4[2] => Mux1.IN17
+sum4[2] => Mux2.IN17
+sum4[2] => Mux3.IN17
+sum4[2] => Mux4.IN17
+sum4[2] => Mux5.IN17
+sum4[2] => Mux6.IN17
+sum4[3] => Mux0.IN16
+sum4[3] => Mux1.IN16
+sum4[3] => Mux2.IN16
+sum4[3] => Mux3.IN16
+sum4[3] => Mux4.IN16
+sum4[3] => Mux5.IN16
+sum4[3] => Mux6.IN16
+seg7[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fourBitsFullAdder|SevenSegCodec:conv1
+sum4[0] => Mux0.IN19
+sum4[0] => Mux1.IN19
+sum4[0] => Mux2.IN19
+sum4[0] => Mux3.IN19
+sum4[0] => Mux4.IN19
+sum4[0] => Mux5.IN19
+sum4[0] => Mux6.IN19
+sum4[1] => Mux0.IN18
+sum4[1] => Mux1.IN18
+sum4[1] => Mux2.IN18
+sum4[1] => Mux3.IN18
+sum4[1] => Mux4.IN18
+sum4[1] => Mux5.IN18
+sum4[1] => Mux6.IN18
+sum4[2] => Mux0.IN17
+sum4[2] => Mux1.IN17
+sum4[2] => Mux2.IN17
+sum4[2] => Mux3.IN17
+sum4[2] => Mux4.IN17
+sum4[2] => Mux5.IN17
+sum4[2] => Mux6.IN17
+sum4[3] => Mux0.IN16
+sum4[3] => Mux1.IN16
+sum4[3] => Mux2.IN16
+sum4[3] => Mux3.IN16
+sum4[3] => Mux4.IN16
+sum4[3] => Mux5.IN16
+sum4[3] => Mux6.IN16
+seg7[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
