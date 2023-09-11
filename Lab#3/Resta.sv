@@ -20,29 +20,29 @@ always @* begin
 	if (A<B) begin
 		tempRes = A + comp2B;
 		resultado = (~tempRes) + 1'b1;
-		flagC = 1;
-		flagN = 1;
-		flagZ = 0;
+		FlagC = 1;
+		FlagN = 1;
+		FlagZ = 0;
 	end
 	
 	// RESTA GENERA UN NÚMERO POSITIVO
 	else if (A>B) begin
 		resultado = A + comp2B;
-		flagC = 0;
-		flagN = 0;
-		flagZ = 0;
+		FlagC = 0;
+		FlagN = 0;
+		FlagZ = 0;
 	end
 	
 	// RESTA IGENERA UN CERO
 	else if (A == B) begin
 		resultado = A + comp2B;
-		flagC = 0;
-		flagN = 0;
-		flagZ = 1;
+		FlagC = 0;
+		FlagN = 0;
+		FlagZ = 1;
 	end 
 	
 	// FLAG OVERFLOW
-	flagV = ((A[N-1] & B[N-1] & (~resultado[N-1])) | ((~A[N-1]) & (~B[N-1]) & resultado[N-1]));
+	FlagV = ((A[N-1] & B[N-1] & (~resultado[N-1])) | ((~A[N-1]) & (~B[N-1]) & resultado[N-1]));
 
 end
 endmodule
