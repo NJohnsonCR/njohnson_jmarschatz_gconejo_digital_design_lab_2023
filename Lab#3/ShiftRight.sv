@@ -1,11 +1,7 @@
-
-module ShiftRight #(parameter N=4)(input logic [N-1:0] A, 
-												input logic [N-1:0] B, 
-												output reg [N-1:0] resultado,
-												output reg FlagZ);
+module ShiftRight #(parameter N=4)(input [N-1:0] A, B,output reg [N-1:0] resultado,output reg FlagZ);
 
 	
-	always_comb begin
+	always @* begin
 		
 		//INICIALIZACIÓN DE VARIABLES
 		resultado = 0;
