@@ -1,6 +1,6 @@
 Analysis & Elaboration report for Experimento-1
-Fri Sep 08 17:09:13 2023
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Tue Sep 12 14:06:49 2023
+Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
 ---------------------
@@ -9,15 +9,27 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |alu
+  5. Parameter Settings for User Entity Instance: Suma:sum
+  6. Parameter Settings for User Entity Instance: Resta:res
+  7. Parameter Settings for User Entity Instance: Resta:res|Complementoa2:comp2
+  8. Parameter Settings for User Entity Instance: Multiplicacion:mul
+  9. Parameter Settings for User Entity Instance: Division:div
+ 10. Parameter Settings for User Entity Instance: Modulo:mod
+ 11. Parameter Settings for User Entity Instance: Op_AND:opAnd
+ 12. Parameter Settings for User Entity Instance: Op_OR:opOr
+ 13. Parameter Settings for User Entity Instance: Op_XOR:opXor
+ 14. Parameter Settings for User Entity Instance: ShiftLeft:lsh
+ 15. Parameter Settings for User Entity Instance: ShiftRight:rsh
+ 16. Analysis & Elaboration Settings
+ 17. Analysis & Elaboration Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -34,22 +46,22 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Failed - Fri Sep 08 17:09:13 2023           ;
-; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                 ; Experimento-1                               ;
-; Top-level Entity Name         ; Resta                                       ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                 ;
++-------------------------------+------------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Tue Sep 12 14:06:49 2023          ;
+; Quartus Prime Version         ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
+; Revision Name                 ; Experimento-1                                  ;
+; Top-level Entity Name         ; alu                                            ;
+; Family                        ; Cyclone V                                      ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
+; Total registers               ; N/A until Partition Merge                      ;
+; Total pins                    ; N/A until Partition Merge                      ;
+; Total virtual pins            ; N/A until Partition Merge                      ;
+; Total block memory bits       ; N/A until Partition Merge                      ;
+; Total PLLs                    ; N/A until Partition Merge                      ;
+; Total DLLs                    ; N/A until Partition Merge                      ;
++-------------------------------+------------------------------------------------+
 
 
 +------------------------------------------+
@@ -58,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -68,13 +80,133 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |alu ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; N              ; 4     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Suma:sum ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; N              ; 4     ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Resta:res ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; N              ; 4     ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Resta:res|Complementoa2:comp2 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; N              ; 4     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplicacion:mul ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; N              ; 4     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Division:div ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; N              ; 4     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Modulo:mod ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; N              ; 4     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Op_AND:opAnd ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; N              ; 4     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Op_OR:opOr ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; N              ; 4     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Op_XOR:opXor ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; N              ; 4     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ShiftLeft:lsh ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; N              ; 4     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ShiftRight:rsh ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; N              ; 4     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; Resta              ; Experimento-1      ;
+; Top-level entity name                                                           ; alu                ; Experimento-1      ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -160,30 +292,62 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Sep 08 17:09:05 2023
+    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+    Info: Processing started: Tue Sep 12 14:06:41 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Experimento-1 -c Experimento-1 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file suma.sv
-    Info (12023): Found entity 1: Suma File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Suma.sv Line: 1
+    Info (12023): Found entity 1: Suma File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Suma.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file op_xor.sv
-    Info (12023): Found entity 1: Op_XOR File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Op_XOR.sv Line: 1
+    Info (12023): Found entity 1: Op_XOR File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Op_XOR.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file op_or.sv
-    Info (12023): Found entity 1: Op_OR File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Op_OR.sv Line: 1
+    Info (12023): Found entity 1: Op_OR File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Op_OR.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file op_and.sv
-    Info (12023): Found entity 1: Op_AND File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Op_AND.sv Line: 1
-Error (10170): Verilog HDL syntax error at alu.sv(14) near text: ")";  expecting an operand. Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 14
-Error (10112): Ignored design unit "alu" at alu.sv(3) due to previous errors File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 3
-Info (12021): Found 0 design units, including 0 entities, in source file alu.sv
+    Info (12023): Found entity 1: Op_AND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Op_AND.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: alu File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file resta.sv
-    Info (12023): Found entity 1: Resta File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Resta.sv Line: 1
+    Info (12023): Found entity 1: Resta File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Resta.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file complementoa2.sv
-    Info (12023): Found entity 1: Complementoa2 File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Complementoa2.sv Line: 2
-Error: Quartus Prime Analysis & Elaboration was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 4763 megabytes
-    Error: Processing ended: Fri Sep 08 17:09:13 2023
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:13
+    Info (12023): Found entity 1: Complementoa2 File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Complementoa2.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file shiftright.sv
+    Info (12023): Found entity 1: ShiftRight File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/ShiftRight.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shiftleft.sv
+    Info (12023): Found entity 1: ShiftLeft File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/ShiftLeft.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file ejemplos_tb.sv
+    Info (12023): Found entity 1: Ejemplos_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Ejemplos_tb.sv Line: 2
+Info (12127): Elaborating entity "alu" for the top level hierarchy
+Warning (10030): Net "fs[1]" at alu.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 10
+Warning (10030): Net "fml[3]" at alu.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 10
+Warning (10030): Net "fml[1]" at alu.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 10
+Warning (10030): Net "fiz[3..1]" at alu.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 10
+Info (12128): Elaborating entity "Suma" for hierarchy "Suma:sum" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 17
+Info (12128): Elaborating entity "Resta" for hierarchy "Resta:res" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 19
+Warning (10240): Verilog HDL Always Construct warning at Resta.sv(14): inferring latch(es) for variable "resultado", which holds its previous value in one or more paths through the always construct File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Resta.sv Line: 14
+Info (10041): Inferred latch for "resultado[0]" at Resta.sv(29) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Resta.sv Line: 29
+Info (10041): Inferred latch for "resultado[1]" at Resta.sv(29) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Resta.sv Line: 29
+Info (10041): Inferred latch for "resultado[2]" at Resta.sv(29) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Resta.sv Line: 29
+Info (10041): Inferred latch for "resultado[3]" at Resta.sv(29) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Resta.sv Line: 29
+Info (12128): Elaborating entity "Complementoa2" for hierarchy "Resta:res|Complementoa2:comp2" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/Resta.sv Line: 10
+Warning (12125): Using design file multiplicacion.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Multiplicacion File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/multiplicacion.sv Line: 1
+Info (12128): Elaborating entity "Multiplicacion" for hierarchy "Multiplicacion:mul" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 21
+Warning (12125): Using design file division.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Division File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/division.sv Line: 1
+Info (12128): Elaborating entity "Division" for hierarchy "Division:div" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 23
+Warning (12125): Using design file modulo.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Modulo File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/modulo.sv Line: 1
+Info (12128): Elaborating entity "Modulo" for hierarchy "Modulo:mod" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 25
+Info (12128): Elaborating entity "Op_AND" for hierarchy "Op_AND:opAnd" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 27
+Info (12128): Elaborating entity "Op_OR" for hierarchy "Op_OR:opOr" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 29
+Info (12128): Elaborating entity "Op_XOR" for hierarchy "Op_XOR:opXor" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 31
+Info (12128): Elaborating entity "ShiftLeft" for hierarchy "ShiftLeft:lsh" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 33
+Info (12128): Elaborating entity "ShiftRight" for hierarchy "ShiftRight:rsh" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#3/alu.sv Line: 35
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4778 megabytes
+    Info: Processing ended: Tue Sep 12 14:06:49 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:18
 
 

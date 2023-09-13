@@ -2,8 +2,8 @@
 module alu #(parameter N=4)(
            input [N-1:0] A,B,  // ALU 8-bit Inputs
            input [3:0] ALU_Sel,// ALU Selection
-           output [N-1:0] ALU_Out, // ALU 8-bit Output
-           output FlagZ,FlagN,FlagV,FlagC // Antonio
+           output reg [N-1:0] ALU_Out, // ALU 8-bit Output
+           output reg FlagZ,FlagN,FlagV,FlagC // Antonio
     );
 	 
 	 wire [N-1:0] sum_rest,res_rest,mul_rest,div_rest,mod_rest,and_rest,or_rest,xor_rest,lsh_rest,rsh_rest;

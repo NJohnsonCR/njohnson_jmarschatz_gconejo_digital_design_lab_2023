@@ -1,0 +1,253 @@
+|alu
+A[0] => A[0].IN9
+A[1] => A[1].IN9
+A[2] => A[2].IN9
+A[3] => A[3].IN9
+B[0] => B[0].IN9
+B[1] => B[1].IN9
+B[2] => B[2].IN9
+B[3] => B[3].IN9
+ALU_Sel[0] => Mux0.IN9
+ALU_Sel[0] => Mux1.IN9
+ALU_Sel[0] => Mux2.IN9
+ALU_Sel[0] => Mux3.IN9
+ALU_Sel[0] => Mux4.IN12
+ALU_Sel[0] => Mux5.IN16
+ALU_Sel[0] => Mux6.IN14
+ALU_Sel[0] => Mux7.IN15
+ALU_Sel[1] => Mux0.IN8
+ALU_Sel[1] => Mux1.IN8
+ALU_Sel[1] => Mux2.IN8
+ALU_Sel[1] => Mux3.IN8
+ALU_Sel[1] => Mux4.IN11
+ALU_Sel[1] => Mux5.IN15
+ALU_Sel[1] => Mux6.IN13
+ALU_Sel[1] => Mux7.IN14
+ALU_Sel[2] => Mux0.IN7
+ALU_Sel[2] => Mux1.IN7
+ALU_Sel[2] => Mux2.IN7
+ALU_Sel[2] => Mux3.IN7
+ALU_Sel[2] => Mux4.IN10
+ALU_Sel[2] => Mux5.IN14
+ALU_Sel[2] => Mux6.IN12
+ALU_Sel[2] => Mux7.IN13
+ALU_Sel[3] => Mux0.IN6
+ALU_Sel[3] => Mux1.IN6
+ALU_Sel[3] => Mux2.IN6
+ALU_Sel[3] => Mux3.IN6
+ALU_Sel[3] => Mux4.IN9
+ALU_Sel[3] => Mux5.IN13
+ALU_Sel[3] => Mux6.IN11
+ALU_Sel[3] => Mux7.IN12
+ALU_Out[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+ALU_Out[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+ALU_Out[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+ALU_Out[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+FlagZ <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+FlagN <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+FlagV <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+FlagC <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|Suma:sum
+A[0] => Add0.IN4
+A[1] => Add0.IN3
+A[2] => Add0.IN2
+A[3] => Add0.IN1
+B[0] => Add0.IN8
+B[1] => Add0.IN7
+B[2] => Add0.IN6
+B[3] => Add0.IN5
+FlagC <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+FlagZ <= always0.DB_MAX_OUTPUT_PORT_TYPE
+FlagV <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+C[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|Resta:res
+A[0] => LessThan0.IN4
+A[0] => LessThan1.IN4
+A[0] => Equal0.IN3
+A[0] => Add1.IN4
+A[1] => LessThan0.IN3
+A[1] => LessThan1.IN3
+A[1] => Equal0.IN2
+A[1] => Add1.IN3
+A[2] => LessThan0.IN2
+A[2] => LessThan1.IN2
+A[2] => Equal0.IN1
+A[2] => Add1.IN2
+A[3] => LessThan0.IN1
+A[3] => LessThan1.IN1
+A[3] => Equal0.IN0
+A[3] => Add1.IN1
+A[3] => FlagV.IN0
+A[3] => FlagV.IN0
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+FlagC <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+FlagZ <= FlagZ.DB_MAX_OUTPUT_PORT_TYPE
+FlagV <= FlagV.DB_MAX_OUTPUT_PORT_TYPE
+FlagN <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+resultado[0] <= resultado[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultado[1] <= resultado[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultado[2] <= resultado[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+resultado[3] <= resultado[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|Resta:res|Complementoa2:comp2
+valor[0] => Add0.IN8
+valor[1] => Add0.IN7
+valor[2] => Add0.IN6
+valor[3] => Add0.IN5
+resultadoComp2[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultadoComp2[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultadoComp2[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultadoComp2[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|Multiplicacion:mul
+A[0] => Mult0.IN3
+A[1] => Mult0.IN2
+A[2] => Mult0.IN1
+A[3] => Mult0.IN0
+B[0] => Mult0.IN7
+B[1] => Mult0.IN6
+B[2] => Mult0.IN5
+B[3] => Mult0.IN4
+FlagZ <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+FlagV <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+C[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+C[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+C[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+C[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|Division:div
+A[0] => Div0.IN3
+A[1] => Div0.IN2
+A[2] => Div0.IN1
+A[3] => Div0.IN0
+B[0] => Div0.IN7
+B[0] => Equal0.IN31
+B[1] => Div0.IN6
+B[1] => Equal0.IN30
+B[2] => Div0.IN5
+B[2] => Equal0.IN29
+B[3] => Div0.IN4
+B[3] => Equal0.IN28
+FlagZ <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+FlagN <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+FlagV <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+FlagC <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+C[0] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[1] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[2] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[3] <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|Modulo:mod
+A[0] => Div0.IN3
+A[1] => Div0.IN2
+A[2] => Div0.IN1
+A[3] => Div0.IN0
+B[0] => Div0.IN7
+B[0] => Equal0.IN31
+B[1] => Div0.IN6
+B[1] => Equal0.IN30
+B[2] => Div0.IN5
+B[2] => Equal0.IN29
+B[3] => Div0.IN4
+B[3] => Equal0.IN28
+FlagZ <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+FlagN <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+FlagV <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+FlagC <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+C[0] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[1] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[2] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[3] <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|Op_AND:opAnd
+A[0] => C.IN0
+A[1] => C.IN0
+A[2] => C.IN0
+A[3] => C.IN0
+B[0] => C.IN1
+B[1] => C.IN1
+B[2] => C.IN1
+B[3] => C.IN1
+C[0] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[1] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[2] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[3] <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|Op_OR:opOr
+A[0] => C.IN0
+A[1] => C.IN0
+A[2] => C.IN0
+A[3] => C.IN0
+B[0] => C.IN1
+B[1] => C.IN1
+B[2] => C.IN1
+B[3] => C.IN1
+C[0] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[1] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[2] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[3] <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|Op_XOR:opXor
+A[0] => C.IN0
+A[1] => C.IN0
+A[2] => C.IN0
+A[3] => C.IN0
+B[0] => C.IN1
+B[1] => C.IN1
+B[2] => C.IN1
+B[3] => C.IN1
+C[0] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[1] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[2] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[3] <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|ShiftLeft:lsh
+A[0] => ShiftLeft0.IN4
+A[1] => ShiftLeft0.IN3
+A[2] => ShiftLeft0.IN2
+A[3] => ShiftLeft0.IN1
+B[0] => ShiftLeft0.IN8
+B[1] => ShiftLeft0.IN7
+B[2] => ShiftLeft0.IN6
+B[3] => ShiftLeft0.IN5
+resultado[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+resultado[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+resultado[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+resultado[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+FlagZ <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|ShiftRight:rsh
+A[0] => ShiftRight0.IN4
+A[1] => ShiftRight0.IN3
+A[2] => ShiftRight0.IN2
+A[3] => ShiftRight0.IN1
+B[0] => ShiftRight0.IN8
+B[1] => ShiftRight0.IN7
+B[2] => ShiftRight0.IN6
+B[3] => ShiftRight0.IN5
+resultado[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+resultado[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+resultado[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+resultado[3] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+FlagZ <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

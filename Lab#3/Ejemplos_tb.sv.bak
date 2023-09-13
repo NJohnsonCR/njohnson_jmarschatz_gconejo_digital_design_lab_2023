@@ -1,0 +1,24 @@
+
+module Ejemplos_tb;
+	  //parametros
+	parameter M = 4;
+	reg [3:0] A,B;
+	wire  FlagZ,FlagN,FlagV,FlagC;
+	wire [3:0] C;
+	 //instanciacion del modulo 
+		Suma #(.N(M)) DUT(.A(A),.B(B),.FlagC(Cout),.FlagZ(Zero),.FlagV(Desb),.C(C));
+
+		initial begin
+	
+		//valores a probar 
+		A= 4'b1111; B= 4'b0010; Suma #(.N(M)) DUT(.A(A),.B(B),.FlagC(Cout),.FlagZ(Zero),.FlagV(Desb),.C(C));
+		//#100
+		//A= 4'b0011;B= 4'b1011;
+		//#100
+		//A= 4'b0000;B= 4'b0000;
+		//#100
+		//A= 4'b0010;B= 4'b0000;
+	 
+		end
+		
+endmodule
