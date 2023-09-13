@@ -1,0 +1,21 @@
+module binary_to_hex_converter_tb();
+
+	logic binary,z;
+	
+	myFirstModule modulo(binary,z);
+	
+	initial begin
+	
+	a = 0;
+	b = 0;
+	c = 0;
+	d = 0;
+	#40
+	a = 0;
+	b = 0;
+	c = 0;
+	d = 1;
+	#40
+	
+	end
+endmodule
