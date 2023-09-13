@@ -2,12 +2,15 @@
 module alu #(parameter N=4)(
            input [N-1:0] A,B,  // ALU 8-bit Inputs
            input [3:0] ALU_Sel,// ALU Selection
-           output reg [N-1:0] ALU_Out, // ALU 8-bit Output
+           output reg [6:0] sal_dis, // ALU 8-bit Output
            output reg FlagZ,FlagN,FlagV,FlagC // Antonio
     );
 	 
 	 wire [N-1:0] sum_rest,res_rest,mul_rest,div_rest,mod_rest,and_rest,or_rest,xor_rest,lsh_rest,rsh_rest;
 	 reg [N-1:0] fs,fr,fml,fd,fmd,fiz,fde =0;
+	 
+	 reg [N-1:0] ALU_Out;
+	
 	 
 	 //0:FlagZ
 	 //1:FlagN
@@ -126,6 +129,9 @@ module alu #(parameter N=4)(
 			  FlagC=0;
 			  end 
         endcase
+		  
     end
+	 
+	 seg7 segmentos(.binary(ALU_Out),.hex_segments(sal_dis));
 
 endmodule
