@@ -1,0 +1,19 @@
+module MatrixExample;
+  int matrix[0:7][0:7]; // Matriz de enteros de 8x8
+  
+  initial begin
+    // Inicialización de la matriz
+    for (int i = 0; i <= 7; i = i + 1) begin
+      for (int j = 0; j <= 7; j = j + 1) begin
+        matrix[i][j] = i * 10 + j;
+      end
+    end
+
+    // Acceso a elementos de la matriz y visualización
+    for (int i = 0; i <= 7; i = i + 1) begin
+      for (int j = 0; j <= 7; j = j + 1) begin
+        $display("matrix[%0d][%0d] = %0d", i, j, matrix[i][j]);
+      end
+    end
+  end
+endmodule

@@ -1,0 +1,19 @@
+module LFSR_RandomGenerator (
+  input wire clk,     // Señal de reloj
+  input wire rst,     // Señal de reinicio
+  output wire [15:0] randomValue // Valor aleatorio de 16 bits
+);
+  reg [15:0] lfsr;    // Registro de cambio lineal
+  
+  always @(posedge clk or posedge rst) begin
+    if (rst) begin
+      lfsr <= 16'hFFFF; // Valor inicial arbitrario
+    end else begin
+      // Implementación de LFSR: XOR de ciertos bits del registro
+      lfsr[0] <= lfsr[0] ^ lfsr[2] ^ lfsr[3] ^ lfsr[5];
+      lfsr[15:1] <= lfsr[14:0];
+    end
+  end
+
+  assign randomValue = lfsr; // El valor del registro es el número aleatorio
+endmodule
