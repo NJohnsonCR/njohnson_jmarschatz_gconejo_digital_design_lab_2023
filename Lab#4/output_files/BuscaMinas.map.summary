@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Failed - Fri Oct  6 14:50:57 2023
+Analysis & Elaboration Status : Successful - Fri Oct  6 20:37:53 2023
 Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 Revision Name : BuscaMinas
-Top-level Entity Name : LFSR_RandomGenerator
+Top-level Entity Name : BuscarYAsignar
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

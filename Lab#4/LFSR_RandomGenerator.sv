@@ -1,4 +1,4 @@
-module LFSR_RandomGenerator (
+module LFSR_RandomGenerator ( ////////////AGREGAR UN 1 CUANDO SE CUMPLE EL ESTADO B
   input wire clk,     // Señal de reloj
   input wire rst,     // Señal de reinicio
   output wire [5:0] randomValue // Valor aleatorio de 6 bits (0-63)
@@ -8,7 +8,7 @@ module LFSR_RandomGenerator (
 
   initial begin
     // Inicializar la semilla con un valor basado en el tiempo
-    seed = $time;
+    seed = $time; //ARREGLAR
   end
   
   always @(posedge clk or posedge rst) begin

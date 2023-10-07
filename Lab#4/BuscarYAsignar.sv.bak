@@ -1,0 +1,24 @@
+module BuscarYAsignar (
+  input wire [7:0] numeroABuscar,      // Número a buscar en la matriz
+  input wire [7:0] matriz [7:0][7:0], // Matriz de 8x8 (por ejemplo)
+  output wire [7:0] resultado [7:0][7:0] // Matriz de resultados con 1 en el espacio correspondiente
+);
+  reg [7:0] resultado_temp [7:0][7:0]; // Matriz temporal para el resultado
+  
+  // Lógica para buscar y asignar el 1
+  integer i, j;
+  always @* begin
+    for (i = 0; i < 8; i = i + 1) begin
+      for (j = 0; j < 8; j = j + 1) begin
+        if (matriz[i][j] == numeroABuscar) begin
+          resultado_temp[i][j] = 8'b1; // Asignar 1 si se encuentra el número
+        end else begin
+          // No hacer nada o ignorar el caso
+        end
+      end
+    end
+  end
+
+  // Salida de resultado
+  assign resultado = resultado_temp;
+endmodule

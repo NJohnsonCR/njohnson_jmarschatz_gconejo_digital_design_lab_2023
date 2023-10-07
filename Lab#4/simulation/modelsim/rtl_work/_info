@@ -8,58 +8,58 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/XPC/Desktop/ProyectosQuartus/Lab#4/simulation/modelsim
-vLFSR_RandomGenerator
+Z0 dC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/simulation/modelsim
+vBuscarYAsignar
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1696624815
+Z2 !s110 1696646295
 !i10b 1
-!s100 :^^EI_PCNUE;MM2RDVCIE0
+!s100 4?S<k3njQ<K@POM4QlXk00
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I[5BMdf64:dI?7O;U1lH333
+IHP46TdVD9nV?Onago8F=X1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1696624198
-8C:/Users/XPC/Desktop/ProyectosQuartus/Lab#4/LFSR_RandomGenerator.sv
-FC:/Users/XPC/Desktop/ProyectosQuartus/Lab#4/LFSR_RandomGenerator.sv
+w1696646151
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv
 !i122 0
-L0 1 19
+L0 1 37
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1696624815.000000
-!s107 C:/Users/XPC/Desktop/ProyectosQuartus/Lab#4/LFSR_RandomGenerator.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Desktop/ProyectosQuartus/Lab#4|C:/Users/XPC/Desktop/ProyectosQuartus/Lab#4/LFSR_RandomGenerator.sv|
+Z6 !s108 1696646295.000000
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv|
 !i113 1
 Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/XPC/Desktop/ProyectosQuartus/Lab#4
+Z8 !s92 -sv -work work +incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4
 Z9 tCvgOpt 0
-n@l@f@s@r_@random@generator
-vLFSR_RandomGenerator_tb
+n@buscar@y@asignar
+vBuscarYAsignar_tb
 R1
 R2
 !i10b 1
-!s100 ^nU`:HgE]F40V:Ocm^i360
+!s100 =HDcF7;j1LejbMGXXHaP20
 R3
-IdAe[TeXSO[B]I2_k9`OfK2
+I_IUAOCm2b]T8k^gMTFbRY3
 R4
 S1
 R0
-w1696624381
-8C:/Users/XPC/Desktop/ProyectosQuartus/Lab#4/LFSR_RandomGenerator_tb.sv
-FC:/Users/XPC/Desktop/ProyectosQuartus/Lab#4/LFSR_RandomGenerator_tb.sv
+w1696646263
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv
 !i122 1
-L0 1 35
+L0 1 44
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/XPC/Desktop/ProyectosQuartus/Lab#4/LFSR_RandomGenerator_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Desktop/ProyectosQuartus/Lab#4|C:/Users/XPC/Desktop/ProyectosQuartus/Lab#4/LFSR_RandomGenerator_tb.sv|
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv|
 !i113 1
 R7
 R8
 R9
-n@l@f@s@r_@random@generator_tb
+n@buscar@y@asignar_tb
