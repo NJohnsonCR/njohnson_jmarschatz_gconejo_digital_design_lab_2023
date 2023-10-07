@@ -1,0 +1,23 @@
+module matriz_tb;
+  reg clk;
+  reg reset;
+  
+  // Instancia del módulo matriz
+  matriz uut (
+    .clk(clk),
+    .reset(reset)
+  );
+  
+  // Generación de señales de reloj
+  always begin
+    #5 clk = ~clk;
+  end
+
+  // Proceso de reset
+  initial begin
+    clk = 0;
+    reset = 1; // Activar reset inicialmente
+    #10 reset = 0; // Desactivar reset después de 10 unidades de tiempo
+    #100 $finish; // Finalizar la simulación después de 100 unidades de tiempo
+  end
+endmodule

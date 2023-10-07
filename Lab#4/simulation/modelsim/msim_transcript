@@ -13,7 +13,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:38:01 on Oct 06,2023
+# Start time: 21:23:54 on Oct 06,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 20:38:02 on Oct 06,2023, Elapsed time: 0:00:01
+# End time: 21:23:54 on Oct 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:38:02 on Oct 06,2023
+# Start time: 21:23:55 on Oct 06,2023
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 20:38:02 on Oct 06,2023, Elapsed time: 0:00:00
+# End time: 21:23:55 on Oct 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:38:02 on Oct 06,2023
+# Start time: 21:23:55 on Oct 06,2023
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 20:38:02 on Oct 06,2023, Elapsed time: 0:00:00
+# End time: 21:23:55 on Oct 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:38:02 on Oct 06,2023
+# Start time: 21:23:55 on Oct 06,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 20:38:04 on Oct 06,2023, Elapsed time: 0:00:02
+# End time: 21:23:56 on Oct 06,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:38:04 on Oct 06,2023
+# Start time: 21:23:57 on Oct 06,2023
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 20:38:05 on Oct 06,2023, Elapsed time: 0:00:01
+# End time: 21:23:57 on Oct 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:38:05 on Oct 06,2023
+# Start time: 21:23:57 on Oct 06,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -483,19 +483,19 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 20:38:07 on Oct 06,2023, Elapsed time: 0:00:02
+# End time: 21:24:00 on Oct 06,2023, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 10
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:38:07 on Oct 06,2023
+# Start time: 21:24:00 on Oct 06,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 20:38:09 on Oct 06,2023, Elapsed time: 0:00:02
+# End time: 21:24:01 on Oct 06,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:38:09 on Oct 06,2023
+# Start time: 21:24:01 on Oct 06,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
@@ -635,7 +635,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 20:38:09 on Oct 06,2023, Elapsed time: 0:00:00
+# End time: 21:24:02 on Oct 06,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -646,15 +646,15 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:38:10 on Oct 06,2023
+# Start time: 21:24:02 on Oct 06,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 20:38:12 on Oct 06,2023, Elapsed time: 0:00:02
+# End time: 21:24:04 on Oct 06,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:38:12 on Oct 06,2023
+# Start time: 21:24:04 on Oct 06,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
@@ -754,7 +754,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 20:38:12 on Oct 06,2023, Elapsed time: 0:00:00
+# End time: 21:24:05 on Oct 06,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -765,7 +765,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:38:12 on Oct 06,2023
+# Start time: 21:24:05 on Oct 06,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -775,18 +775,18 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 20:38:15 on Oct 06,2023, Elapsed time: 0:00:03
+# End time: 21:24:07 on Oct 06,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 6
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:38:15 on Oct 06,2023
+# Start time: 21:24:07 on Oct 06,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 20:38:15 on Oct 06,2023, Elapsed time: 0:00:00
+# End time: 21:24:08 on Oct 06,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -798,35 +798,34 @@
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4 {C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv}
+# vlog -sv -work work +incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4 {C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:38:15 on Oct 06,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4" C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv 
-# -- Compiling module BuscarYAsignar
-# ** Warning: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv(2): (vlog-13314) Defaulting port 'numerosABuscar' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# Start time: 21:24:08 on Oct 06,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4" C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv 
+# -- Compiling module matriz
 # 
 # Top level modules:
-# 	BuscarYAsignar
-# End time: 20:38:15 on Oct 06,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# 
-# vlog -sv -work work +incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4 {C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:38:15 on Oct 06,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4" C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv 
-# -- Compiling module BuscarYAsignar_tb
-# 
-# Top level modules:
-# 	BuscarYAsignar_tb
-# End time: 20:38:15 on Oct 06,2023, Elapsed time: 0:00:00
+# 	matriz
+# End time: 21:24:08 on Oct 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  BuscarYAsignar_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" BuscarYAsignar_tb 
-# Start time: 20:38:15 on Oct 06,2023
+# vlog -sv -work work +incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4 {C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:24:08 on Oct 06,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4" C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz_tb.sv 
+# -- Compiling module matriz_tb
+# 
+# Top level modules:
+# 	matriz_tb
+# End time: 21:24:08 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  matriz_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" matriz_tb 
+# Start time: 21:24:08 on Oct 06,2023
 # Loading sv_std.std
-# Loading work.BuscarYAsignar_tb
-# Loading work.BuscarYAsignar
+# Loading work.matriz_tb
+# Loading work.matriz
 # 
 # add wave *
 # view structure
@@ -834,141 +833,74 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Se encontró el número          27 en la posición [          3][          3]
-# Se encontró el número          42 en la posición [          5][          2]
-# Se encontró el número          15 en la posición [          1][          7]
-# Se encontró el número          10 en la posición [          1][          2]
-# Resultado en [          0][          0]:   0
-# Resultado en [          0][          1]:   0
-# Resultado en [          0][          2]:   0
-# Resultado en [          0][          3]:   0
-# Resultado en [          0][          4]:   0
-# Resultado en [          0][          5]:   0
-# Resultado en [          0][          6]:   0
-# Resultado en [          0][          7]:   0
-# Resultado en [          1][          0]:   0
-# Resultado en [          1][          1]:   0
-# Resultado en [          1][          2]:   0
-# Resultado en [          1][          3]:   0
-# Resultado en [          1][          4]:   0
-# Resultado en [          1][          5]:   0
-# Resultado en [          1][          6]:   0
-# Resultado en [          1][          7]:   0
-# Resultado en [          2][          0]:   0
-# Resultado en [          2][          1]:   0
-# Resultado en [          2][          2]:   0
-# Resultado en [          2][          3]:   0
-# Resultado en [          2][          4]:   0
-# Resultado en [          2][          5]:   0
-# Resultado en [          2][          6]:   0
-# Resultado en [          2][          7]:   0
-# Resultado en [          3][          0]:   0
-# Resultado en [          3][          1]:   0
-# Resultado en [          3][          2]:   0
-# Resultado en [          3][          3]:   0
-# Resultado en [          3][          4]:   0
-# Resultado en [          3][          5]:   0
-# Resultado en [          3][          6]:   0
-# Resultado en [          3][          7]:   0
-# Resultado en [          4][          0]:   0
-# Resultado en [          4][          1]:   0
-# Resultado en [          4][          2]:   0
-# Resultado en [          4][          3]:   0
-# Resultado en [          4][          4]:   0
-# Resultado en [          4][          5]:   0
-# Resultado en [          4][          6]:   0
-# Resultado en [          4][          7]:   0
-# Resultado en [          5][          0]:   0
-# Resultado en [          5][          1]:   0
-# Resultado en [          5][          2]:   0
-# Resultado en [          5][          3]:   0
-# Resultado en [          5][          4]:   0
-# Resultado en [          5][          5]:   0
-# Resultado en [          5][          6]:   0
-# Resultado en [          5][          7]:   0
-# Resultado en [          6][          0]:   0
-# Resultado en [          6][          1]:   0
-# Resultado en [          6][          2]:   0
-# Resultado en [          6][          3]:   0
-# Resultado en [          6][          4]:   0
-# Resultado en [          6][          5]:   0
-# Resultado en [          6][          6]:   0
-# Resultado en [          6][          7]:   0
-# Resultado en [          7][          0]:   0
-# Resultado en [          7][          1]:   0
-# Resultado en [          7][          2]:   0
-# Resultado en [          7][          3]:   0
-# Resultado en [          7][          4]:   0
-# Resultado en [          7][          5]:   0
-# Resultado en [          7][          6]:   0
-# Resultado en [          7][          7]:   0
-# Resultado en [          0][          0]:   0
-# Resultado en [          0][          1]:   0
-# Resultado en [          0][          2]:   0
-# Resultado en [          0][          3]:   0
-# Resultado en [          0][          4]:   0
-# Resultado en [          0][          5]:   0
-# Resultado en [          0][          6]:   0
-# Resultado en [          0][          7]:   0
-# Resultado en [          1][          0]:   0
-# Resultado en [          1][          1]:   0
-# Resultado en [          1][          2]:   1
-# Resultado en [          1][          3]:   0
-# Resultado en [          1][          4]:   0
-# Resultado en [          1][          5]:   0
-# Resultado en [          1][          6]:   0
-# Resultado en [          1][          7]:   1
-# Resultado en [          2][          0]:   0
-# Resultado en [          2][          1]:   0
-# Resultado en [          2][          2]:   0
-# Resultado en [          2][          3]:   0
-# Resultado en [          2][          4]:   0
-# Resultado en [          2][          5]:   0
-# Resultado en [          2][          6]:   0
-# Resultado en [          2][          7]:   0
-# Resultado en [          3][          0]:   0
-# Resultado en [          3][          1]:   0
-# Resultado en [          3][          2]:   0
-# Resultado en [          3][          3]:   1
-# Resultado en [          3][          4]:   0
-# Resultado en [          3][          5]:   0
-# Resultado en [          3][          6]:   0
-# Resultado en [          3][          7]:   0
-# Resultado en [          4][          0]:   0
-# Resultado en [          4][          1]:   0
-# Resultado en [          4][          2]:   0
-# Resultado en [          4][          3]:   0
-# Resultado en [          4][          4]:   0
-# Resultado en [          4][          5]:   0
-# Resultado en [          4][          6]:   0
-# Resultado en [          4][          7]:   0
-# Resultado en [          5][          0]:   0
-# Resultado en [          5][          1]:   0
-# Resultado en [          5][          2]:   1
-# Resultado en [          5][          3]:   0
-# Resultado en [          5][          4]:   0
-# Resultado en [          5][          5]:   0
-# Resultado en [          5][          6]:   0
-# Resultado en [          5][          7]:   0
-# Resultado en [          6][          0]:   0
-# Resultado en [          6][          1]:   0
-# Resultado en [          6][          2]:   0
-# Resultado en [          6][          3]:   0
-# Resultado en [          6][          4]:   0
-# Resultado en [          6][          5]:   0
-# Resultado en [          6][          6]:   0
-# Resultado en [          6][          7]:   0
-# Resultado en [          7][          0]:   0
-# Resultado en [          7][          1]:   0
-# Resultado en [          7][          2]:   0
-# Resultado en [          7][          3]:   0
-# Resultado en [          7][          4]:   0
-# Resultado en [          7][          5]:   0
-# Resultado en [          7][          6]:   0
-# Resultado en [          7][          7]:   0
-# ** Note: $finish    : C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv(31)
-#    Time: 10 ps  Iteration: 0  Instance: /BuscarYAsignar_tb
+# Matriz después del reset:
+# matrix[0][0] = 0000000000
+# matrix[0][1] = 0000000000
+# matrix[0][2] = 0000000000
+# matrix[0][3] = 0000000000
+# matrix[0][4] = 0000000000
+# matrix[0][5] = 0000000000
+# matrix[0][6] = 0000000000
+# matrix[0][7] = 0000000000
+# matrix[1][0] = 0000000000
+# matrix[1][1] = 0000000000
+# matrix[1][2] = 0000000000
+# matrix[1][3] = 0000000000
+# matrix[1][4] = 0000000000
+# matrix[1][5] = 0000000000
+# matrix[1][6] = 0000000000
+# matrix[1][7] = 0000000000
+# matrix[2][0] = 0000000000
+# matrix[2][1] = 0000000000
+# matrix[2][2] = 0000000000
+# matrix[2][3] = 0000000000
+# matrix[2][4] = 0000000000
+# matrix[2][5] = 0000000000
+# matrix[2][6] = 0000000000
+# matrix[2][7] = 0000000000
+# matrix[3][0] = 0000000000
+# matrix[3][1] = 0000000000
+# matrix[3][2] = 0000000000
+# matrix[3][3] = 0000000000
+# matrix[3][4] = 0000000000
+# matrix[3][5] = 0000000000
+# matrix[3][6] = 0000000000
+# matrix[3][7] = 0000000000
+# matrix[4][0] = 0000000000
+# matrix[4][1] = 0000000000
+# matrix[4][2] = 0000000000
+# matrix[4][3] = 0000000000
+# matrix[4][4] = 0000000000
+# matrix[4][5] = 0000000000
+# matrix[4][6] = 0000000000
+# matrix[4][7] = 0000000000
+# matrix[5][0] = 0000000000
+# matrix[5][1] = 0000000000
+# matrix[5][2] = 0000000000
+# matrix[5][3] = 0000000000
+# matrix[5][4] = 0000000000
+# matrix[5][5] = 0000000000
+# matrix[5][6] = 0000000000
+# matrix[5][7] = 0000000000
+# matrix[6][0] = 0000000000
+# matrix[6][1] = 0000000000
+# matrix[6][2] = 0000000000
+# matrix[6][3] = 0000000000
+# matrix[6][4] = 0000000000
+# matrix[6][5] = 0000000000
+# matrix[6][6] = 0000000000
+# matrix[6][7] = 0000000000
+# matrix[7][0] = 0000000000
+# matrix[7][1] = 0000000000
+# matrix[7][2] = 0000000000
+# matrix[7][3] = 0000000000
+# matrix[7][4] = 0000000000
+# matrix[7][5] = 0000000000
+# matrix[7][6] = 0000000000
+# matrix[7][7] = 0000000000
+# ** Note: $finish    : C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz_tb.sv(33)
+#    Time: 110 ps  Iteration: 0  Instance: /matriz_tb
 # 1
-# Break in Module BuscarYAsignar_tb at C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv line 31
-# End time: 20:39:41 on Oct 06,2023, Elapsed time: 0:01:26
+# Break in Module matriz_tb at C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz_tb.sv line 33
+# End time: 21:24:29 on Oct 06,2023, Elapsed time: 0:00:21
 # Errors: 0, Warnings: 0
