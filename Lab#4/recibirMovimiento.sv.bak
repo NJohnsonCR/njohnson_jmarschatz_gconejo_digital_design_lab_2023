@@ -1,0 +1,11 @@
+module recibirMovimiento(
+input wire clk,
+input wire rst,
+input wire[9:0] matrix[7:0][7:0]
+);
+
+matriz instanciaMatriz(
+
+);
+
+endmodule
