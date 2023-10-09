@@ -1,6 +1,6 @@
 Analysis & Elaboration report for BuscaMinas
-Sun Oct 08 19:42:00 2023
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Sun Oct  8 20:38:16 2023
+Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
 ---------------------
@@ -9,17 +9,16 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |FSM
-  5. Analysis & Elaboration Settings
-  6. Analysis & Elaboration Messages
-  7. Analysis & Elaboration Suppressed Messages
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
+  6. Analysis & Elaboration Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -36,22 +35,22 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sun Oct 08 19:42:00 2023       ;
-; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                 ; BuscaMinas                                  ;
-; Top-level Entity Name         ; FSM                                         ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                 ;
++-------------------------------+------------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Sun Oct  8 20:38:16 2023          ;
+; Quartus Prime Version         ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
+; Revision Name                 ; BuscaMinas                                     ;
+; Top-level Entity Name         ; CheckMatrixValue                               ;
+; Family                        ; Cyclone V                                      ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
+; Total registers               ; N/A until Partition Merge                      ;
+; Total pins                    ; N/A until Partition Merge                      ;
+; Total virtual pins            ; N/A until Partition Merge                      ;
+; Total block memory bits       ; N/A until Partition Merge                      ;
+; Total PLLs                    ; N/A until Partition Merge                      ;
+; Total DLLs                    ; N/A until Partition Merge                      ;
++-------------------------------+------------------------------------------------+
 
 
 +------------------------------------------+
@@ -60,7 +59,7 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -70,33 +69,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |FSM ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; a              ; 0000  ; Unsigned Binary                            ;
-; b              ; 0001  ; Unsigned Binary                            ;
-; c              ; 0010  ; Unsigned Binary                            ;
-; d              ; 0011  ; Unsigned Binary                            ;
-; e              ; 0100  ; Unsigned Binary                            ;
-; f              ; 0101  ; Unsigned Binary                            ;
-; g              ; 0110  ; Unsigned Binary                            ;
-; h              ; 0111  ; Unsigned Binary                            ;
-; i              ; 1000  ; Unsigned Binary                            ;
-; j              ; 1001  ; Unsigned Binary                            ;
-; k              ; 1010  ; Unsigned Binary                            ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; FSM                ; BuscaMinas         ;
+; Top-level entity name                                                           ; CheckMatrixValue   ; BuscaMinas         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -182,43 +161,51 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Oct 08 19:41:54 2023
+    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+    Info: Processing started: Sun Oct  8 20:38:09 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BuscaMinas -c BuscaMinas --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file switch_binary_encoder.sv
-    Info (12023): Found entity 1: switch_binary_encoder File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/switch_binary_encoder.sv Line: 1
+    Info (12023): Found entity 1: switch_binary_encoder File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/switch_binary_encoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file matriz.sv
-    Info (12023): Found entity 1: matriz File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 1
+    Info (12023): Found entity 1: matriz File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lfsr_randomgenerator.sv
-    Info (12023): Found entity 1: LFSR_RandomGenerator File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/LFSR_RandomGenerator.sv Line: 1
+    Info (12023): Found entity 1: LFSR_RandomGenerator File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/LFSR_RandomGenerator.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lfsr_randomgenerator_tb.sv
-    Info (12023): Found entity 1: LFSR_RandomGenerator_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/LFSR_RandomGenerator_tb.sv Line: 1
+    Info (12023): Found entity 1: LFSR_RandomGenerator_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/LFSR_RandomGenerator_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file buscaryasignar.sv
-    Info (12023): Found entity 1: BuscarYAsignar File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv Line: 1
+    Info (12023): Found entity 1: BuscarYAsignar File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file buscaryasignar_tb.sv
-    Info (12023): Found entity 1: BuscarYAsignar_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv Line: 1
+    Info (12023): Found entity 1: BuscarYAsignar_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file matriz_tb.sv
-    Info (12023): Found entity 1: matriz_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz_tb.sv Line: 1
+    Info (12023): Found entity 1: matriz_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file recibirmovimiento.sv
-    Info (12023): Found entity 1: recibirMovimiento File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento.sv Line: 1
+    Info (12023): Found entity 1: recibirMovimiento File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file recibirmovimiento_tb.sv
-    Info (12023): Found entity 1: recibirMovimiento_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento_tb.sv Line: 1
+    Info (12023): Found entity 1: recibirMovimiento_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
-    Info (12023): Found entity 1: FSM File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/FSM.sv Line: 1
-Info (12127): Elaborating entity "FSM" for the top level hierarchy
-Info (144001): Generated suppressed messages file C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/output_files/BuscaMinas.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4758 megabytes
-    Info: Processing ended: Sun Oct 08 19:42:01 2023
+    Info (12023): Found entity 1: FSM File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/FSM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file checkmatrixvalue.sv
+    Info (12023): Found entity 1: CheckMatrixValue File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file checkmatrixvalue_tb.sv
+    Info (12023): Found entity 1: CheckMatrixValue_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue_tb.sv Line: 1
+Info (12127): Elaborating entity "CheckMatrixValue" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at CheckMatrixValue.sv(10): object "address" assigned a value but never read File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv Line: 10
+Warning (10230): Verilog HDL assignment warning at CheckMatrixValue.sv(13): truncated value with size 8 to match size of target (4) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv Line: 13
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrix" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrix" into its bus
+Info (144001): Generated suppressed messages file C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/output_files/BuscaMinas.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4778 megabytes
+    Info: Processing ended: Sun Oct  8 20:38:16 2023
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +--------------------------------------------+
 ; Analysis & Elaboration Suppressed Messages ;
 +--------------------------------------------+
-The suppressed messages can be found in C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/output_files/BuscaMinas.map.smsg.
+The suppressed messages can be found in C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/output_files/BuscaMinas.map.smsg.
 
 

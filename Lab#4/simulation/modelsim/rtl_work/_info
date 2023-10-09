@@ -8,58 +8,58 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/simulation/modelsim
-vrecibirMovimiento
+Z0 dC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/simulation/modelsim
+vCheckMatrixValue
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1696736211
+Z2 !s110 1696819117
 !i10b 1
-!s100 F@j6>?RGV6P`6mg03;O9o0
+!s100 FB]=46]Q>J6cfQXo?omGZ0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IRno09=BFBQ9zTcn[9XzU82
+IJ<56CfN]c;B8[ZaBaoN7j2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1696736185
-8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento.sv
-FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento.sv
+w1696817744
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv
 !i122 0
-L0 1 63
+L0 1 25
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1696736211.000000
-!s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento.sv|
+Z6 !s108 1696819117.000000
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv|
 !i113 1
 Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4
+Z8 !s92 -sv -work work +incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4
 Z9 tCvgOpt 0
-nrecibir@movimiento
-vrecibirMovimiento_tb
+n@check@matrix@value
+vCheckMatrixValue_tb
 R1
 R2
 !i10b 1
-!s100 j2cBWCNa9mmd4H4Q;>d?X1
+!s100 8zhC@<k7kXKZ<6fTbd5DI1
 R3
-IXiCkl_UBLiLOCcHmYieaA1
+I<2NY;:g98>aUk`hRmIbD^1
 R4
 S1
 R0
-w1696736114
-8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento_tb.sv
-FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento_tb.sv
+w1696819085
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue_tb.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue_tb.sv
 !i122 1
-L0 1 58
+L0 1 55
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento_tb.sv|
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue_tb.sv|
 !i113 1
 R7
 R8
 R9
-nrecibir@movimiento_tb
+n@check@matrix@value_tb
