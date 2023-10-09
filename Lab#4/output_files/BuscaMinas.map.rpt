@@ -1,5 +1,5 @@
 Analysis & Elaboration report for BuscaMinas
-Sat Oct 07 21:36:44 2023
+Sun Oct 08 19:42:00 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -9,9 +9,10 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
-  6. Analysis & Elaboration Suppressed Messages
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |FSM
+  5. Analysis & Elaboration Settings
+  6. Analysis & Elaboration Messages
+  7. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -38,10 +39,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sat Oct 07 21:36:44 2023       ;
+; Analysis & Elaboration Status ; Successful - Sun Oct 08 19:42:00 2023       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; BuscaMinas                                  ;
-; Top-level Entity Name         ; recibirMovimiento                           ;
+; Top-level Entity Name         ; FSM                                         ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -69,13 +70,33 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |FSM ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; a              ; 0000  ; Unsigned Binary                            ;
+; b              ; 0001  ; Unsigned Binary                            ;
+; c              ; 0010  ; Unsigned Binary                            ;
+; d              ; 0011  ; Unsigned Binary                            ;
+; e              ; 0100  ; Unsigned Binary                            ;
+; f              ; 0101  ; Unsigned Binary                            ;
+; g              ; 0110  ; Unsigned Binary                            ;
+; h              ; 0111  ; Unsigned Binary                            ;
+; i              ; 1000  ; Unsigned Binary                            ;
+; j              ; 1001  ; Unsigned Binary                            ;
+; k              ; 1010  ; Unsigned Binary                            ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; recibirMovimiento  ; BuscaMinas         ;
+; Top-level entity name                                                           ; FSM                ; BuscaMinas         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -162,7 +183,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 07 21:36:38 2023
+    Info: Processing started: Sun Oct 08 19:41:54 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BuscaMinas -c BuscaMinas --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -184,21 +205,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file recibir
     Info (12023): Found entity 1: recibirMovimiento File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file recibirmovimiento_tb.sv
     Info (12023): Found entity 1: recibirMovimiento_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento_tb.sv Line: 1
-Info (12127): Elaborating entity "recibirMovimiento" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at recibirMovimiento.sv(19): truncated value with size 32 to match size of target (4) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento.sv Line: 19
-Warning (10230): Verilog HDL assignment warning at recibirMovimiento.sv(23): truncated value with size 32 to match size of target (4) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento.sv Line: 23
-Warning (10230): Verilog HDL assignment warning at recibirMovimiento.sv(28): truncated value with size 32 to match size of target (4) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento.sv Line: 28
-Warning (10230): Verilog HDL assignment warning at recibirMovimiento.sv(32): truncated value with size 32 to match size of target (4) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento.sv Line: 32
-Warning (10230): Verilog HDL assignment warning at recibirMovimiento.sv(38): truncated value with size 32 to match size of target (4) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento.sv Line: 38
-Warning (10230): Verilog HDL assignment warning at recibirMovimiento.sv(43): truncated value with size 32 to match size of target (4) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento.sv Line: 43
-Warning (10230): Verilog HDL assignment warning at recibirMovimiento.sv(51): truncated value with size 32 to match size of target (4) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento.sv Line: 51
-Warning (10230): Verilog HDL assignment warning at recibirMovimiento.sv(55): truncated value with size 32 to match size of target (4) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/recibirMovimiento.sv Line: 55
+Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
+    Info (12023): Found entity 1: FSM File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/FSM.sv Line: 1
+Info (12127): Elaborating entity "FSM" for the top level hierarchy
 Info (144001): Generated suppressed messages file C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/output_files/BuscaMinas.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4766 megabytes
-    Info: Processing ended: Sat Oct 07 21:36:44 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:13
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4758 megabytes
+    Info: Processing ended: Sun Oct 08 19:42:01 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +--------------------------------------------+
