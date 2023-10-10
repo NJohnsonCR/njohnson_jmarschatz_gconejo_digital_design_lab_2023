@@ -10,34 +10,36 @@
 # Copying D:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4 {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv}
+# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4 {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:48:18 on Oct 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv 
-# -- Compiling module CheckMatrixValue
+# Start time: 19:59:59 on Oct 09,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv 
+# -- Compiling module BuscarYAsignar
+# ** Warning: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv(2): (vlog-13314) Defaulting port 'numerosABuscar' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv(5): (vlog-13314) Defaulting port 'matriz' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
-# 	CheckMatrixValue
-# End time: 21:48:18 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# 	BuscarYAsignar
+# End time: 19:59:59 on Oct 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # 
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4 {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4 {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:48:18 on Oct 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue_tb.sv 
-# -- Compiling module CheckMatrixValue_tb
+# Start time: 19:59:59 on Oct 09,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv 
+# -- Compiling module BuscarYAsignar_tb
 # 
 # Top level modules:
-# 	CheckMatrixValue_tb
-# End time: 21:48:18 on Oct 08,2023, Elapsed time: 0:00:00
+# 	BuscarYAsignar_tb
+# End time: 19:59:59 on Oct 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  CheckMatrixValue_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" CheckMatrixValue_tb 
-# Start time: 21:48:19 on Oct 08,2023
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  BuscarYAsignar_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" BuscarYAsignar_tb 
+# Start time: 19:59:59 on Oct 09,2023
 # Loading sv_std.std
-# Loading work.CheckMatrixValue_tb
-# Loading work.CheckMatrixValue
+# Loading work.BuscarYAsignar_tb
+# Loading work.BuscarYAsignar
 # 
 # add wave *
 # view structure
@@ -45,56 +47,74 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Matriz (en binario):
-# 0100100100 1010000001 1000001001 1001100011 1100001101 0110001101 0001100101 1000010010 
-# 1100000001 0100001101 0101110110 0100111101 1111101101 1110001100 0111111001 0011000110 
-# 0011000101 1010101010 1111100101 1001110111 1000010010 1110001111 0111110010 1011001110 
-# 1011101000 1011000101 0101011100 0010111101 0000101101 1001100101 1001100011 1100001010 
-# 1010000000 0100100000 0110101010 0010011101 1010010110 0000010011 0000001101 1001010011 
-# 0101101011 1011010101 1000000010 1010101110 0100011101 1011001111 0100100011 0100001010 
-# 1011001010 0000111100 0111110010 0110001010 1101000001 0011011000 1101111000 1010001001 
-# 0111101011 0110110110 0111000110 1110101110 1010111100 0100101010 1000001011 1001110001 
-# El valor en la posición (0, 1) es 1010000001
-# El valor en la posición (0, 2) es 1000001001
-# El valor en la posición (0, 3) es 1001100011
-# El valor en la posición (0, 4) es 1100001101
-# El valor en la posición (0, 5) es 0110001101
-# El valor en la posición (0, 6) es 0001100101
-# El valor en la posición (1, 0) es 1100000001
-# El valor en la posición (1, 1) es 0100001101
-# El valor en la posición (1, 3) es 0100111101
-# El valor en la posición (1, 4) es 1111101101
-# El valor en la posición (1, 6) es 0111111001
-# El valor en la posición (2, 0) es 0011000101
-# El valor en la posición (2, 2) es 1111100101
-# El valor en la posición (2, 3) es 1001110111
-# El valor en la posición (2, 5) es 1110001111
-# El valor en la posición (3, 1) es 1011000101
-# El valor en la posición (3, 3) es 0010111101
-# El valor en la posición (3, 4) es 0000101101
-# El valor en la posición (3, 5) es 1001100101
-# El valor en la posición (3, 6) es 1001100011
-# El valor en la posición (4, 3) es 0010011101
-# El valor en la posición (4, 5) es 0000010011
-# El valor en la posición (4, 6) es 0000001101
-# El valor en la posición (4, 7) es 1001010011
-# El valor en la posición (5, 0) es 0101101011
-# El valor en la posición (5, 1) es 1011010101
-# El valor en la posición (5, 4) es 0100011101
-# El valor en la posición (5, 5) es 1011001111
-# El valor en la posición (5, 6) es 0100100011
-# El valor en la posición (6, 4) es 1101000001
-# El valor en la posición (6, 7) es 1010001001
-# El valor en la posición (7, 0) es 0111101011
-# El valor en la posición (7, 6) es 1000001011
-# El valor en la posición (7, 7) es 1001110001
-# Prueba 1: Resultado = 0
-# Prueba 2: Resultado = 1
-# Prueba 2: Resultado = 1
-# Prueba 2: Resultado = 1
-# ** Note: $finish    : C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue_tb.sv(71)
-#    Time: 40 ps  Iteration: 0  Instance: /CheckMatrixValue_tb
+# Matriz Resultado:
+# [0][0] = xxxxxxxxxx
+# [0][1] = xxxxxxxxxx
+# [0][2] = xxxxxxxxxx
+# [0][3] = xxxxxxxxxx
+# [0][4] = xxxxxxxxxx
+# [0][5] = xxxxxxxxxx
+# [0][6] = xxxxxxxxxx
+# [0][7] = xxxxxxxxxx
+# [1][0] = xxxxxxxxxx
+# [1][1] = xxxxxxxxxx
+# [1][2] = xxxxxxxxxx
+# [1][3] = xxxxxxxxxx
+# [1][4] = xxxxxxxxxx
+# [1][5] = xxxxxxxxxx
+# [1][6] = xxxxxxxxxx
+# [1][7] = xxxxxxxxxx
+# [2][0] = xxxxxxxxxx
+# [2][1] = xxxxxxxxxx
+# [2][2] = xxxxxxxxxx
+# [2][3] = xxxxxxxxxx
+# [2][4] = xxxxxxxxxx
+# [2][5] = xxxxxxxxxx
+# [2][6] = xxxxxxxxxx
+# [2][7] = xxxxxxxxxx
+# [3][0] = xxxxxxxxxx
+# [3][1] = xxxxxxxxxx
+# [3][2] = xxxxxxxxxx
+# [3][3] = xxxxxxxxxx
+# [3][4] = xxxxxxxxxx
+# [3][5] = xxxxxxxxxx
+# [3][6] = xxxxxxxxxx
+# [3][7] = xxxxxxxxxx
+# [4][0] = xxxxxxxxxx
+# [4][1] = xxxxxxxxxx
+# [4][2] = xxxxxxxxxx
+# [4][3] = xxxxxxxxxx
+# [4][4] = xxxxxxxxxx
+# [4][5] = xxxxxxxxxx
+# [4][6] = xxxxxxxxxx
+# [4][7] = xxxxxxxxxx
+# [5][0] = xxxxxxxxxx
+# [5][1] = xxxxxxxxxx
+# [5][2] = xxxxxxxxxx
+# [5][3] = xxxxxxxxxx
+# [5][4] = xxxxxxxxxx
+# [5][5] = xxxxxxxxxx
+# [5][6] = xxxxxxxxxx
+# [5][7] = xxxxxxxxxx
+# [6][0] = xxxxxxxxxx
+# [6][1] = xxxxxxxxxx
+# [6][2] = xxxxxxxxxx
+# [6][3] = xxxxxxxxxx
+# [6][4] = xxxxxxxxxx
+# [6][5] = xxxxxxxxxx
+# [6][6] = xxxxxxxxxx
+# [6][7] = xxxxxxxxxx
+# [7][0] = xxxxxxxxxx
+# [7][1] = xxxxxxxxxx
+# [7][2] = xxxxxxxxxx
+# [7][3] = xxxxxxxxxx
+# [7][4] = xxxxxxxxxx
+# [7][5] = xxxxxxxxxx
+# [7][6] = xxxxxxxxxx
+# [7][7] = xxxxxxxxxx
+# ** Note: $finish    : C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv(50)
+#    Time: 120 ps  Iteration: 0  Instance: /BuscarYAsignar_tb
 # 1
-# Break in Module CheckMatrixValue_tb at C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue_tb.sv line 71
-# End time: 21:48:30 on Oct 08,2023, Elapsed time: 0:00:11
+# Break in Module BuscarYAsignar_tb at C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv line 50
+# End time: 20:00:22 on Oct 09,2023, Elapsed time: 0:00:23
 # Errors: 0, Warnings: 0

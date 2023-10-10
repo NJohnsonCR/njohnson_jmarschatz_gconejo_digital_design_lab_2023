@@ -1,0 +1,4 @@
+module listaRandom(input reg [5:0], output reg [63:0] numerosABuscar [5:0]);
+
+
+endmodule 

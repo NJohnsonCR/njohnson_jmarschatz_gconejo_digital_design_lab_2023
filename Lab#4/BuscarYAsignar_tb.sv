@@ -1,44 +1,52 @@
-module BuscarYAsignar_tb;
-
-  reg [7:0] numerosABuscar [3:0]; // Una lista de números a buscar
-  reg [7:0] matriz [7:0][7:0];
-  wire [7:0] resultado [7:0][7:0];
-
-  // Instancia del módulo BuscarYAsignar
-  BuscarYAsignar uut (
-    .numerosABuscar(numerosABuscar), // Cambiamos el nombre de la señal
-    .matriz(matriz),
-    .resultado(resultado)
-  );
-
-  // Generación de estímulos
-  initial begin
-    // Inicializar los números a buscar y la matriz
-    numerosABuscar[0] = 27; // Por ejemplo, buscamos el número 27
-    numerosABuscar[1] = 42; // Otro número a buscar
-    numerosABuscar[2] = 15; // Otro número a buscar
-    numerosABuscar[3] = 10; // Otro número a buscar
-    // Inicializar la matriz con valores conocidos
-    // Puedes ajustar los valores de la matriz según tus necesidades
-    matriz[0][0] = 27;
-    matriz[2][4] = 42;
-    matriz[5][7] = 15;
-
-    // Ejecutar la simulación durante un período
-    #10;
-
-    // Finalizar la simulación
-    $finish;
-  end
-
-  // Proceso de impresión de resultados
-  always @* begin
-    integer i, j;
-    for (i = 0; i < 8; i = i + 1) begin
-      for (j = 0; j < 8; j = j + 1) begin
-        $display("Resultado en [%d][%d]: %d", i, j, resultado[i][j]);
-      end
+module BuscarYAsignar_tb();
+    reg clk, rst;
+    reg [5:0] numerosABuscar [63:0];
+    reg [9:0] matriz [7:0][7:0];
+    reg [9:0] resultado [7:0][7:0];
+    
+    // Instancia del módulo bajo prueba
+    BuscarYAsignar uut (
+        .numerosABuscar(numerosABuscar),
+        .clk(clk),
+        .rst(rst),
+        .matriz(matriz),
+        .resultado(resultado)
+    );
+    
+    // Generación de señales de prueba
+    initial begin
+        clk = 0;
+        rst = 0;
+        
+        // Espera un poco antes de aplicar el reset
+        #10 rst = 1;
+        #10 rst = 0;
+        
+        // Ciclo de reloj
+        repeat (20) begin
+            #5 clk = ~clk;
+        end
+        
+        // Inicialización de la matriz y números a buscar
+        for (int i = 0; i < 8; i++) begin
+            for (int j = 0; j < 8; j++) begin
+                matriz[i][j] = $random % 64; // Inicializa la matriz con valores aleatorios de 0 a 63
+            end
+        end
+        
+        for (int i = 0; i < 64; i++) begin
+            numerosABuscar[i] = i; // Inicializa la lista de números a buscar del 0 al 63
+        end
+        
+        // Mostrar matriz de resultado
+        $display("Matriz Resultado:");
+        for (int i = 0; i < 8; i++) begin
+            for (int j = 0; j < 8; j++) begin
+                $display("[%0d][%0d] = %b", i, j, resultado[i][j]);
+            end
+        end
+        
+        // Termina simulación
+        $finish;
     end
-  end
-
 endmodule

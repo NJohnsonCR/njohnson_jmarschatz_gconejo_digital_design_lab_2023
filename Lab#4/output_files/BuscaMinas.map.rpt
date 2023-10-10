@@ -1,5 +1,5 @@
 Analysis & Elaboration report for BuscaMinas
-Sun Oct 08 21:46:30 2023
+Mon Oct 09 19:59:40 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -38,10 +38,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sun Oct 08 21:46:30 2023       ;
+; Analysis & Elaboration Status ; Successful - Mon Oct 09 19:59:40 2023       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; BuscaMinas                                  ;
-; Top-level Entity Name         ; CheckMatrixValue                            ;
+; Top-level Entity Name         ; BuscarYAsignar                              ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -75,7 +75,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; CheckMatrixValue   ; BuscaMinas         ;
+; Top-level entity name                                                           ; BuscarYAsignar     ; BuscaMinas         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -162,7 +162,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Oct 08 21:46:24 2023
+    Info: Processing started: Mon Oct 09 19:59:29 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BuscaMinas -c BuscaMinas --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -176,8 +176,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file lfsr_ra
     Info (12023): Found entity 1: LFSR_RandomGenerator_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/LFSR_RandomGenerator_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file buscaryasignar.sv
     Info (12023): Found entity 1: BuscarYAsignar File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file buscaryasignar_tb.sv
-    Info (12023): Found entity 1: BuscarYAsignar_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file matriz_tb.sv
     Info (12023): Found entity 1: matriz_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file recibirmovimiento.sv
@@ -190,17 +188,27 @@ Info (12021): Found 1 design units, including 1 entities, in source file checkma
     Info (12023): Found entity 1: CheckMatrixValue File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file checkmatrixvalue_tb.sv
     Info (12023): Found entity 1: CheckMatrixValue_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue_tb.sv Line: 1
-Info (12127): Elaborating entity "CheckMatrixValue" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at CheckMatrixValue.sv(10): object "address" assigned a value but never read File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv Line: 10
-Warning (10230): Verilog HDL assignment warning at CheckMatrixValue.sv(13): truncated value with size 8 to match size of target (4) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv Line: 13
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrix" into its bus
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrix" into its bus
+Info (12021): Found 1 design units, including 1 entities, in source file buscaminas.sv
+    Info (12023): Found entity 1: BuscaMinas File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file listarandom.sv
+    Info (12023): Found entity 1: listaRandom File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file buscaminas_tb.sv
+    Info (12023): Found entity 1: BuscaMinas_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file buscaryasignar_tb.sv
+    Info (12023): Found entity 1: BuscarYAsignar_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv Line: 1
+Info (12127): Elaborating entity "BuscarYAsignar" for the top level hierarchy
+Warning (10855): Verilog HDL warning at BuscarYAsignar.sv(13): initial value for variable resultado_temp should be constant File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv Line: 13
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "resultado" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "resultado_temp" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matriz" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "resultado" into its bus
 Info (144001): Generated suppressed messages file C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/output_files/BuscaMinas.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4766 megabytes
-    Info: Processing ended: Sun Oct 08 21:46:30 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:13
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4875 megabytes
+    Info: Processing ended: Mon Oct 09 19:59:40 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:19
 
 
 +--------------------------------------------+

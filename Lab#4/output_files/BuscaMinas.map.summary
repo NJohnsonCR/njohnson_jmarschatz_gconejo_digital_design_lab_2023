@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Sun Oct 08 21:46:30 2023
+Analysis & Elaboration Status : Successful - Mon Oct 09 19:59:40 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : BuscaMinas
-Top-level Entity Name : CheckMatrixValue
+Top-level Entity Name : BuscarYAsignar
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
