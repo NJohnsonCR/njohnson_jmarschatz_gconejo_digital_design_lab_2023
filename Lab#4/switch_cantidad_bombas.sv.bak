@@ -1,4 +1,4 @@
-module switch_binary_encoder(
+module switch_cantidad_bombas(
 	input [5:0] entrada,
 	//input wire clk,
 	input wire rst,
@@ -22,4 +22,3 @@ module switch_binary_encoder(
 end
 
 endmodule
- 

@@ -1,5 +1,4 @@
 module matriz (
-  input wire clk,
   input wire reset,
   output reg [9:0] matrix[7:0][7:0]
 );
@@ -7,7 +6,7 @@ module matriz (
   // Registros para almacenar la matriz de enteros de 8x8
   
 
-  always_ff @(posedge clk or posedge reset) begin
+  always_ff @* begin
     if (reset) begin
             // Inicialización de la matriz en el flanco de reset
             for (int i = 0; i < 8; i = i + 1) begin

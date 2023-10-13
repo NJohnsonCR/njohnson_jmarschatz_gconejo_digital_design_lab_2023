@@ -1,4 +1,9 @@
-module BuscaMinas(input wire clk, input wire reset, output reg [9:0] matrizResultante [7:0][7:0]);
+module BuscaMinas(
+	input reg clk,
+	input reg reset,
+	input reg [5:0] entrada_bombas, 
+	output reg [9:0] matrizResultante [7:0][7:0]
+	);
 
 	wire [5:0] entrada;
 	reg  [9:0] matrizPrincipal[7:0][7:0];
@@ -6,31 +11,27 @@ module BuscaMinas(input wire clk, input wire reset, output reg [9:0] matrizResul
 	reg  [5:0] numerosABuscar [63:0];
 
 	matriz moduloMatriz(
-	  .clk(clk),
-	  .reset(reset),
-	  .matrix(matrizPrincipal)
+		  .reset(reset),
+		  .matrix(matrizPrincipal)
 	);
-	
-	switch_binary_encoder binaryEncoder(
-			.entrada(entrada), 
-			.clk(clk), 
-			.rst(reset), 
+
+	switch_cantidad_bombas switch_bombas(
+			.entrada(entrada_bombas),
+			.rst(reset),
 			.salida(salida)
 	);
 	
 	listaRandom random(
-			.cantidadBombas(salida), 
-			.clk(clk), 
+			.entrada_bombas(salida), 
 			.rst(reset), 
 			.numerosABuscar(numerosABuscar)
 	);
 	
-	
 	BuscarYAsignar buscar(
 		  .numerosABuscar(numerosABuscar),
-		  .clk(clk), 
-		  .rst(reset),
-		  .matriz(matrizPrincipal), 
+		  //.clk(clk), 
+		  //.rst(reset),
+		  .matrizPrincipal(matrizPrincipal), 
 		  .resultado(matrizResultante)
 	);
 	

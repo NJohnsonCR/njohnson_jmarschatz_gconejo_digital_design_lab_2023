@@ -7,9 +7,9 @@ module BuscarYAsignar_tb();
     // Instancia del módulo bajo prueba
     BuscarYAsignar uut (
         .numerosABuscar(numerosABuscar),
-        .clk(clk),
-        .rst(rst),
-        .matriz(matriz),
+        //.clk(clk),
+        //.rst(rst),
+        .matrizPrincipal(matriz),
         .resultado(resultado)
     );
     
@@ -39,10 +39,10 @@ module BuscarYAsignar_tb();
         end
         
         // Mostrar matriz de resultado
-        $display("Matriz Resultado:");
+        //$display("Matriz Resultado:");
         for (int i = 0; i < 8; i++) begin
             for (int j = 0; j < 8; j++) begin
-                $display("[%0d][%0d] = %b", i, j, resultado[i][j]);
+                //$display("[%0d][%0d] = %b", i, j, resultado[i][j]);
             end
         end
         
