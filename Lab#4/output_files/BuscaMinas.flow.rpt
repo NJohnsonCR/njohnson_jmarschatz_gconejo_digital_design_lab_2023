@@ -1,6 +1,6 @@
 Flow report for BuscaMinas
-Fri Oct 13 14:43:08 2023
-Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Fri Oct 13 17:21:04 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,24 +38,24 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+------------------------------------------------------------------------------+
-; Flow Summary                                                                 ;
-+-----------------------------+------------------------------------------------+
-; Flow Status                 ; Successful - Fri Oct 13 14:43:08 2023          ;
-; Quartus Prime Version       ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
-; Revision Name               ; BuscaMinas                                     ;
-; Top-level Entity Name       ; BuscaMinas                                     ;
-; Family                      ; Cyclone V                                      ;
-; Device                      ; 5CSEMA5F31C6                                   ;
-; Timing Models               ; Final                                          ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                      ;
-; Total registers             ; N/A until Partition Merge                      ;
-; Total pins                  ; N/A until Partition Merge                      ;
-; Total virtual pins          ; N/A until Partition Merge                      ;
-; Total block memory bits     ; N/A until Partition Merge                      ;
-; Total PLLs                  ; N/A until Partition Merge                      ;
-; Total DLLs                  ; N/A until Partition Merge                      ;
-+-----------------------------+------------------------------------------------+
++---------------------------------------------------------------------------+
+; Flow Summary                                                              ;
++-----------------------------+---------------------------------------------+
+; Flow Status                 ; Successful - Fri Oct 13 17:21:04 2023       ;
+; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name               ; BuscaMinas                                  ;
+; Top-level Entity Name       ; CheckMatrixValue                            ;
+; Family                      ; Cyclone V                                   ;
+; Device                      ; 5CSEMA5F31C6                                ;
+; Timing Models               ; Final                                       ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -63,64 +63,65 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/13/2023 14:43:00 ;
+; Start date & time ; 10/13/2023 17:20:59 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; BuscaMinas          ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 185410942947171.169722978012176        ; --            ; --          ; --                                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; BuscaMinas_tb                     ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; LFSR_RandomGenerator_tb           ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; matriz_tb                         ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; RandomNumberGenerator_tb          ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; recibirMovimiento_tb              ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; CheckMatrixValue_tb               ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; BuscarYAsignar_tb                 ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; BuscaMinas_tb                          ; --            ; --          ; eda_simulation                    ;
-; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                  ; ModelSim (SystemVerilog)               ; <None>        ; --          ; --                                ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_FILE                  ; BuscaMinas_tb.sv                       ; --            ; --          ; BuscaMinas_tb                     ;
-; EDA_TEST_BENCH_FILE                  ; LFSR_RandomGenerator_tb.sv             ; --            ; --          ; LFSR_RandomGenerator_tb           ;
-; EDA_TEST_BENCH_FILE                  ; matriz_tb.sv                           ; --            ; --          ; matriz_tb                         ;
-; EDA_TEST_BENCH_FILE                  ; RandomNumberGenerator_tb.sv            ; --            ; --          ; RandomNumberGenerator_tb          ;
-; EDA_TEST_BENCH_FILE                  ; recibirMovimiento_tb.sv                ; --            ; --          ; recibirMovimiento_tb              ;
-; EDA_TEST_BENCH_FILE                  ; CheckMatrixValue_tb.sv                 ; --            ; --          ; CheckMatrixValue_tb               ;
-; EDA_TEST_BENCH_FILE                  ; BuscarYAsignar_tb.sv                   ; --            ; --          ; BuscarYAsignar_tb                 ;
-; EDA_TEST_BENCH_MODULE_NAME           ; BuscaMinas_tb                          ; --            ; --          ; BuscaMinas_tb                     ;
-; EDA_TEST_BENCH_MODULE_NAME           ; LFSR_RandomGenerator_tb                ; --            ; --          ; LFSR_RandomGenerator_tb           ;
-; EDA_TEST_BENCH_MODULE_NAME           ; matriz_tb                              ; --            ; --          ; matriz_tb                         ;
-; EDA_TEST_BENCH_MODULE_NAME           ; RandomNumberGenerator_tb               ; --            ; --          ; RandomNumberGenerator_tb          ;
-; EDA_TEST_BENCH_MODULE_NAME           ; recibirMovimiento_tb                   ; --            ; --          ; recibirMovimiento_tb              ;
-; EDA_TEST_BENCH_MODULE_NAME           ; CheckMatrixValue_tb                    ; --            ; --          ; CheckMatrixValue_tb               ;
-; EDA_TEST_BENCH_MODULE_NAME           ; BuscarYAsignar_tb                      ; --            ; --          ; BuscarYAsignar_tb                 ;
-; EDA_TEST_BENCH_NAME                  ; RandomNumberGenerator_tb               ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; LFSR_RandomGenerator_tb                ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; BuscarYAsignar_tb                      ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; matriz_tb                              ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; recibirMovimiento_tb                   ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; CheckMatrixValue_tb                    ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; BuscaMinas_tb                          ; --            ; --          ; eda_simulation                    ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                                ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                     ;
++--------------------------------------+----------------------------------------+---------------+------------------+-----------------------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name      ; Section Id                        ;
++--------------------------------------+----------------------------------------+---------------+------------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 264086602265196.169723925907708        ; --            ; --               ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --               ; BuscaMinas_tb                     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --               ; LFSR_RandomGenerator_tb           ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --               ; matriz_tb                         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --               ; RandomNumberGenerator_tb          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --               ; recibirMovimiento_tb              ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --               ; CheckMatrixValue_tb               ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --               ; BuscarYAsignar_tb                 ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --               ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --               ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --               ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --               ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; BuscaMinas_tb                          ; --            ; --               ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --               ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim (SystemVerilog)               ; <None>        ; --               ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --               ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; BuscaMinas_tb.sv                       ; --            ; --               ; BuscaMinas_tb                     ;
+; EDA_TEST_BENCH_FILE                  ; LFSR_RandomGenerator_tb.sv             ; --            ; --               ; LFSR_RandomGenerator_tb           ;
+; EDA_TEST_BENCH_FILE                  ; matriz_tb.sv                           ; --            ; --               ; matriz_tb                         ;
+; EDA_TEST_BENCH_FILE                  ; RandomNumberGenerator_tb.sv            ; --            ; --               ; RandomNumberGenerator_tb          ;
+; EDA_TEST_BENCH_FILE                  ; recibirMovimiento_tb.sv                ; --            ; --               ; recibirMovimiento_tb              ;
+; EDA_TEST_BENCH_FILE                  ; CheckMatrixValue_tb.sv                 ; --            ; --               ; CheckMatrixValue_tb               ;
+; EDA_TEST_BENCH_FILE                  ; BuscarYAsignar_tb.sv                   ; --            ; --               ; BuscarYAsignar_tb                 ;
+; EDA_TEST_BENCH_MODULE_NAME           ; BuscaMinas_tb                          ; --            ; --               ; BuscaMinas_tb                     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; LFSR_RandomGenerator_tb                ; --            ; --               ; LFSR_RandomGenerator_tb           ;
+; EDA_TEST_BENCH_MODULE_NAME           ; matriz_tb                              ; --            ; --               ; matriz_tb                         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; RandomNumberGenerator_tb               ; --            ; --               ; RandomNumberGenerator_tb          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; recibirMovimiento_tb                   ; --            ; --               ; recibirMovimiento_tb              ;
+; EDA_TEST_BENCH_MODULE_NAME           ; CheckMatrixValue_tb                    ; --            ; --               ; CheckMatrixValue_tb               ;
+; EDA_TEST_BENCH_MODULE_NAME           ; BuscarYAsignar_tb                      ; --            ; --               ; BuscarYAsignar_tb                 ;
+; EDA_TEST_BENCH_NAME                  ; RandomNumberGenerator_tb               ; --            ; --               ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; LFSR_RandomGenerator_tb                ; --            ; --               ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; BuscarYAsignar_tb                      ; --            ; --               ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; matriz_tb                              ; --            ; --               ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; recibirMovimiento_tb                   ; --            ; --               ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; CheckMatrixValue_tb                    ; --            ; --               ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; BuscaMinas_tb                          ; --            ; --               ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --               ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --               ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --               ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; CheckMatrixValue ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; CheckMatrixValue ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; CheckMatrixValue ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --               ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --               ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --               ; --                                ;
+; TOP_LEVEL_ENTITY                     ; CheckMatrixValue                       ; BuscaMinas    ; --               ; --                                ;
++--------------------------------------+----------------------------------------+---------------+------------------+-----------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -128,8 +129,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:08     ; 1.0                     ; 4809 MB             ; 00:00:18                           ;
-; Total                  ; 00:00:08     ; --                      ; --                  ; 00:00:18                           ;
+; Analysis & Elaboration ; 00:00:06     ; 1.0                     ; 4768 MB             ; 00:00:13                           ;
+; Total                  ; 00:00:06     ; --                      ; --                  ; 00:00:13                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -138,7 +139,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+------------------+------------+------------+----------------+
 ; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; DESKTOP-N4CT73P  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-KQDE7IA  ; Windows 10 ; 10.0       ; x86_64         ;
 +------------------------+------------------+------------+------------+----------------+
 
 

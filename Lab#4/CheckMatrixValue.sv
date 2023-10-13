@@ -4,7 +4,7 @@ module CheckMatrixValue(
   input [9:0] matrix [7:0][7:0], // Matriz de 10 bits (8x8)
   output reg result // Salida que indica si se encontró un 1 en la posición especificada
 );
-  reg [9:0] matrixValue; // Valor en la posición especificada de la matriz
+  reg [8:0] matrixValue; // Valor en la posición especificada de la matriz
 
   // Combinar las coordenadas X e Y para obtener la dirección en la matriz
   reg [3:0] address;
@@ -16,7 +16,7 @@ module CheckMatrixValue(
 
   // Verificar si el bit MSB es igual a 1 (es una bomba)
   always @(matrixValue) begin
-    if (matrixValue[9] == 1'b1) begin
+    if (matrixValue[6] == 1'b1) begin
       result = 1'b1; // Indicar que se encontró una bomba (1)
     end else begin
       result = 1'b0; // Indicar que no se encontró una bomba (0)

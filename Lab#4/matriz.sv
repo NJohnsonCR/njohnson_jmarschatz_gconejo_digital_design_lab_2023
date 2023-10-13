@@ -1,6 +1,6 @@
 module matriz (
   input wire reset,
-  output reg [9:0] matrix[7:0][7:0]
+  output reg [8:0] matrix[7:0][7:0]
 );
 
   // Registros para almacenar la matriz de enteros de 8x8
@@ -11,7 +11,7 @@ module matriz (
             // Inicialización de la matriz en el flanco de reset
             for (int i = 0; i < 8; i = i + 1) begin
               for (int j = 0; j < 8; j = j + 1) begin
-                 matrix[i][j] <= 10'b0; // Inicializar todos los elementos a 0
+                 matrix[i][j] <= 9'b0; // Inicializar todos los elementos a 0
               end
             end
          end else begin
