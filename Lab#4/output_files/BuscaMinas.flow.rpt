@@ -1,5 +1,5 @@
 Flow report for BuscaMinas
-Mon Oct 16 00:30:47 2023
+Mon Oct 16 15:43:42 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Mon Oct 16 00:30:47 2023       ;
+; Flow Status                 ; Successful - Mon Oct 16 15:43:42 2023       ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; BuscaMinas                                  ;
 ; Top-level Entity Name       ; BuscaMinas                                  ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/16/2023 00:30:41 ;
+; Start date & time ; 10/16/2023 15:43:35 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; BuscaMinas          ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 264086602265196.169743784113688        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 264086602265196.169749261504524        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; BuscaMinas_tb                     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; LFSR_RandomGenerator_tb           ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; matriz_tb                         ;
@@ -132,7 +132,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4789 MB             ; 00:00:15                           ;
+; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4812 MB             ; 00:00:15                           ;
 ; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:15                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 

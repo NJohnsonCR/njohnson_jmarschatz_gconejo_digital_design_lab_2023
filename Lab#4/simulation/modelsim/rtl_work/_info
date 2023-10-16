@@ -11,24 +11,24 @@ cModel Technology
 Z0 dC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/simulation/modelsim
 vBuscaMinas
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1697440493
+Z2 !s110 1697492827
 !i10b 1
-!s100 h1<ESiQJYWQ1;7lYCYUkW0
+!s100 F0WAe_i_UF1mgj6]QzY:N2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IKTe_`eZ[G8>:Ib]IbBUMU2
+In83:;B3QUb1`j0Bn7_R3l2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1697437395
+w1697492612
 8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv
 FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv
 !i122 1
-L0 1 50
+L0 1 77
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1697440493.000000
+Z6 !s108 1697492827.000000
 !s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv|
 !i113 1
@@ -40,17 +40,17 @@ vBuscaMinas_tb
 R1
 R2
 !i10b 1
-!s100 ;9JSUJTF1f[kab<KQ32ZB2
+!s100 N7@[Lh6hO@^1zUWCHB4zB0
 R3
-IbGAG1z`zJaaCDW9`[bIPX2
+I?PKBNI>He`gfhLhGe8VM81
 R4
 S1
 R0
-w1697437583
+w1697492802
 8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv
 FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv
 !i122 3
-L0 1 39
+L0 1 38
 R5
 r1
 !s85 0
@@ -67,17 +67,17 @@ vlistaRandom
 R1
 R2
 !i10b 1
-!s100 `Y4Jf7llIUGPh9JOC;LdX3
+!s100 aJJg=LPSo]`1f=6S``HQ^0
 R3
-I`>=^:3dk2Ng3Sc>cQ8f821
+IXnfLl]9]PG_fPSbfn]]Pn2
 R4
 S1
 R0
-w1697440478
+w1697492505
 8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv
 FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv
 !i122 2
-L0 1 30
+L0 1 35
 R5
 r1
 !s85 0

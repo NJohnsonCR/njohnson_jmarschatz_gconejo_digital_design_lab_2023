@@ -1,7 +1,7 @@
 module switch_binary_encoder(
 	input [5:0] entrada,
 	//input wire clk,
-	input wire rst,
+	input rst,
 	output reg [5:0] salida
 	);
 

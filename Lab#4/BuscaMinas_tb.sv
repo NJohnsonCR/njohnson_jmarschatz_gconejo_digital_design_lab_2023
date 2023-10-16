@@ -16,12 +16,11 @@ module BuscaMinas_tb();
 	 always #5 clk = ~clk;
 		initial begin
         clk = 0;
-        reset = 0;
+        reset = 1;
 		  
-		  entrada_bombas = 6'b111111;
+		  entrada_bombas = 6'b001111;
         
         // Espera un poco antes de aplicar el reset
-        #10 reset = 1;
         #10 reset = 0;
 		 
 		  /*

@@ -12,57 +12,57 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4 {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:14:53 on Oct 16,2023
+# Start time: 15:47:07 on Oct 16,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv 
 # -- Compiling module matriz
 # 
 # Top level modules:
 # 	matriz
-# End time: 01:14:53 on Oct 16,2023, Elapsed time: 0:00:00
+# End time: 15:47:07 on Oct 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4 {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:14:53 on Oct 16,2023
+# Start time: 15:47:07 on Oct 16,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv 
 # -- Compiling module BuscaMinas
 # 
 # Top level modules:
 # 	BuscaMinas
-# End time: 01:14:53 on Oct 16,2023, Elapsed time: 0:00:00
+# End time: 15:47:07 on Oct 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4 {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:14:53 on Oct 16,2023
+# Start time: 15:47:07 on Oct 16,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv 
 # -- Compiling module listaRandom
 # 
 # Top level modules:
 # 	listaRandom
-# End time: 01:14:53 on Oct 16,2023, Elapsed time: 0:00:00
+# End time: 15:47:07 on Oct 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4 {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:14:53 on Oct 16,2023
+# Start time: 15:47:07 on Oct 16,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv 
 # -- Compiling module BuscaMinas_tb
 # 
 # Top level modules:
 # 	BuscaMinas_tb
-# End time: 01:14:53 on Oct 16,2023, Elapsed time: 0:00:00
+# End time: 15:47:07 on Oct 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  BuscaMinas_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" BuscaMinas_tb 
-# Start time: 01:14:53 on Oct 16,2023
+# Start time: 15:47:07 on Oct 16,2023
 # Loading sv_std.std
 # Loading work.BuscaMinas_tb
 # Loading work.BuscaMinas
 # Loading work.matriz
 # Loading work.listaRandom
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'random'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /BuscaMinas_tb/uut/random File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv Line: 18
-# ** Warning: (vsim-3722) C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv(18): [TFMPC] - Missing connection for port 'randomValue'.
+#    Time: 0 ps  Iteration: 0  Instance: /BuscaMinas_tb/uut/random File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv Line: 21
+# ** Warning: (vsim-3722) C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv(21): [TFMPC] - Missing connection for port 'randomValue'.
 # 
 # add wave *
 # view structure
@@ -70,137 +70,25 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Numeros de la lista : [          0][ x]
-# Numeros de la lista : [          1][ x]
-# Numeros de la lista : [          2][ x]
-# Numeros de la lista : [          3][ x]
-# Numeros de la lista : [          4][ x]
-# Numeros de la lista : [          5][ x]
-# Numeros de la lista : [          6][ x]
-# Numeros de la lista : [          7][ x]
-# Numeros de la lista : [          8][ x]
-# Numeros de la lista : [          9][ x]
-# Numeros de la lista : [         10][ x]
-# Numeros de la lista : [         11][ x]
-# Numeros de la lista : [         12][ x]
-# Numeros de la lista : [         13][ x]
-# Numeros de la lista : [         14][ x]
-# Numeros de la lista : [         15][ x]
-# Numeros de la lista : [         16][ x]
-# Numeros de la lista : [         17][ x]
-# Numeros de la lista : [         18][ x]
-# Numeros de la lista : [         19][ x]
-# Numeros de la lista : [         20][ x]
-# Numeros de la lista : [         21][ x]
-# Numeros de la lista : [         22][ x]
-# Numeros de la lista : [         23][ x]
-# Numeros de la lista : [         24][ x]
-# Numeros de la lista : [         25][ x]
-# Numeros de la lista : [         26][ x]
-# Numeros de la lista : [         27][ x]
-# Numeros de la lista : [         28][ x]
-# Numeros de la lista : [         29][ x]
-# Numeros de la lista : [         30][ x]
-# Numeros de la lista : [         31][ x]
-# Numeros de la lista : [         32][ x]
-# Numeros de la lista : [         33][ x]
-# Numeros de la lista : [         34][ x]
-# Numeros de la lista : [         35][ x]
-# Numeros de la lista : [         36][ x]
-# Numeros de la lista : [         37][ x]
-# Numeros de la lista : [         38][ x]
-# Numeros de la lista : [         39][ x]
-# Numeros de la lista : [         40][ x]
-# Numeros de la lista : [         41][ x]
-# Numeros de la lista : [         42][ x]
-# Numeros de la lista : [         43][ x]
-# Numeros de la lista : [         44][ x]
-# Numeros de la lista : [         45][ x]
-# Numeros de la lista : [         46][ x]
-# Numeros de la lista : [         47][ x]
-# Numeros de la lista : [         48][ x]
-# Numeros de la lista : [         49][ x]
-# Numeros de la lista : [         50][ x]
-# Numeros de la lista : [         51][ x]
-# Numeros de la lista : [         52][ x]
-# Numeros de la lista : [         53][ x]
-# Numeros de la lista : [         54][ x]
-# Numeros de la lista : [         55][ x]
-# Numeros de la lista : [         56][ x]
-# Numeros de la lista : [         57][ x]
-# Numeros de la lista : [         58][ x]
-# Numeros de la lista : [         59][ x]
-# Numeros de la lista : [         60][ x]
-# Numeros de la lista : [         61][ x]
-# Numeros de la lista : [         62][ x]
-# Numeros de la lista : [         63][ x]
-# Numeros de la lista : [          0][ x]
-# Numeros de la lista : [          1][ x]
-# Numeros de la lista : [          2][ x]
-# Numeros de la lista : [          3][ x]
-# Numeros de la lista : [          4][ x]
-# Numeros de la lista : [          5][ x]
-# Numeros de la lista : [          6][ x]
-# Numeros de la lista : [          7][ x]
-# Numeros de la lista : [          8][ x]
-# Numeros de la lista : [          9][ x]
-# Numeros de la lista : [         10][ x]
-# Numeros de la lista : [         11][ x]
-# Numeros de la lista : [         12][ x]
-# Numeros de la lista : [         13][ x]
-# Numeros de la lista : [         14][ x]
-# Numeros de la lista : [         15][ x]
-# Numeros de la lista : [         16][ x]
-# Numeros de la lista : [         17][ x]
-# Numeros de la lista : [         18][ x]
-# Numeros de la lista : [         19][ x]
-# Numeros de la lista : [         20][ x]
-# Numeros de la lista : [         21][ x]
-# Numeros de la lista : [         22][ x]
-# Numeros de la lista : [         23][ x]
-# Numeros de la lista : [         24][ x]
-# Numeros de la lista : [         25][ x]
-# Numeros de la lista : [         26][ x]
-# Numeros de la lista : [         27][ x]
-# Numeros de la lista : [         28][ x]
-# Numeros de la lista : [         29][ x]
-# Numeros de la lista : [         30][ x]
-# Numeros de la lista : [         31][ x]
-# Numeros de la lista : [         32][ x]
-# Numeros de la lista : [         33][ x]
-# Numeros de la lista : [         34][ x]
-# Numeros de la lista : [         35][ x]
-# Numeros de la lista : [         36][ x]
-# Numeros de la lista : [         37][ x]
-# Numeros de la lista : [         38][ x]
-# Numeros de la lista : [         39][ x]
-# Numeros de la lista : [         40][ x]
-# Numeros de la lista : [         41][ x]
-# Numeros de la lista : [         42][ x]
-# Numeros de la lista : [         43][ x]
-# Numeros de la lista : [         44][ x]
-# Numeros de la lista : [         45][ x]
-# Numeros de la lista : [         46][ x]
-# Numeros de la lista : [         47][ x]
-# Numeros de la lista : [         48][ x]
-# Numeros de la lista : [         49][ x]
-# Numeros de la lista : [         50][ x]
-# Numeros de la lista : [         51][ x]
-# Numeros de la lista : [         52][ x]
-# Numeros de la lista : [         53][ x]
-# Numeros de la lista : [         54][ x]
-# Numeros de la lista : [         55][ x]
-# Numeros de la lista : [         56][ x]
-# Numeros de la lista : [         57][ x]
-# Numeros de la lista : [         58][ x]
-# Numeros de la lista : [         59][ x]
-# Numeros de la lista : [         60][ x]
-# Numeros de la lista : [         61][ x]
-# Numeros de la lista : [         62][ x]
-# Numeros de la lista : [         63][ x]
-# ** Note: $finish    : C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv(37)
-#    Time: 1020 ps  Iteration: 0  Instance: /BuscaMinas_tb
+# Numeros de la lista : [          0][12]
+# Numeros de la lista : [          1][59]
+# Numeros de la lista : [          2][30]
+# Numeros de la lista : [          3][37]
+# Numeros de la lista : [          4][ 0]
+# Numeros de la lista : [          5][31]
+# Numeros de la lista : [          6][50]
+# Numeros de la lista : [          7][41]
+# Numeros de la lista : [          8][52]
+# Numeros de la lista : [          9][ 3]
+# Numeros de la lista : [         10][ 6]
+# Numeros de la lista : [         11][45]
+# Numeros de la lista : [         12][40]
+# Numeros de la lista : [         13][39]
+# Numeros de la lista : [         14][26]
+# Numeros de la lista : [         15][49]
+# ** Note: $finish    : C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv(36)
+#    Time: 1010 ps  Iteration: 0  Instance: /BuscaMinas_tb
 # 1
-# Break in Module BuscaMinas_tb at C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv line 37
-# End time: 01:15:04 on Oct 16,2023, Elapsed time: 0:00:11
+# Break in Module BuscaMinas_tb at C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv line 36
+# End time: 15:49:19 on Oct 16,2023, Elapsed time: 0:02:12
 # Errors: 0, Warnings: 2

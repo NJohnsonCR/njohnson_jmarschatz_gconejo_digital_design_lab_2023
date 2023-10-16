@@ -1,15 +1,18 @@
 module BuscaMinas(
-	input reg clk,
-	input reg reset,
-	input reg [5:0] entrada_bombas, 
+	input clk,
+	input reset,
+	input [5:0] entrada_bombas,
 	output reg [8:0] matrizResultante [7:0][7:0]
 	);
 
-	wire [5:0] entrada;
 	reg  [8:0] matrizPrincipal[7:0][7:0];
 	reg  [5:0] salida;
 	reg  [5:0] numerosABuscar [63:0];
-
+	
+	wire Bomb_cantidad, Bomba_resultado, Bandera, Numero_bomba, casilla, Bomba, msgF, Estado_bomba, mp;
+	wire [1:0] seleccion;
+	
+	
 	matriz moduloMatriz(
 		  .reset(reset),
 		  .matrix(matrizPrincipal)
@@ -22,13 +25,37 @@ module BuscaMinas(
 			.numerosABuscar(numerosABuscar)
 	);
 	/*
+	FSM maquinita(
+		.clk(clk),
+		.rst(reset),
+		.Bomb_cantidad(Bomb_cantidad),
+		.Bomba_resultado(Bomba_resultado),
+		.seleccion(selección),
+		.Bandera(Bandera),
+		.Numero_bomba(Numero_bomba),
+		.casilla(casilla),
+		.Bomba(Bomba),
+		.msgF(msgF),
+		.Estado_bomba(Estado_bomba),
+		.mp(Estado_bomba)
+	);
+	/*
+	switch_binary_encoder switchBombas(
+		.entrada(entrada_bombas),
+		.rst(reset),
+		.salida(salida)
+	);
+	
+	
 	BuscarYAsignar buscar(
 	  .numerosABuscar(numerosABuscar),
-	  //.clk(clk), 
-	  //.rst(reset),
+	  .clk(clk), 
+	  .rst(reset),
 	  .matrizPrincipal(matrizPrincipal), 
 	  .resultado(matrizResultante)
 	);
+	
+
 /*	
 	bombasAdyacentes bombasAdyancentes(
     .matrizEntrada(matrizPrincipal),
