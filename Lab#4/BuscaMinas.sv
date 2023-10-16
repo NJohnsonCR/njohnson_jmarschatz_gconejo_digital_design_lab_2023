@@ -2,11 +2,11 @@ module BuscaMinas(
 	input reg clk,
 	input reg reset,
 	input reg [5:0] entrada_bombas, 
-	output reg [9:0] matrizResultante [7:0][7:0]
+	output reg [8:0] matrizResultante [7:0][7:0]
 	);
 
 	wire [5:0] entrada;
-	reg  [9:0] matrizPrincipal[7:0][7:0];
+	reg  [8:0] matrizPrincipal[7:0][7:0];
 	reg  [5:0] salida;
 	reg  [5:0] numerosABuscar [63:0];
 
@@ -14,7 +14,15 @@ module BuscaMinas(
 		  .reset(reset),
 		  .matrix(matrizPrincipal)
 	);
-
+	
+	bombasAdyacentes bombasAdyancentes(
+    .matrizEntrada(matrizPrincipal),
+	 .reset(reset),
+	 .clk(clk),
+    .matrizResultante(matrizResultante) 
+	);
+		
+/*
 	switch_cantidad_bombas switch_bombas(
 			.entrada(entrada_bombas),
 			.rst(reset),
@@ -35,5 +43,5 @@ module BuscaMinas(
 		  .resultado(matrizResultante)
 	);
 	
-
+*/
 endmodule

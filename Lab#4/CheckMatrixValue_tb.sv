@@ -1,7 +1,7 @@
 module CheckMatrixValue_tb;
   reg [3:0] X_tb; // Coordenada X de 4 bits
   reg [3:0] Y_tb; // Coordenada Y de 4 bits
-  reg [9:0] matrix_tb [7:0][7:0]; // Matriz de 10 bits (8x8)
+  reg [8:0] matrix_tb [7:0][7:0]; // Matriz de 10 bits (8x8)
   wire result_tb; // Salida que indica si se encontró un 1 en la posición especificada
 
   // Instancia el módulo CheckMatrixValue
@@ -44,7 +44,7 @@ module CheckMatrixValue_tb;
 
     // Prueba 3: Verificar si hay bomba en la posición (7,7)
     X_tb = 7;
-    Y_tb = 7;
+    Y_tb = 0;
     #10; // Espera un corto período de tiempo
     $display("Prueba 2: Resultado = %b", result_tb);
 	 

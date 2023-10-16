@@ -1,0 +1,7 @@
+module bombasAdyancentes(
+		input reg [9:0] matrizEntrada [7:0][7:0]
+		output reg [9:0] matrizResultante [7:0][7:0]
+		);
+		
+
+endmodule 

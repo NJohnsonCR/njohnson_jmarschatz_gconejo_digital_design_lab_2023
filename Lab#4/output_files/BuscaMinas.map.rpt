@@ -1,5 +1,5 @@
 Analysis & Elaboration report for BuscaMinas
-Fri Oct 13 17:21:04 2023
+Sun Oct 15 23:33:08 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -38,10 +38,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Fri Oct 13 17:21:04 2023       ;
+; Analysis & Elaboration Status ; Successful - Sun Oct 15 23:33:08 2023       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; BuscaMinas                                  ;
-; Top-level Entity Name         ; CheckMatrixValue                            ;
+; Top-level Entity Name         ; BuscaMinas                                  ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -75,7 +75,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; CheckMatrixValue   ; BuscaMinas         ;
+; Top-level entity name                                                           ; BuscaMinas         ; BuscaMinas         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -162,7 +162,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Oct 13 17:20:58 2023
+    Info: Processing started: Sun Oct 15 23:33:01 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BuscaMinas -c BuscaMinas --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -209,18 +209,605 @@ Info (12021): Found 1 design units, including 1 entities, in source file buscary
     Info (12023): Found entity 1: BuscarYAsignar_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file switch_cantidad_bombas.sv
     Info (12023): Found entity 1: switch_cantidad_bombas File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/switch_cantidad_bombas.sv Line: 1
-Info (12127): Elaborating entity "CheckMatrixValue" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at CheckMatrixValue.sv(10): object "address" assigned a value but never read File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv Line: 10
-Warning (10230): Verilog HDL assignment warning at CheckMatrixValue.sv(13): truncated value with size 8 to match size of target (4) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv Line: 13
-Warning (10230): Verilog HDL assignment warning at CheckMatrixValue.sv(14): truncated value with size 10 to match size of target (9) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv Line: 14
+Info (12021): Found 1 design units, including 1 entities, in source file bombasadyacentes.sv
+    Info (12023): Found entity 1: bombasAdyacentes File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/bombasAdyacentes.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bombasadyacentes_tb.sv
+    Info (12023): Found entity 1: bombasAdyacentes_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/bombasAdyacentes_tb.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at bombasAdyacentes_tb.sv(8): created implicit net for "reset" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/bombasAdyacentes_tb.sv Line: 8
+Info (12127): Elaborating entity "BuscaMinas" for the top level hierarchy
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrizResultante" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrizPrincipal" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrizResultante" into its bus
+Info (12128): Elaborating entity "matriz" for hierarchy "matriz:moduloMatriz" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv Line: 16
+Info (10041): Inferred latch for "matrix[0][0][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][0][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][0][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][0][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][0][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][0][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][0][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][0][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][0][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][1][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][1][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][1][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][1][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][1][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][1][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][1][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][1][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][1][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][2][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][2][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][2][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][2][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][2][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][2][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][2][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][2][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][2][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][3][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][3][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][3][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][3][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][3][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][3][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][3][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][3][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][3][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][4][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][4][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][4][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][4][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][4][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][4][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][4][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][4][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][4][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][5][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][5][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][5][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][5][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][5][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][5][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][5][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][5][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][5][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][6][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][6][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][6][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][6][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][6][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][6][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][6][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][6][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][6][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][7][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][7][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][7][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][7][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][7][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][7][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][7][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][7][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[0][7][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][0][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][0][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][0][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][0][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][0][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][0][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][0][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][0][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][0][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][1][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][1][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][1][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][1][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][1][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][1][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][1][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][1][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][1][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][2][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][2][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][2][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][2][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][2][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][2][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][2][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][2][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][2][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][3][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][3][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][3][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][3][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][3][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][3][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][3][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][3][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][3][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][4][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][4][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][4][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][4][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][4][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][4][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][4][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][4][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][4][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][5][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][5][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][5][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][5][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][5][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][5][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][5][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][5][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][5][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][6][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][6][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][6][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][6][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][6][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][6][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][6][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][6][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][6][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][7][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][7][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][7][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][7][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][7][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][7][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][7][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][7][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[1][7][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][0][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][0][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][0][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][0][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][0][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][0][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][0][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][0][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][0][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][1][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][1][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][1][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][1][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][1][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][1][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][1][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][1][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][1][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][2][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][2][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][2][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][2][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][2][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][2][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][2][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][2][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][2][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][3][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][3][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][3][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][3][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][3][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][3][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][3][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][3][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][3][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][4][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][4][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][4][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][4][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][4][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][4][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][4][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][4][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][4][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][5][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][5][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][5][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][5][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][5][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][5][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][5][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][5][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][5][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][6][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][6][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][6][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][6][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][6][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][6][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][6][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][6][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][6][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][7][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][7][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][7][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][7][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][7][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][7][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][7][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][7][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[2][7][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][0][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][0][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][0][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][0][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][0][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][0][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][0][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][0][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][0][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][1][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][1][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][1][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][1][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][1][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][1][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][1][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][1][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][1][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][2][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][2][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][2][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][2][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][2][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][2][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][2][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][2][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][2][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][3][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][3][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][3][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][3][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][3][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][3][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][3][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][3][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][3][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][4][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][4][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][4][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][4][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][4][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][4][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][4][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][4][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][4][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][5][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][5][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][5][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][5][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][5][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][5][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][5][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][5][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][5][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][6][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][6][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][6][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][6][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][6][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][6][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][6][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][6][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][6][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][7][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][7][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][7][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][7][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][7][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][7][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][7][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][7][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[3][7][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][0][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][0][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][0][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][0][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][0][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][0][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][0][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][0][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][0][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][1][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][1][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][1][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][1][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][1][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][1][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][1][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][1][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][1][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][2][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][2][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][2][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][2][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][2][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][2][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][2][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][2][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][2][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][3][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][3][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][3][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][3][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][3][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][3][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][3][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][3][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][3][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][4][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][4][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][4][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][4][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][4][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][4][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][4][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][4][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][4][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][5][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][5][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][5][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][5][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][5][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][5][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][5][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][5][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][5][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][6][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][6][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][6][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][6][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][6][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][6][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][6][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][6][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][6][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][7][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][7][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][7][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][7][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][7][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][7][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][7][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][7][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[4][7][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][0][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][0][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][0][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][0][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][0][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][0][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][0][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][0][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][0][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][1][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][1][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][1][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][1][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][1][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][1][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][1][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][1][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][1][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][2][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][2][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][2][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][2][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][2][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][2][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][2][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][2][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][2][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][3][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][3][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][3][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][3][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][3][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][3][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][3][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][3][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][3][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][4][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][4][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][4][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][4][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][4][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][4][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][4][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][4][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][4][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][5][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][5][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][5][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][5][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][5][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][5][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][5][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][5][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][5][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][6][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][6][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][6][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][6][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][6][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][6][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][6][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][6][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][6][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][7][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][7][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][7][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][7][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][7][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][7][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][7][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][7][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[5][7][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][0][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][0][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][0][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][0][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][0][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][0][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][0][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][0][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][0][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][1][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][1][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][1][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][1][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][1][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][1][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][1][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][1][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][1][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][2][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][2][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][2][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][2][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][2][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][2][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][2][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][2][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][2][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][3][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][3][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][3][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][3][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][3][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][3][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][3][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][3][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][3][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][4][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][4][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][4][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][4][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][4][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][4][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][4][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][4][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][4][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][5][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][5][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][5][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][5][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][5][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][5][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][5][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][5][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][5][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][6][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][6][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][6][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][6][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][6][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][6][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][6][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][6][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][6][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][7][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][7][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][7][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][7][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][7][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][7][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][7][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][7][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[6][7][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][0][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][0][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][0][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][0][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][0][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][0][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][0][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][0][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][0][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][1][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][1][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][1][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][1][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][1][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][1][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][1][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][1][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][1][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][2][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][2][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][2][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][2][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][2][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][2][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][2][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][2][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][2][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][3][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][3][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][3][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][3][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][3][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][3][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][3][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][3][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][3][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][4][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][4][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][4][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][4][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][4][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][4][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][4][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][4][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][4][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][5][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][5][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][5][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][5][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][5][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][5][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][5][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][5][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][5][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][6][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][6][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][6][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][6][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][6][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][6][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][6][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][6][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][6][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][7][0]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][7][1]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][7][2]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][7][3]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][7][4]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][7][5]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][7][6]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][7][7]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
+Info (10041): Inferred latch for "matrix[7][7][8]" at matriz.sv(10) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv Line: 10
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrix" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrix" into its bus
+Info (12128): Elaborating entity "bombasAdyacentes" for hierarchy "bombasAdyacentes:bombasAdyancentes" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv Line: 23
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrizEntrada" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrizResultante" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrizEntrada" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrizResultante" into its bus
 Info (144001): Generated suppressed messages file C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/output_files/BuscaMinas.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4768 megabytes
-    Info: Processing ended: Fri Oct 13 17:21:04 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:13
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4764 megabytes
+    Info: Processing ended: Sun Oct 15 23:33:08 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +--------------------------------------------+
