@@ -3,15 +3,17 @@ module listaRandom(
     input wire clk,
     input reg [5:0] entrada_bombas,
     output reg [5:0] randomValue, // Valor aleatorio de 6 bits (0-63)
-    output reg [5:0] numerosABuscar [63:0]
+    output reg [5:0] numerosABuscar [63:0],
+	 output wire enableBuscar
 );
 
   reg [15:0] state;   
   reg flag;
   initial begin 
 		flag = 1'b0;
+		enableBuscar = 1'b0;
 //		lfsr = 6'b111111; // Valor inicial arbitrario
-  end
+	  end
   always @(posedge clk) begin
     if (rst) begin
       state = 16'hACE1; // Valor inicial arbitrario
@@ -26,10 +28,11 @@ module listaRandom(
 			  randomValue = state[5:0];
 //			  $display("RandomValue : %b", randomValue);
 			  numerosABuscar[i] = randomValue; // Agregar el valor aleatorio a la lista
-			  $display("Numeros de la lista : [%d][%d]", i, numerosABuscar[i]);
+//			  $display("Numeros de la lista : [%d][%d]", i, numerosABuscar[i]);
 			end
       end
 		flag = 1'b1;
 	 end
   end 
+  assign enableBuscar = 1'b1;
 endmodule
