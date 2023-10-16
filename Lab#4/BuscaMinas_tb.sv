@@ -33,6 +33,7 @@ module BuscaMinas_tb();
   
         end
 		  */
+		  
 		  #1000 $finish;
     end
 endmodule

@@ -1,8 +1,8 @@
 module BuscarYAsignar_tb();
     reg clk, rst;
     reg [5:0] numerosABuscar [63:0];
-    reg [9:0] matriz [7:0][7:0];
-    reg [9:0] resultado [7:0][7:0];
+    reg [8:0] matriz [7:0][7:0];
+    reg [8:0] resultado [7:0][7:0];
     
     // Instancia del módulo bajo prueba
     BuscarYAsignar uut (
@@ -42,7 +42,7 @@ module BuscarYAsignar_tb();
         //$display("Matriz Resultado:");
         for (int i = 0; i < 8; i++) begin
             for (int j = 0; j < 8; j++) begin
-                //$display("[%0d][%0d] = %b", i, j, resultado[i][j]);
+                $display("[%0d][%0d] = %b", i, j, resultado[i][j]);
             end
         end
         

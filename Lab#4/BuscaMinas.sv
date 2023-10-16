@@ -15,33 +15,36 @@ module BuscaMinas(
 		  .matrix(matrizPrincipal)
 	);
 	
+	listaRandom random(
+			.entrada_bombas(entrada_bombas), 
+			.clk(clk),
+			.rst(reset), 
+			.numerosABuscar(numerosABuscar)
+	);
+	/*
+	BuscarYAsignar buscar(
+	  .numerosABuscar(numerosABuscar),
+	  //.clk(clk), 
+	  //.rst(reset),
+	  .matrizPrincipal(matrizPrincipal), 
+	  .resultado(matrizResultante)
+	);
+/*	
 	bombasAdyacentes bombasAdyancentes(
     .matrizEntrada(matrizPrincipal),
 	 .reset(reset),
 	 .clk(clk),
     .matrizResultante(matrizResultante) 
 	);
-		
-/*
+	
 	switch_cantidad_bombas switch_bombas(
 			.entrada(entrada_bombas),
 			.rst(reset),
 			.salida(salida)
 	);
 	
-	listaRandom random(
-			.entrada_bombas(salida), 
-			.rst(reset), 
-			.numerosABuscar(numerosABuscar)
-	);
 	
-	BuscarYAsignar buscar(
-		  .numerosABuscar(numerosABuscar),
-		  //.clk(clk), 
-		  //.rst(reset),
-		  .matrizPrincipal(matrizPrincipal), 
-		  .resultado(matrizResultante)
-	);
+	/*
 	
 */
 endmodule

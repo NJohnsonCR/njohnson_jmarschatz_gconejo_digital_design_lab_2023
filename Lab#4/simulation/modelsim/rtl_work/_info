@@ -9,75 +9,48 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/simulation/modelsim
-vbombasAdyacentes
+vBuscaMinas
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1697434468
+Z2 !s110 1697440493
 !i10b 1
-!s100 ILCg8JX[bCfTA0aUf2jOe1
+!s100 h1<ESiQJYWQ1;7lYCYUkW0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I?e2408g9Z?WUP:OEXOS9Q1
+IKTe_`eZ[G8>:Ib]IbBUMU2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1697434453
-8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/bombasAdyacentes.sv
-FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/bombasAdyacentes.sv
-!i122 2
-L0 1 37
+w1697437395
+8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv
+FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv
+!i122 1
+L0 1 50
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1697434468.000000
-!s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/bombasAdyacentes.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/bombasAdyacentes.sv|
+Z6 !s108 1697440493.000000
+!s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv|
 !i113 1
 Z7 o-sv -work work
 Z8 !s92 -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4
 Z9 tCvgOpt 0
-nbombas@adyacentes
-vBuscaMinas
-R1
-R2
-!i10b 1
-!s100 ;QlnNcg`IS@_N`8a0gV`I1
-R3
-IIU4LfnbbKn8QdJBgBdGNA3
-R4
-S1
-R0
-w1697432374
-8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv
-FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv
-!i122 1
-L0 1 47
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv|
-!i113 1
-R7
-R8
-R9
 n@busca@minas
 vBuscaMinas_tb
 R1
 R2
 !i10b 1
-!s100 fkOLzSa0Em1LWBVOY5T7c0
+!s100 ;9JSUJTF1f[kab<KQ32ZB2
 R3
-IAnn=:30^ZP9j@CBGMjTHl2
+IbGAG1z`zJaaCDW9`[bIPX2
 R4
 S1
 R0
-w1697434304
+w1697437583
 8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv
 FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv
 !i122 3
-L0 1 38
+L0 1 39
 R5
 r1
 !s85 0
@@ -90,6 +63,33 @@ R7
 R8
 R9
 n@busca@minas_tb
+vlistaRandom
+R1
+R2
+!i10b 1
+!s100 `Y4Jf7llIUGPh9JOC;LdX3
+R3
+I`>=^:3dk2Ng3Sc>cQ8f821
+R4
+S1
+R0
+w1697440478
+8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv
+FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv
+!i122 2
+L0 1 30
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv|
+!i113 1
+R7
+R8
+R9
+nlista@random
 vmatriz
 R1
 R2
