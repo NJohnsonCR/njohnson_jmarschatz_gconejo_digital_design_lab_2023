@@ -1,5 +1,5 @@
 Analysis & Elaboration report for BuscaMinas
-Mon Oct 16 23:48:04 2023
+Tue Oct 17 00:49:31 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -12,10 +12,8 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   4. Parameter Settings for User Entity Instance: FSM:maquinita
   5. Analysis & Elaboration Settings
   6. Port Connectivity Checks: "FSM:maquinita"
-  7. Port Connectivity Checks: "listaRandom:random"
-  8. Port Connectivity Checks: "comparador:compBomba"
-  9. Analysis & Elaboration Messages
- 10. Analysis & Elaboration Suppressed Messages
+  7. Analysis & Elaboration Messages
+  8. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -42,7 +40,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Oct 16 23:48:04 2023       ;
+; Analysis & Elaboration Status ; Successful - Tue Oct 17 00:49:31 2023       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; BuscaMinas                                  ;
 ; Top-level Entity Name         ; BuscaMinas                                  ;
@@ -189,32 +187,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "listaRandom:random"                                                                                             ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                                                  ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; randomValue ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "comparador:compBomba"                                                                                                                                                                ;
-+---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; b       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (6 bits) it drives.  The 26 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; b[5..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-+---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Oct 16 23:47:58 2023
+    Info: Processing started: Tue Oct 17 00:49:24 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BuscaMinas -c BuscaMinas --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -231,8 +210,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file sincron
     Info (12023): Found entity 1: sincronizador_vertical File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/sincronizador_vertical.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file sincronizador_horizontal.sv
     Info (12023): Found entity 1: sincronizador_horizontal File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/sincronizador_horizontal.sv Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file listarandom_tb.sv
-    Info (12023): Found entity 1: listaRandom_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file switch_binary_encoder.sv
     Info (12023): Found entity 1: switch_binary_encoder File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/switch_binary_encoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file matriz.sv
@@ -251,7 +228,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file checkma
     Info (12023): Found entity 1: CheckMatrixValue File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file checkmatrixvalue_tb.sv
     Info (12023): Found entity 1: CheckMatrixValue_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/CheckMatrixValue_tb.sv Line: 1
-Warning (10090): Verilog HDL syntax warning at BuscaMinas.sv(82): extra block comment delimiter characters /* within block comment File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv Line: 82
+Warning (10090): Verilog HDL syntax warning at BuscaMinas.sv(72): extra block comment delimiter characters /* within block comment File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv Line: 72
 Info (12021): Found 1 design units, including 1 entities, in source file buscaminas.sv
     Info (12023): Found entity 1: BuscaMinas File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file listarandom.sv
@@ -853,22 +830,19 @@ Info (10041): Inferred latch for "matrix[7][7][8]" at matriz.sv(10) File: C:/Use
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrix" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrix" into its bus
 Info (12128): Elaborating entity "switch_cantidad_bombas" for hierarchy "switch_cantidad_bombas:switchBombas" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv Line: 26
-Info (12128): Elaborating entity "comparador" for hierarchy "comparador:compBomba" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv Line: 32
-Info (12128): Elaborating entity "listaRandom" for hierarchy "listaRandom:random" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv Line: 39
+Info (12128): Elaborating entity "listaRandom" for hierarchy "listaRandom:random" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv Line: 37
 Warning (10230): Verilog HDL assignment warning at listaRandom.sv(25): truncated value with size 32 to match size of target (16) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv Line: 25
-Info (12128): Elaborating entity "BuscarYAsignar" for hierarchy "BuscarYAsignar:buscar" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv Line: 48
-Warning (10036): Verilog HDL or VHDL warning at BuscarYAsignar.sv(11): object "flag" assigned a value but never read File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv Line: 11
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrizPrincipal" into its bus
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "resultado" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrizResultado" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrizPrincipal" into its bus
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "resultado" into its bus
-Info (12128): Elaborating entity "FSM" for hierarchy "FSM:maquinita" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv Line: 63
-Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrizResultado" into its bus
+Info (12128): Elaborating entity "FSM" for hierarchy "FSM:maquinita" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv Line: 53
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/output_files/BuscaMinas.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4792 megabytes
-    Info: Processing ended: Mon Oct 16 23:48:04 2023
-    Info: Elapsed time: 00:00:06
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4815 megabytes
+    Info: Processing ended: Tue Oct 17 00:49:31 2023
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:14
 
 

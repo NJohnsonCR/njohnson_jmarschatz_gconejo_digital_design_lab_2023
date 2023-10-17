@@ -22,14 +22,15 @@ module BuscaMinas_tb;
     // Inicialización de prueba
     initial begin
         // Establecer condiciones iniciales (reset, entrada_bombas, etc.)
+		  entrada_bombas = 6'b001000;
         reset = 1;
-        entrada_bombas = 6'b000000;
+         
         
         // Esperar un ciclo de reloj
         #5 reset = 0;
         
         // Enviar datos de prueba
-        entrada_bombas = 6'b110011;
+      
         
         // Esperar tiempo suficiente para que los módulos se ejecuten
         #100;

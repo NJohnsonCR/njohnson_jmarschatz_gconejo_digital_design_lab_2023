@@ -25,27 +25,17 @@ module BuscaMinas(
 		.cantidadBombas(cantidadBombas)
 	);
 	
-	comparador compBomba(
-	 .a(cantidadBombas),
-	 .b(0),
-    .resultado(Bomb_cantidad)
-	);
+	
 	
 	listaRandom random(
 		.entrada_bombas(cantidadBombas), 
 		.clk(clk),
 		.rst(reset), 
-		.numerosABuscar(numerosABuscar)
+		.matrizPrincipal(matrizPrincipal),
+		.matrizResultado(matrizResultante),
+		.bombas_resultado(Bomba_resultado)
 	);
 	
-	
-	BuscarYAsignar buscar(
-	  .numerosABuscar(numerosABuscar),
-	  .clk(clk), 
-	  .rst(reset),
-	  .matrizPrincipal(matrizPrincipal), 
-	  .resultado(matrizResultante)
-	);
 	
 	FSM maquinita(
 		.clk(clk),

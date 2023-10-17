@@ -11,24 +11,24 @@ cModel Technology
 Z0 dC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/simulation/modelsim
 vBuscaMinas
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1697521968
+Z2 !s110 1697525474
 !i10b 1
-!s100 WUWLcFoZV5BHNfoTGEUla0
+!s100 I3[=7n:8Zm0OeFzF=BQ>>2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IE]GN=G6;2GX]F8;5DJ:@j3
+IW0A8GVJ2C99iddU<_^XlH1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1697521554
+w1697523930
 8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv
 FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv
-!i122 3
-L0 1 85
+!i122 2
+L0 1 75
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1697521968.000000
+Z6 !s108 1697525474.000000
 !s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv|
 !i113 1
@@ -40,17 +40,17 @@ vBuscaMinas_tb
 R1
 R2
 !i10b 1
-!s100 b9@H`HBcPzNLL;9[dPG0Z2
+!s100 kX3ZLObNm]SfAXJBMS:262
 R3
-IY7mW`_jBLblMiOX]o3blP2
+In1XWVPiE1Ml7eWOh;[b@T2
 R4
 S1
 R0
-Z10 w1697520048
+w1697525361
 8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv
 FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv
-!i122 7
-L0 1 40
+!i122 5
+L0 1 41
 R5
 r1
 !s85 0
@@ -63,62 +63,9 @@ R7
 R8
 R9
 n@busca@minas_tb
-vBuscarYAsignar
-R1
-R2
-!i10b 1
-!s100 `k4M5_^_[O]@47=hK_5233
-R3
-I?CnThb8hNFBLCBaYKCfD[3
-R4
-S1
-R0
-R10
-8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv
-FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv
-!i122 1
-L0 1 44
-R5
-r1
-!s85 0
-31
-Z11 !s108 1697521967.000000
-!s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscarYAsignar.sv|
-!i113 1
-R7
-R8
-R9
-n@buscar@y@asignar
-vcomparador
-R1
-R2
-!i10b 1
-!s100 edc;Jc[<^YJKQkUA2BU8z3
-R3
-I;ZETbne@c=5bVm>l8_0g]0
-R4
-S1
-R0
-w1697521955
-8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/comparador.sv
-FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/comparador.sv
-!i122 6
-L0 2 17
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/comparador.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/comparador.sv|
-!i113 1
-R7
-R8
-R9
 vFSM
 R1
-R2
+Z10 !s110 1697525473
 !i10b 1
 !s100 [e83bjI@We0J5ga4da>db2
 R3
@@ -129,13 +76,13 @@ R0
 w1697521875
 8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/FSM.sv
 FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/FSM.sv
-!i122 2
+!i122 1
 L0 1 59
 R5
 r1
 !s85 0
 31
-R6
+Z11 !s108 1697525473.000000
 !s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/FSM.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/FSM.sv|
 !i113 1
@@ -147,17 +94,17 @@ vlistaRandom
 R1
 R2
 !i10b 1
-!s100 H<OgGDO76TeGIh;2EdX0=0
+!s100 iSDYJC5gzInXiN<QAeg;^2
 R3
-I@9ah5^Vo3EBHf;BRBhd2n1
+IHb9kKj1?^H3F]D1dkC3Y<2
 R4
 S1
 R0
-R10
+w1697525458
 8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv
 FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv
-!i122 4
-L0 1 35
+!i122 3
+L0 1 61
 R5
 r1
 !s85 0
@@ -172,7 +119,7 @@ R9
 nlista@random
 vmatriz
 R1
-!s110 1697521967
+R10
 !i10b 1
 !s100 ;_]7dnjW]>ePNiMVP:6Ej0
 R3
@@ -209,7 +156,7 @@ R0
 w1697521677
 8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/switch_cantidad_bombas.sv
 FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/switch_cantidad_bombas.sv
-!i122 5
+!i122 4
 L0 1 21
 R5
 r1
