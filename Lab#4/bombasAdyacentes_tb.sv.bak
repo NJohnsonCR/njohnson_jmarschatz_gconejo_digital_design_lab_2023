@@ -1,0 +1,37 @@
+module bombasAdyacentes_tb;
+    reg [9:0] matrizEntrada [7:0][7:0];
+    reg [9:0] matrizResultante [7:0][7:0];
+
+    // Instancia del módulo bajo prueba
+    bombasAdyacentes uut (
+        .matrizEntrada(matrizEntrada),
+        .matrizResultante(matrizResultante)
+    );
+
+    // Inicialización de la matriz de prueba
+    initial begin
+        // Definir una matriz de prueba con ceros y unos
+        matrizEntrada[0][0] = 1;
+        matrizEntrada[1][1] = 1;
+        matrizEntrada[2][2] = 1;
+        matrizEntrada[3][3] = 1;
+        matrizEntrada[4][4] = 1;
+        matrizEntrada[5][5] = 1;
+        matrizEntrada[6][6] = 1;
+        matrizEntrada[7][7] = 1;
+
+        // Esperar un tiempo para que la copia se complete
+        #1;
+
+        // Mostrar valores de matrizResultante
+        $display("Valores de matrizResultante:");
+        for (int i = 0; i < 8; i++) begin
+            for (int j = 0; j < 8; j++) begin
+                $display("[%0d][%0d] = %0d", i, j, matrizResultante[i][j]);
+            end
+        end
+
+        // Terminar simulación
+        $finish;
+    end
+endmodule

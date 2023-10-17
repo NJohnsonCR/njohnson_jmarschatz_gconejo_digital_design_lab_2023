@@ -1,6 +1,6 @@
 module BuscaMinas_tb();
     reg clk, reset;
-    reg [9:0] matrizResultante [7:0][7:0];
+    reg [8:0] matrizResultante [7:0][7:0];
 	 reg [5:0] numerosABuscar [63:0];
 	 reg [5:0] entrada_bombas;
     
@@ -16,22 +16,23 @@ module BuscaMinas_tb();
 	 always #5 clk = ~clk;
 		initial begin
         clk = 0;
-        reset = 0;
+        reset = 1;
 		  
-		  entrada_bombas = 6'b111111;
+		  entrada_bombas = 6'b001111;
         
         // Espera un poco antes de aplicar el reset
-        #10 reset = 1;
         #10 reset = 0;
-		  
-        
-        // Mostrar matriz resultante
-        /*$display("Matriz Resultante:");
+		 
+		  /*
+		  $display("Valores de matrizResultante:");
         for (int i = 0; i < 8; i++) begin
             for (int j = 0; j < 8; j++) begin
-                $display("[%0d][%0d] = %b", i, j, matrizResultante[i][j]);
+                $display("[%0d][%0d] = %0b", i, j, matrizResultante[i][j]);
             end
-        end*/
+  
+        end
+		  */
+		  
 		  #1000 $finish;
     end
 endmodule
