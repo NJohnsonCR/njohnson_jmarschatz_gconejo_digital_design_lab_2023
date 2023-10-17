@@ -1,12 +1,12 @@
 |BuscaMinas
 clk => clk.IN1
-reset => reset.IN1
-entrada_bombas[0] => listaRandom:random.entrada_bombas[0]
-entrada_bombas[1] => listaRandom:random.entrada_bombas[1]
-entrada_bombas[2] => listaRandom:random.entrada_bombas[2]
-entrada_bombas[3] => listaRandom:random.entrada_bombas[3]
-entrada_bombas[4] => listaRandom:random.entrada_bombas[4]
-entrada_bombas[5] => listaRandom:random.entrada_bombas[5]
+reset => reset.IN2
+entrada_bombas[0] => entrada_bombas[0].IN1
+entrada_bombas[1] => entrada_bombas[1].IN1
+entrada_bombas[2] => entrada_bombas[2].IN1
+entrada_bombas[3] => entrada_bombas[3].IN1
+entrada_bombas[4] => entrada_bombas[4].IN1
+entrada_bombas[5] => entrada_bombas[5].IN1
 matrizResultante[0][0][0] <= BuscarYAsignar:buscar.resultado[0][0][0]
 matrizResultante[0][0][1] <= BuscarYAsignar:buscar.resultado[0][0][1]
 matrizResultante[0][0][2] <= BuscarYAsignar:buscar.resultado[0][0][2]
@@ -1163,6 +1163,49 @@ matrix[7][7][5] <= <GND>
 matrix[7][7][6] <= <GND>
 matrix[7][7][7] <= <GND>
 matrix[7][7][8] <= <GND>
+
+
+|BuscaMinas|switch_cantidad_bombas:switchBombas
+entrada[0] => cantidadBombas.DATAA
+entrada[0] => Equal0.IN31
+entrada[1] => cantidadBombas.DATAA
+entrada[1] => Equal0.IN30
+entrada[2] => cantidadBombas.DATAA
+entrada[2] => Equal0.IN29
+entrada[3] => cantidadBombas.DATAA
+entrada[3] => Equal0.IN28
+entrada[4] => cantidadBombas.DATAA
+entrada[4] => Equal0.IN27
+entrada[5] => cantidadBombas.DATAA
+entrada[5] => Equal0.IN26
+rst => cantidadBombas.OUTPUTSELECT
+rst => cantidadBombas.OUTPUTSELECT
+rst => cantidadBombas.OUTPUTSELECT
+rst => cantidadBombas.OUTPUTSELECT
+rst => cantidadBombas.OUTPUTSELECT
+rst => cantidadBombas.OUTPUTSELECT
+cantidadBombas[0] <= cantidadBombas.DB_MAX_OUTPUT_PORT_TYPE
+cantidadBombas[1] <= cantidadBombas.DB_MAX_OUTPUT_PORT_TYPE
+cantidadBombas[2] <= cantidadBombas.DB_MAX_OUTPUT_PORT_TYPE
+cantidadBombas[3] <= cantidadBombas.DB_MAX_OUTPUT_PORT_TYPE
+cantidadBombas[4] <= cantidadBombas.DB_MAX_OUTPUT_PORT_TYPE
+cantidadBombas[5] <= cantidadBombas.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BuscaMinas|comparador:compBomba
+a[0] => LessThan0.IN6
+a[1] => LessThan0.IN5
+a[2] => LessThan0.IN4
+a[3] => LessThan0.IN3
+a[4] => LessThan0.IN2
+a[5] => LessThan0.IN1
+b[0] => LessThan0.IN12
+b[1] => LessThan0.IN11
+b[2] => LessThan0.IN10
+b[3] => LessThan0.IN9
+b[4] => LessThan0.IN8
+b[5] => LessThan0.IN7
+resultado <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |BuscaMinas|listaRandom:random

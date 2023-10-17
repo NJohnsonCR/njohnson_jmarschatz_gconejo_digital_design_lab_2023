@@ -6,7 +6,7 @@ module BuscaMinas(
 	);
 
 	reg  [8:0] matrizPrincipal[7:0][7:0];
-	reg  [5:0] salida;
+	reg  [5:0] cantidadBombas;
 	reg  [5:0] numerosABuscar [63:0];
 	wire enableBuscar;
 	
@@ -19,15 +19,20 @@ module BuscaMinas(
 		  .matrix(matrizPrincipal)
 	);
 	
-	/*switch_binary_encoder switchBombas(
+	switch_cantidad_bombas switchBombas(
 		.entrada(entrada_bombas),
 		.rst(reset),
-		.salida(salida)
-	);*/
+		.cantidadBombas(cantidadBombas)
+	);
 	
+	comparador compBomba(
+	 .a(cantidadBombas),
+	 .b(0),
+    .resultado(Bomb_cantidad)
+	);
 	
 	listaRandom random(
-		.entrada_bombas(entrada_bombas), 
+		.entrada_bombas(cantidadBombas), 
 		.clk(clk),
 		.rst(reset), 
 		.numerosABuscar(numerosABuscar)
@@ -57,11 +62,7 @@ module BuscaMinas(
 		.mp(Estado_bomba)
 	);
 	
-	/*comparador compBomba(
-	 .a(entrada_bombas),
-	 .b(0),
-    .resultado(Bomb_cantidad)
-	);*/
+	
 
 /*	
 	bombasAdyacentes bombasAdyancentes(

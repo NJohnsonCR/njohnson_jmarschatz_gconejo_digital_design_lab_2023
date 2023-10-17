@@ -199,7 +199,7 @@ logic [9:0] Matriz [0:7][0:7] = '{
                     V_horizontal >= (j * ANCHO_CELDA + 144) && V_horizontal < ((j+1) * ANCHO_CELDA + 144)) begin
 						  if (i ==  j) begin
                                 red <= 8'h00;
-                                green <= 8'00;
+                                green <= 8'h00;
                                 blue <= 8'hFF;
                             end else begin
                                 red <= 8'h00;
