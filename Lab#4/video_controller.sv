@@ -63,7 +63,11 @@ logic [9:0] Matriz [0:7][0:7] = '{
 
 
     always begin
+		//if(juego)
         draw_game_screen();
+		  /*if (win)  draw_win_screen();
+		  else
+		  draw_lose_screen();*/
     end
 
 	 
@@ -188,9 +192,41 @@ logic [9:0] Matriz [0:7][0:7] = '{
 		  end
 	endtask
 	 
-	/* task draw_win_screen;
+	 task draw_win_screen;
+	 for (int i = 0; i < FILAS; i = i + 1) begin
+            for (int j = 0; j < COLUMNAS; j = j + 1) begin
+                if (V_vertical >= (i * ALTO_CELDA + 35) && V_vertical < ((i+1) * ALTO_CELDA + 35) &&
+                    V_horizontal >= (j * ANCHO_CELDA + 144) && V_horizontal < ((j+1) * ANCHO_CELDA + 144)) begin
+						  if (i ==  j) begin
+                                red <= 8'h00;
+                                green <= 8'00;
+                                blue <= 8'hFF;
+                            end else begin
+                                red <= 8'h00;
+                                green <= 8'h00;
+                                blue <= 8'h00;
+                            end
+						  end
+						  end
+						  end
 	 endtask
 	 
 	 task draw_lose_screen;
-	 endtask*/
+	 for (int i = 0; i < FILAS; i = i + 1) begin
+            for (int j = 0; j < COLUMNAS; j = j + 1) begin
+                if (V_vertical >= (i * ALTO_CELDA + 35) && V_vertical < ((i+1) * ALTO_CELDA + 35) &&
+                    V_horizontal >= (j * ANCHO_CELDA + 144) && V_horizontal < ((j+1) * ANCHO_CELDA + 144)) begin
+						  if ((i + j) % 2 == 0) begin
+                                red <= 8'hFF;
+                                green <= 8'hFF;
+                                blue <= 8'h00;
+                            end else begin
+                                red <= 8'hFF;
+                                green <= 8'hFF;
+                                blue <= 8'hFF;
+                            end
+						  end
+						  end
+						  end
+	 endtask
 endmodule
