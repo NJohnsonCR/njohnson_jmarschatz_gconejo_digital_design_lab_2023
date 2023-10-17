@@ -48,7 +48,7 @@ module video_controller #(
     // Asignar colores a la cuadrícula o al fondo
 
 logic [9:0] Matriz [0:7][0:7] = '{
-    '{3'h000,3'h001,3'h004,3'h005,3'h008,3'h002,3'h002,3'h002},
+    '{3'h000,3'h001,3'h004,3'h006,3'h008,3'h002,3'h002,3'h002},
     '{3'h010,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002},
     '{3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002},
     '{3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002},
@@ -57,9 +57,6 @@ logic [9:0] Matriz [0:7][0:7] = '{
     '{3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002},
     '{3'h1f0,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002}
 };
-
-
-
 
 
 
@@ -85,15 +82,15 @@ logic [9:0] Matriz [0:7][0:7] = '{
                 if (V_vertical >= (i * ALTO_CELDA + 35) && V_vertical < ((i+1) * ALTO_CELDA + 35) &&
                     V_horizontal >= (j * ANCHO_CELDA + 144) && V_horizontal < ((j+1) * ANCHO_CELDA + 144)) begin
 					
-					if(!Matriz[i][j] [0])begin //casilla vacia
+					if(Matriz[i][j] ==0)begin //casilla vacia
 							red <= 8'h5C;
 							green <= 8'h40;
 							blue <= 8'h33;
 					end
-					if(Matriz[i][j] [0])begin //casilla seleccionada
-							red <= 8'h00;
+					else if(Matriz[i][j] [0])begin //casilla seleccionada
+							red <= 8'hFF;
 							green <= 8'hFF;
-							blue <= 8'hFF;
+							blue <= 8'h00;
 					end
 					else if(Matriz[i][j] [1]) begin //casilla zacate
 						if ((i + j) % 2 == 0) begin
@@ -111,7 +108,7 @@ logic [9:0] Matriz [0:7][0:7] = '{
 						green <= 8'h00;
 						blue<= 8'h00;
 						end
-					else if(Matriz[i][j] [2:1]==3) begin//casilla bomba oculta
+					else if(Matriz[i][j] [2]&& Matriz[i][j] [1]) begin//casilla bomba oculta
 						if ((i + j) % 2 == 0) begin
                                 red <= 8'h00;
                                 green <= 8'hFF;
@@ -122,7 +119,7 @@ logic [9:0] Matriz [0:7][0:7] = '{
                                 blue <= 8'h00;
                             end
 					end
-					else if(Matriz[i][j] [2:1]==3) begin//casilla bomba bandera
+					else if(Matriz[i][j] [3]) begin//casilla bomba bandera
 						red <= 8'h00;
 						green <= 8'h00;
 						blue<= 8'hFF;
