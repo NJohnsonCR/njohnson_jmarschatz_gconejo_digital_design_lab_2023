@@ -110,6 +110,7 @@ logic [9:0] Matriz [0:7][0:7] = '{
 						red <= 8'hFF;
 						green <= 8'h00;
 						blue<= 8'h00;
+						end
 					else if(Matriz[i][j] [2:1]==3) begin//casilla bomba oculta
 						if ((i + j) % 2 == 0) begin
                                 red <= 8'h00;
@@ -187,6 +188,7 @@ logic [9:0] Matriz [0:7][0:7] = '{
 				end
             end
         end
+		  
 	endtask
 	 
 	/* task draw_win_screen;
