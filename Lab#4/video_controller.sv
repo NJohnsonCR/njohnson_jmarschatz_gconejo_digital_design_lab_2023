@@ -185,7 +185,7 @@ logic [9:0] Matriz [0:7][0:7] = '{
 				end
             end
         end
-		  
+		  end
 	endtask
 	 
 	/* task draw_win_screen;

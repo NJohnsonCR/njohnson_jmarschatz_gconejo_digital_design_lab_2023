@@ -2,9 +2,7 @@ module BuscarYAsignar (
   input reg [5:0] numerosABuscar [63:0], // Una lista de números a buscar
   input wire clk, 
   input wire rst,
-  
   input reg [8:0] matrizPrincipal [7:0][7:0], // Matriz de 8x8 (por ejemplo)
-  input 
   output reg [8:0] resultado [7:0][7:0] // Matriz de resultados con 1 en el espacio correspondiente
 );
   

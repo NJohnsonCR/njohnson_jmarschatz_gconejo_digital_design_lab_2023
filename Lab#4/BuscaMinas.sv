@@ -19,19 +19,18 @@ module BuscaMinas(
 		  .matrix(matrizPrincipal)
 	);
 	
-	switch_binary_encoder switchBombas(
+	/*switch_binary_encoder switchBombas(
 		.entrada(entrada_bombas),
 		.rst(reset),
 		.salida(salida)
-	);
+	);*/
 	
 	
 	listaRandom random(
 		.entrada_bombas(entrada_bombas), 
 		.clk(clk),
 		.rst(reset), 
-		.numerosABuscar(numerosABuscar),
-		.enableBuscar(enableBuscar)
+		.numerosABuscar(numerosABuscar)
 	);
 	
 	
@@ -42,17 +41,13 @@ module BuscaMinas(
 	  .matrizPrincipal(matrizPrincipal), 
 	  .resultado(matrizResultante)
 	);
-	/*
-
-	/*
-
 	
-		FSM maquinita(
+	FSM maquinita(
 		.clk(clk),
 		.rst(reset),
 		.Bomb_cantidad(Bomb_cantidad),
 		.Bomba_resultado(Bomba_resultado),
-		.seleccion(selección),
+		.seleccion(seleccion),
 		.Bandera(Bandera),
 		.Numero_bomba(Numero_bomba),
 		.casilla(casilla),
@@ -62,11 +57,11 @@ module BuscaMinas(
 		.mp(Estado_bomba)
 	);
 	
-	comparador compBomba(
+	/*comparador compBomba(
 	 .a(entrada_bombas),
 	 .b(0),
     .resultado(Bomb_cantidad)
-	);
+	);*/
 
 /*	
 	bombasAdyacentes bombasAdyancentes(

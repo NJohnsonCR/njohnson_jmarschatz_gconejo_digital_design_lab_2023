@@ -3,15 +3,13 @@ module listaRandom(
     input wire clk,
     input reg [5:0] entrada_bombas,
     output reg [5:0] randomValue, // Valor aleatorio de 6 bits (0-63)
-    output reg [5:0] numerosABuscar [63:0],
-	 output wire enableBuscar
+    output reg [5:0] numerosABuscar [63:0]
 );
 
   reg [15:0] state;   
   reg flag;
   initial begin 
 		flag = 1'b0;
-		enableBuscar = 1'b0;
 //		lfsr = 6'b111111; // Valor inicial arbitrario
 	  end
   always @(posedge clk) begin
@@ -34,5 +32,4 @@ module listaRandom(
 		flag = 1'b1;
 	 end
   end 
-  assign enableBuscar = 1'b1;
 endmodule

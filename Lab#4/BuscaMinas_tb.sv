@@ -1,38 +1,40 @@
-module BuscaMinas_tb();
-    reg clk, reset;
+module BuscaMinas_tb;
+
+    // Definición de señales de prueba
+    reg clk = 0;
+    reg reset = 0;
+    reg [5:0] entrada_bombas;
     reg [8:0] matrizResultante [7:0][7:0];
-	 reg [5:0] numerosABuscar [63:0];
-	 reg [5:0] entrada_bombas;
     
-    // Instancia del módulo bajo prueba
+    // Conexión con el módulo BuscaMinas
     BuscaMinas uut (
         .clk(clk),
         .reset(reset),
-		  .entrada_bombas(entrada_bombas),
+        .entrada_bombas(entrada_bombas),
         .matrizResultante(matrizResultante)
     );
-    
-    // Generación de señales de prueba
-	 always #5 clk = ~clk;
-		initial begin
-        clk = 0;
-        reset = 1;
-		  
-		  entrada_bombas = 6'b001111;
-        
-        // Espera un poco antes de aplicar el reset
-        #10 reset = 0;
-		 
-		  /*
-		  $display("Valores de matrizResultante:");
-        for (int i = 0; i < 8; i++) begin
-            for (int j = 0; j < 8; j++) begin
-                $display("[%0d][%0d] = %0b", i, j, matrizResultante[i][j]);
-            end
-  
-        end
-		  */
-		  
-		  #1000 $finish;
+
+    // Generación de reloj
+    always begin
+        #5 clk = ~clk;
     end
+
+    // Inicialización de prueba
+    initial begin
+        // Establecer condiciones iniciales (reset, entrada_bombas, etc.)
+        reset = 1;
+        entrada_bombas = 6'b000000;
+        
+        // Esperar un ciclo de reloj
+        #5 reset = 0;
+        
+        // Enviar datos de prueba
+        entrada_bombas = 6'b110011;
+        
+        // Esperar tiempo suficiente para que los módulos se ejecuten
+        #100;
+		  
+		  $finish; 
+    end
+
 endmodule
