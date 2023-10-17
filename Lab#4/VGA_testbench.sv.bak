@@ -1,0 +1,42 @@
+module VGA_testbench;
+
+  // Definición de señales
+  reg clk,reset;          // Señal de reloj
+  wire vgaclk,hsync, vsync,sync_b, blank_b;      // Salida de datos
+  wire [7:0] r, g, b;
+
+  // Instanciar el módulo bajo prueba
+  video_controller UUT (
+
+    .clk(clk),
+    .h_sync(hsync),
+    .v_sync(vsync),
+    .red(r),
+    .green(g),
+    .blue(b),
+    .clk_25MHz(vgaclk),
+    .sync_n(sync_b),
+    .blank_n(blank_b)
+  );
+
+  // Generador de reloj
+	always #5 clk=~clk;
+
+  // Inicialización
+  initial begin
+        clk=0;
+		//aplicar reset
+        reset=0;
+        repeat (2) begin
+            @(posedge clk);
+          reset=1;
+        end
+        reset=0;
+		//reset aplicado
+    end
+	 
+	 initial begin
+     #3500   $finish;
+  end
+
+endmodule

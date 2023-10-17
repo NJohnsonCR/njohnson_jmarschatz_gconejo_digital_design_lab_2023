@@ -1,8 +1,8 @@
 module video_controller #(
-    parameter WIDTH = 640,
-    parameter HEIGHT = 480,
-    parameter ROWS = 8,
-    parameter COLS = 8
+    parameter ANCHO = 640,
+    parameter ALTO = 480,
+    parameter FILAS = 8,
+    parameter COLUMNAS = 8
 )
 (
     input logic clk,
@@ -17,8 +17,8 @@ module video_controller #(
 );
 
     // Dimensiones de las celdas
-    localparam CELL_WIDTH = WIDTH / COLS;
-    localparam CELL_HEIGHT = HEIGHT / ROWS;
+    localparam ANCHO_CELDA = ANCHO / COLUMNAS;
+    localparam ALTO_CELDA = ALTO / FILAS;
     localparam BOMB_R = 8'b00000000;
     localparam BOMB_G = 8'b00000000;
     localparam BOMB_B = 8'b00000000;
@@ -27,11 +27,11 @@ module video_controller #(
     logic enable;
     logic [15:0] V_horizontal;
     logic [15:0] V_vertical;
-
-    // Clock divider
+		wire txt_num =1;
+    // pll
     VGA_pll vga_clock_gen(clk, clk_25MHz);
 
-    // Contadores
+    // contadores pata sincronizadores
     sincronizador_horizontal vga_h (clk_25MHz, enable, V_horizontal);
     sincronizador_vertical vga_v (clk_25MHz, enable, V_vertical);
 
@@ -47,39 +47,19 @@ module video_controller #(
 
     // Asignar colores a la cuadrícula o al fondo
 
-logic [1:0] grid [0:7][0:7] = '{
-    '{2'b00,2'b00,2'b00,2'b00,2'b11,2'b00,2'b00,2'b00},
-    '{2'b00,2'b00,2'b11,2'b00,2'b11,2'b00,2'b00,2'b00},
-    '{2'b10,2'b00,2'b11,2'b11,2'b00,2'b00,2'b01,2'b00},
-    '{2'b00,2'b00,2'b00,2'b00,2'b00,2'b00,2'b00,2'b00},
-    '{2'b00,2'b11,2'b00,2'b00,2'b10,2'b00,2'b00,2'b00},
-    '{2'b00,2'b00,2'b00,2'b00,2'b10,2'b00,2'b00,2'b00},
-    '{2'b00,2'b00,2'b00,2'b10,2'b10,2'b00,2'b00,2'b00},
-    '{2'b11,2'b00,2'b00,2'b10,2'b10,2'b00,2'b00,2'b01}
+logic [9:0] Matriz [0:7][0:7] = '{
+    '{3'h000,3'h001,3'h004,3'h005,3'h008,3'h002,3'h002,3'h002},
+    '{3'h010,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002},
+    '{3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002},
+    '{3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002},
+    '{3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002},
+    '{3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002},
+    '{3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002},
+    '{3'h1f0,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002,3'h002}
 };
 
 
-logic [1:0] gridGameWin [0:7][0:7] = '{
-    '{2'b00,2'b11,2'b00,2'b11,2'b00,2'b11,2'b11,2'b11},
-    '{2'b11,2'b00,2'b11,2'b00,2'b11,2'b11,2'b11,2'b11},
-    '{2'b11,2'b11,2'b11,2'b11,2'b11,2'b11,2'b11,2'b11},
-    '{2'b11,2'b11,2'b00,2'b11,2'b11,2'b11,2'b11,2'b11},
-    '{2'b11,2'b11,2'b00,2'b11,2'b11,2'b11,2'b11,2'b11},
-    '{2'b11,2'b11,2'b11,2'b11,2'b11,2'b11,2'b11,2'b11},
-    '{2'b00,2'b00,2'b11,2'b00,2'b11,2'b11,2'b11,2'b11},
-    '{2'b00,2'b11,2'b00,2'b00,2'b11,2'b11,2'b11,2'b11}
-};
 
-logic [1:0] gridGameOver [0:7][0:7] = '{
-    '{2'b11,2'b11,2'b11,2'b11,2'b11,2'b11,2'b11,2'b11},
-    '{2'b00,2'b00,2'b00,2'b00,2'b11,2'b00,2'b00,2'b00},
-    '{2'b00,2'b11,2'b11,2'b11,2'b11,2'b00,2'b11,2'b00},
-    '{2'b00,2'b11,2'b00,2'b00,2'b11,2'b00,2'b11,2'b00},
-    '{2'b00,2'b11,2'b11,2'b00,2'b11,2'b00,2'b11,2'b00},
-    '{2'b00,2'b00,2'b00,2'b00,2'b11,2'b00,2'b00,2'b00},
-    '{2'b11,2'b11,2'b11,2'b11,2'b11,2'b11,2'b11,2'b11},
-    '{2'b11,2'b11,2'b11,2'b11,2'b11,2'b11,2'b11,2'b11}
-};
 
 
 
@@ -90,47 +70,128 @@ logic [1:0] gridGameOver [0:7][0:7] = '{
     end
 
 	 
-//00 --0 grid (gris y blanco)
-//01 --1 casilla marcada (azul)
-//10 --2 casilla seleccionada (rojo)
-//11 --3 bomba (negro)
+//0 0000 0000 --0 casilla vacia (cafe)
+//0 0000 0001 --0 casilla selecconada (amarillo)
+//0 0000 0010 --0 casilla zacate (verde y otro verde)
+//0 0000 0100 || 0 0000 0110 || 0 0000 1000 --0 casilla bomba abierta, cerrada y bandera respectivamente (roja)(verde y otro verde)(azul)
+//0 0000 1000 --0 casilla bandera (azul)
+// >> 0 0001 0000  --0 casilla bomba adyacente con numero este caso 0 (cafe numero blanco)
+//1 1111 0000 --0 casilla bomba adyacente con cantidad de bombas este caso 8 (cafe numero blanco)
+
 
     task draw_game_screen;
-        for (int i = 0; i < ROWS; i = i + 1) begin
-            for (int j = 0; j < COLS; j = j + 1) begin
-                if (V_vertical >= (i * CELL_HEIGHT + 35) && V_vertical < ((i+1) * CELL_HEIGHT + 35) &&
-                    V_horizontal >= (j * CELL_WIDTH + 144) && V_horizontal < ((j+1) * CELL_WIDTH + 144)) begin
-
-                    case(grid[i][j])
-                        0: begin  // Casilla no vacía (bomba)
-                            if ((i + j) % 2 == 0) begin
-                                red <= 8'b11111111;
-                                green <= 8'b11111111;
-                                blue <= 8'b11111111;
+        for (int i = 0; i < FILAS; i = i + 1) begin
+            for (int j = 0; j < COLUMNAS; j = j + 1) begin
+                if (V_vertical >= (i * ALTO_CELDA + 35) && V_vertical < ((i+1) * ALTO_CELDA + 35) &&
+                    V_horizontal >= (j * ANCHO_CELDA + 144) && V_horizontal < ((j+1) * ANCHO_CELDA + 144)) begin
+					
+					if(!Matriz[i][j] [0])begin //casilla vacia
+							red <= 8'h5C;
+							green <= 8'h40;
+							blue <= 8'h33;
+					end
+					if(Matriz[i][j] [0])begin //casilla seleccionada
+							red <= 8'h00;
+							green <= 8'hFF;
+							blue <= 8'hFF;
+					end
+					else if(Matriz[i][j] [1]) begin //casilla zacate
+						if ((i + j) % 2 == 0) begin
+							red <= 8'h00;
+							green <= 8'hFF;
+							blue <= 8'h00;
+						end else begin
+							red <= 8'h00;
+							green <= 8'hBA;
+							blue <= 8'h00;
+						end
+					end
+					else if(Matriz[i][j] [2]) begin //casilla bomba
+						red <= 8'hFF;
+						green <= 8'h00;
+						blue<= 8'h00;
+					else if(Matriz[i][j] [2:1]==3) begin//casilla bomba oculta
+						if ((i + j) % 2 == 0) begin
+                                red <= 8'h00;
+                                green <= 8'hFF;
+                                blue <= 8'h00;
                             end else begin
-                                red <= 8'b10101010;
-                                green <= 8'b10101010;
-                                blue <= 8'b10101010;
+                                red <= 8'h00;
+                                green <= 8'hBA;
+                                blue <= 8'h00;
                             end
-                        end
-								1: begin
-											red <= 8'b00000000;
-											green <= 8'b10101010;
-											blue <= 8'b10101010;
-									end
-								2: begin
-											red <= 8'b11111111;
-											green <= 8'b00000000;
-											blue <= 8'b00000000;
-									end
-								3: begin
-											red <= 8'b00000000;
-											green <= 8'b00000000;
-											blue <= 8'b00000000;
-									end
-                    endcase
-                end
+					end
+					else if(Matriz[i][j] [2:1]==3) begin//casilla bomba bandera
+						red <= 8'h00;
+						green <= 8'h00;
+						blue<= 8'hFF;
+					end
+					else if(Matriz[i][j]>=16) begin// casilla adyacente
+					case(Matriz[i][j] [9:6])
+						0:begin
+							red <= (txt_num ) ? 8'h5C:8'hFF;
+							green <= (txt_num ) ? 8'h40:8'hFF;
+							blue<= (txt_num ) ? 8'h33:8'hFF;
+						end
+						1:begin
+							red <= (txt_num ) ? 8'h5C:8'hFF;
+							green <= (txt_num ) ? 8'h40:8'hFF;
+							blue<= (txt_num ) ? 8'h33:8'hFF;
+						end
+						2:begin
+							red <= (txt_num ) ? 8'h5C:8'hFF;
+							green <= (txt_num ) ? 8'h40:8'hFF;
+							blue<= (txt_num ) ? 8'h33:8'hFF;
+						end
+						3:begin
+							red <= (txt_num ) ? 8'h5C:8'hFF;
+							green <= (txt_num ) ? 8'h40:8'hFF;
+							blue<= (txt_num ) ? 8'h33:8'hFF; 	
+						end
+						4:begin 
+							red <= (txt_num ) ? 8'h5C:8'hFF;
+							green <= (txt_num ) ? 8'h40:8'hFF;
+							blue<= (txt_num ) ? 8'h33:8'hFF; 
+						end
+						5:begin 
+							red <= (txt_num ) ? 8'h5C:8'hFF;
+							green <= (txt_num ) ? 8'h40:8'hFF;
+							blue<= (txt_num ) ? 8'h33:8'hFF; 
+						end
+						6:begin 
+							red <= (txt_num ) ? 8'h5C:8'hFF;
+							green <= (txt_num ) ? 8'h40:8'hFF;
+							blue<= (txt_num ) ? 8'h33:8'hFF; 
+						end
+						7:begin 
+							red <= (txt_num ) ? 8'h5C:8'hFF;
+							green <= (txt_num ) ? 8'h40:8'hFF;
+							blue<= (txt_num ) ? 8'h33:8'hFF; 
+						end
+						8:begin 
+							red <= (txt_num ) ? 8'h5C:8'hFF;
+							green <= (txt_num ) ? 8'h40:8'hFF;
+							blue<= (txt_num ) ? 8'h33:8'hFF; 
+						end
+						9:begin 
+							red <= (txt_num ) ? 8'h5C:8'hFF;
+							green <= (txt_num ) ? 8'h40:8'hFF;
+							blue<= (txt_num ) ? 8'h33:8'hFF; 
+						end
+						default:begin 
+							red <=  8'h5C;
+							green <=  8'h40;
+							blue<=  8'h33; 	
+						end
+					endcase
+				end
             end
         end
-    endtask
+	endtask
+	 
+	/* task draw_win_screen;
+	 endtask
+	 
+	 task draw_lose_screen;
+	 endtask*/
 endmodule
