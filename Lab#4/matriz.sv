@@ -11,7 +11,7 @@ module matriz (
             // Inicialización de la matriz en el flanco de reset
             for (int i = 0; i < 8; i = i + 1) begin
               for (int j = 0; j < 8; j = j + 1) begin
-                 matrix[i][j] <= 9'b000000000; // Inicializar todos los elementos a 0
+                 matrix[i][j] <= 9'b000000010; // Inicializar todos los elementos a 0
               end
             end
 				

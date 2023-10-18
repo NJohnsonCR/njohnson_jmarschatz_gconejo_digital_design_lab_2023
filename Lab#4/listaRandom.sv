@@ -44,7 +44,7 @@ module listaRandom(
 			$display("Posiciones generadas  [%d][%d]", fila, columna);
 
 		  
-			matrizResultado[fila][columna][6] = 1'b1; 
+			matrizResultado[fila][columna][2] = 1'b1; 
 
 			$display("lista  %b ", matrizResultado[fila][columna]);
 				

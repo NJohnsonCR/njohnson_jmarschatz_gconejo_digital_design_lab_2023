@@ -1,0 +1,47 @@
+
+module seg7(
+		input reg [5:0] entrada_bombas,
+		output reg [7:0] siete_seg0,
+		output reg [7:0] siete_seg1
+);
+  
+  output reg [7:0] siete_seg0;
+  output reg [7:0] siete_seg1;
+  
+  always @ (entrada_bombas) begin
+    
+    case (bcd_in[3:0])
+      
+      0:		seg0 = 7'b0111111;
+      1:		seg0 = 7'b0000110;
+      2:		seg0 = 7'b1011011;
+      3:		seg0 = 7'b1001111;
+      4:		seg0 = 7'b1100110;
+      5:		seg0 = 7'b1101101;
+      6:		seg0 = 7'b1111101;
+      7:		seg0 = 7'b0000111;
+      8:		seg0 = 7'b1111111;
+      9:		seg0 = 7'b1100111;
+      default:	seg0 = 7'b0111111;
+      
+    endcase
+    
+    case (bcd_in[7:4])
+      
+      0:		seg1 = 7'b0111111;
+      1:		seg1 = 7'b0000110;
+      2:		seg1 = 7'b1011011;
+      3:		seg1 = 7'b1001111;
+      4:		seg1 = 7'b1100110;
+      5:		seg1 = 7'b1101101;
+      6:		seg1 = 7'b1111101;
+      7:		seg1 = 7'b0000111;
+      8:		seg1 = 7'b1111111;
+      9:		seg1 = 7'b1100111;
+      default:	seg1 = 7'b0111111;
+      
+    endcase
+
+  end
+  
+endmodule

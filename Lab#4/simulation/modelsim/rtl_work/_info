@@ -9,57 +9,294 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/simulation/modelsim
-vbombasAdyacentes
+vBuscaMinas
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1697587534
+Z2 !s110 1697604214
 !i10b 1
-!s100 PJ5`[SXo[;3<S26_AASPS0
+!s100 4zgefiKMTnO:CM81KmfjJ2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IG_aINhjg91FDlOV?4LIg@2
+I3Do8N3Ucn0==NGV6ME`^63
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1697584844
-8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/bombasAdyacentes.sv
-FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/bombasAdyacentes.sv
-!i122 0
-L0 1 49
+w1697604026
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv
+!i122 6
+L0 1 106
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1697587533.000000
-!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/bombasAdyacentes.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/bombasAdyacentes.sv|
+Z6 !s108 1697604214.000000
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4
-Z8 tCvgOpt 0
-nbombas@adyacentes
-vbombasAdyacentes_tb
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4
+Z9 tCvgOpt 0
+n@busca@minas
+vBuscaMinas_tb
 R1
 R2
 !i10b 1
-!s100 HM?EYCWag`Fkm3dknBWiX0
+!s100 @^_HILk[K]?n7Eb41P0]d3
 R3
-INJM^Die]m?K0:<]7o8I:@1
+IdRE=;MOAc:f;HeF4]lgfd3
 R4
 S1
 R0
-w1697586016
-8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/bombasAdyacentes_tb.sv
-FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/bombasAdyacentes_tb.sv
-!i122 1
-L0 1 56
+w1697604033
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv
+!i122 8
+Z10 L0 1 59
 R5
 r1
 !s85 0
 31
-!s108 1697587534.000000
-!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/bombasAdyacentes_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/bombasAdyacentes_tb.sv|
-!i113 1
 R6
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/BuscaMinas_tb.sv|
+!i113 1
 R7
 R8
-nbombas@adyacentes_tb
+R9
+n@busca@minas_tb
+vFSM
+R1
+R2
+!i10b 1
+!s100 [e83bjI@We0J5ga4da>db2
+R3
+IVULCS7z<>jY=^^Q[VIH:A0
+R4
+S1
+R0
+w1697517156
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/FSM.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/FSM.sv
+!i122 5
+R10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/FSM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/FSM.sv|
+!i113 1
+R7
+R8
+R9
+n@f@s@m
+vlistaRandom
+R1
+R2
+!i10b 1
+!s100 iA`CFXT]]Mg=;IO0_j:mG2
+R3
+IGaKP;3@TCa302f[Cokd]<0
+R4
+S1
+R0
+w1697598676
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv
+!i122 7
+L0 1 61
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/listaRandom.sv|
+!i113 1
+R7
+R8
+R9
+nlista@random
+vmatriz
+R1
+R2
+!i10b 1
+!s100 I6[ACFMn3E>:n2jG1n_Jo0
+R3
+IaFhO@z<6A;zJd:km6zWbb3
+R4
+S1
+R0
+w1697597779
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv
+!i122 4
+L0 1 26
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/matriz.sv|
+!i113 1
+R7
+R8
+R9
+vseg7
+R1
+!s110 1697604215
+!i10b 1
+!s100 cnioELYd3IG7EWW;jkjI73
+R3
+IGe0IecYCK?C7`@;bo4CQg2
+R4
+S1
+R0
+w1697604076
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/seg7.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/seg7.sv
+!i122 10
+L0 2 43
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/seg7.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/seg7.sv|
+!i113 1
+R7
+R8
+R9
+vsincronizador_horizontal
+R1
+R2
+!i10b 1
+!s100 RVVWM@lFmOoBl9HF6z=U20
+R3
+I`[DDQ1XFiDi77na>[h]Lg0
+R4
+S1
+R0
+Z11 w1697332276
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/sincronizador_horizontal.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/sincronizador_horizontal.sv
+!i122 3
+L0 2 21
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/sincronizador_horizontal.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/sincronizador_horizontal.sv|
+!i113 1
+R7
+R8
+R9
+vsincronizador_vertical
+R1
+R2
+!i10b 1
+!s100 YZ69mM@ZddSDTW6JbA3Gb1
+R3
+ILj^cBWa171gTM7gU?OGi83
+R4
+S1
+R0
+R11
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/sincronizador_vertical.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/sincronizador_vertical.sv
+!i122 2
+L0 2 18
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/sincronizador_vertical.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/sincronizador_vertical.sv|
+!i113 1
+R7
+R8
+R9
+vswitch_cantidad_bombas
+R1
+R2
+!i10b 1
+!s100 dbKc>6`zfln=oY]EaW9ea3
+R3
+IZEdDHQY6cZ64oZ=k3O`=92
+R4
+S1
+R0
+w1697525753
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/switch_cantidad_bombas.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/switch_cantidad_bombas.sv
+!i122 9
+L0 1 21
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/switch_cantidad_bombas.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/switch_cantidad_bombas.sv|
+!i113 1
+R7
+R8
+R9
+vVGA_pll
+R1
+R2
+!i10b 1
+!s100 N[V2@<_MhKQzA9Piimz<f1
+R3
+IokE@HN8IDHG=a:MRCNdKA2
+R4
+S1
+R0
+R11
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/VGA_pll.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/VGA_pll.sv
+!i122 1
+L0 2 23
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/VGA_pll.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/VGA_pll.sv|
+!i113 1
+R7
+R8
+R9
+n@v@g@a_pll
+vvideo_controller
+R1
+R2
+!i10b 1
+!s100 XXoMZ:^dkzKG<75g?ab`K1
+R3
+IGl5[=m1OF1ZGX9LljD8iH1
+R4
+S1
+R0
+w1697600736
+8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/video_controller.sv
+FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/video_controller.sv
+!i122 0
+L0 1 198
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/video_controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Lab#4/video_controller.sv|
+!i113 1
+R7
+R8
+R9
