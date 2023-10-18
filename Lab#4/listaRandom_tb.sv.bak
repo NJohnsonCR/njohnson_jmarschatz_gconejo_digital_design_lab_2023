@@ -5,12 +5,12 @@ module listaRandom_tb;
     wire [5:0] numerosABuscar [63:0];
     
     // Instancia del módulo bajo prueba
-    /*listaRandom uut (
+    listaRandom uut (
         .cantidadBombas(cantidadBombas),
         .clk(clk),
         .rst(rst),
         .numerosABuscar(numerosABuscar)
-    );*/
+    );
     
     // Generación de señales de prueba
     initial begin

@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Tue Oct 17 00:49:31 2023
-Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Analysis & Elaboration Status : Successful - Tue Oct 17 17:39:31 2023
+Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 Revision Name : BuscaMinas
-Top-level Entity Name : BuscaMinas
+Top-level Entity Name : bombasAdyacentes
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
