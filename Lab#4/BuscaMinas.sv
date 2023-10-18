@@ -52,7 +52,7 @@ module BuscaMinas(
 		.matrizResultante(matrizResultante), 
 		.seleccion(seleccion)
 	);*/
-	
+	/*
 	video_controller matriz_vga(
 		 .clk(clk),
 		 .Matriz(matrizResultante),
@@ -71,7 +71,7 @@ module BuscaMinas(
 		.siete_seg0(siete_seg0),
 		.siete_seg1(siete_seg1)
   );
-	
+	*/
 	
 	FSM maquinita(
 		.clk(clk),
