@@ -19,9 +19,6 @@ module video_controller #(
     // Dimensiones de las celdas
     localparam ANCHO_CELDA = ANCHO / COLUMNAS;
     localparam ALTO_CELDA = ALTO / FILAS;
-    localparam BOMB_R = 8'b00000000;
-    localparam BOMB_G = 8'b00000000;
-    localparam BOMB_B = 8'b00000000;
 
     // VGA variables de control
     logic enable;
@@ -188,6 +185,18 @@ logic [9:0] Matriz [0:7][0:7] = '{
 					endcase
 				end
             end
+				
+				else begin
+					if ((i + j) % 2 == 0) begin
+                                red <= 8'hFF;
+                                green <= 8'h6E;
+                                blue <= 8'hC7;
+                            end else begin
+                                red <= 8'hFF;
+                                green <= 8'hFF;
+                                blue <= 8'hFF;
+                            end
+			end
         end
 		  end
 	endtask
