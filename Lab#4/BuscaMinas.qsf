@@ -42,7 +42,7 @@ set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY BuscaMinas
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:34:37  SEPTEMBER 30, 2023"
-set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.1 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name BOARD "DE1-SoC Board"
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (SystemVerilog)"
@@ -82,29 +82,6 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME BuscaMinas_tb -section_id
 set_global_assignment -name EDA_TEST_BENCH_NAME bombasAdyacentes_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id bombasAdyacentes_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME bombasAdyacentes_tb -section_id bombasAdyacentes_tb
-set_global_assignment -name SYSTEMVERILOG_FILE listaRandom_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE VGA_testbench.sv
-set_global_assignment -name SYSTEMVERILOG_FILE video_controller.sv
-set_global_assignment -name SYSTEMVERILOG_FILE VGA_pll.sv
-set_global_assignment -name SYSTEMVERILOG_FILE sincronizador_vertical.sv
-set_global_assignment -name SYSTEMVERILOG_FILE sincronizador_horizontal.sv
-set_global_assignment -name SYSTEMVERILOG_FILE switch_binary_encoder.sv
-set_global_assignment -name SYSTEMVERILOG_FILE matriz.sv
-set_global_assignment -name SYSTEMVERILOG_FILE BuscarYAsignar.sv
-set_global_assignment -name SYSTEMVERILOG_FILE matriz_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE recibirMovimiento.sv
-set_global_assignment -name SYSTEMVERILOG_FILE recibirMovimiento_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE FSM.sv
-set_global_assignment -name SYSTEMVERILOG_FILE CheckMatrixValue.sv
-set_global_assignment -name SYSTEMVERILOG_FILE CheckMatrixValue_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE BuscaMinas.sv
-set_global_assignment -name SYSTEMVERILOG_FILE listaRandom.sv
-set_global_assignment -name SYSTEMVERILOG_FILE BuscaMinas_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE BuscarYAsignar_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE switch_cantidad_bombas.sv
-set_global_assignment -name SYSTEMVERILOG_FILE bombasAdyacentes.sv
-set_global_assignment -name SYSTEMVERILOG_FILE bombasAdyacentes_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE comparador.sv
 set_location_assignment PIN_AE12 -to reset
 set_location_assignment PIN_AF10 -to entrada_bombas[3]
 set_location_assignment PIN_AF14 -to clk
@@ -154,7 +131,6 @@ set_global_assignment -name EDA_TEST_BENCH_FILE CheckMatrixValue_tb.sv -section_
 set_global_assignment -name EDA_TEST_BENCH_FILE BuscaMinas_tb.sv -section_id BuscaMinas_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE bombasAdyacentes_tb.sv -section_id bombasAdyacentes_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE VGA_testbench.sv -section_id VGA_testbench
-set_global_assignment -name SYSTEMVERILOG_FILE seg7.sv
 set_location_assignment PIN_AE26 -to siete_seg0[0]
 set_location_assignment PIN_AE27 -to siete_seg0[1]
 set_location_assignment PIN_AE28 -to siete_seg0[2]
@@ -173,3 +149,27 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE listaRandom_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE VGA_testbench.sv
+set_global_assignment -name SYSTEMVERILOG_FILE video_controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE VGA_pll.sv
+set_global_assignment -name SYSTEMVERILOG_FILE sincronizador_vertical.sv
+set_global_assignment -name SYSTEMVERILOG_FILE sincronizador_horizontal.sv
+set_global_assignment -name SYSTEMVERILOG_FILE switch_binary_encoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE matriz.sv
+set_global_assignment -name SYSTEMVERILOG_FILE BuscarYAsignar.sv
+set_global_assignment -name SYSTEMVERILOG_FILE matriz_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE recibirMovimiento.sv
+set_global_assignment -name SYSTEMVERILOG_FILE recibirMovimiento_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE FSM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE CheckMatrixValue.sv
+set_global_assignment -name SYSTEMVERILOG_FILE CheckMatrixValue_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE BuscaMinas.sv
+set_global_assignment -name SYSTEMVERILOG_FILE listaRandom.sv
+set_global_assignment -name SYSTEMVERILOG_FILE BuscaMinas_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE BuscarYAsignar_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE switch_cantidad_bombas.sv
+set_global_assignment -name SYSTEMVERILOG_FILE bombasAdyacentes.sv
+set_global_assignment -name SYSTEMVERILOG_FILE bombasAdyacentes_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE comparador.sv
+set_global_assignment -name SYSTEMVERILOG_FILE seg7.sv
