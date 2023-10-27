@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -5.371
+TNS   : -101.706
+
+Type  : Slow 1100mV 85C Model Setup 'hhclock:div|seconds'
+Slack : -1.342
+TNS   : -2.447
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.380
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'hhclock:div|seconds'
+Slack : 0.532
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'hhclock:div|seconds'
+Slack : -2.174
+TNS   : -37.697
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -22.677
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -5.510
+TNS   : -99.758
+
+Type  : Slow 1100mV 0C Model Setup 'hhclock:div|seconds'
+Slack : -1.255
+TNS   : -2.287
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'hhclock:div|seconds'
+Slack : 0.494
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'hhclock:div|seconds'
+Slack : -2.174
+TNS   : -37.575
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -24.743
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -3.148
+TNS   : -45.314
+
+Type  : Fast 1100mV 85C Model Setup 'hhclock:div|seconds'
+Slack : -0.691
+TNS   : -1.004
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'hhclock:div|seconds'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'hhclock:div|seconds'
+Slack : -2.174
+TNS   : -37.156
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.328
+TNS   : -3.560
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -2.839
+TNS   : -37.866
+
+Type  : Fast 1100mV 0C Model Setup 'hhclock:div|seconds'
+Slack : -0.604
+TNS   : -0.848
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.190
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'hhclock:div|seconds'
+Slack : 0.329
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'hhclock:div|seconds'
+Slack : -2.174
+TNS   : -37.079
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.337
+TNS   : -3.600
+
+------------------------------------------------------------
