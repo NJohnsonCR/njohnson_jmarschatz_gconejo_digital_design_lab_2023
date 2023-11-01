@@ -1,13 +1,12 @@
-module condition_check(clk,pcs,mmw,rgw,ALUflags,cond,PCSrc,MemWrite,RegWrite);
+module condition_check(cond,ALUflags,CondEx);
   input [3:0]ALUflags,cond;
-  input clk,pcs,mmw,rgw;
-  output PCSrc,MemWrite,RegWrite;
-  wire z,n,c,v;
+  output CondEx;
+  wire z,n,c,v,condEX;
   assign v=ALUflags[0];
   assign c=ALUflags[1];
   assign z=ALUflags[2];
   assign n=ALUflags[3];
-  wire condEX;
+
   always @* begin
   case(cond) 
   4'b0000:begin condEX=z; end
@@ -24,15 +23,12 @@ module condition_check(clk,pcs,mmw,rgw,ALUflags,cond,PCSrc,MemWrite,RegWrite);
   4'b1011:begin condEX=n^v; end
   4'b1100:begin condEX=~z&~(n^v); end
   4'b1101:begin condEX=~z&|(n^v); end
-  4'b1110:begin condEX=1; end
-  default:begin condEX=0; end
+  4'b1110:begin condEX=1'b1; end
+  default:begin condEX=1'bx; end
   endcase
  
  end
- 
- 	assign PCSrc = condEX&& pcs ;
-	assign MemWrite = condEX && mmw ;
-	assign RegWrite = condEX && rgw ;
+
 	
 	
 endmodule
