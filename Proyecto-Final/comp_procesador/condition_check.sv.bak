@@ -1,0 +1,4 @@
+module condition_check(ALUOp,cond)
+  input [3:0]ALUflags;
+  input [3:0]cond;
+endmodule

@@ -1,0 +1,61 @@
+module Deco_ALU(ALUOp,Func)
+  input ALUOp;
+  input [3:0]Func;
+  if(!ALUOp)begin 
+    AULControl=2'b00;
+    FlagW=2'b00;
+  end
+  
+  
+  else if(ALUOp)begin
+    case(Func[4:1])
+      4'b0000:begin 
+        if(Func[0]) begin
+          AULControl=2'b10;
+          FlagW=2'b10;
+        end 
+          else begin
+            AULControl=2'b10;
+            FlagW=2'b00;
+          end 
+      end
+      
+      4'b0100:begin 
+        if(Func[0]) begin
+          AULControl=2'b00;
+          FlagW=2'b11;
+        end 
+          else begin
+            AULControl=2'b00;
+            FlagW=2'b00;
+          end 
+      end
+      
+      4'b0010:begin 
+        if(Func[0]) begin
+          AULControl=2'b10;
+          FlagW=2'b11;
+        end 
+          else begin
+            AULControl=2'b10;
+            FlagW=2'b00;
+          end 
+      end 
+      
+      4'b1100:begin 
+        if(Func[0]) begin
+          AULControl=2'b11;
+          FlagW=2'b10;
+        end 
+          else begin
+            AULControl=2'b11;
+            FlagW=2'b00;
+          end 
+      end 
+        
+        
+    endcase
+  
+  end
+  
+endmodule

@@ -1,0 +1,99 @@
+// Code your design here
+module control_unit( cond,op,func,rd,ALUflags,PCSrc,MemtoReg,MemWrite,ALUControl,ALUSrc,ImmSrc,RegWrite,RegSrc)
+  input [3:0]cond;
+  input [1:0]op;
+  input [5:0]func;
+  input [3:0]rd;
+  input [3:0]ALUflags;
+  output PCSrc;
+  output MemtoReg;
+  output MemWrite;
+  output [1:0]ALUControl;
+  output ALUSrc;
+  output [1:0]ImmSrc;
+  output RegWrite;
+  output [1:0]RegSrc;
+  
+  always@* begin 
+    if(op == 2'b01 && funct[0]==1)begin 
+      MemtoReg =1'b1;
+    end
+    else MemtoReg =1'b0;
+  
+    if(op == 2'b01 && funct[0]==0)begin 
+      MemWrite =1'b1;
+    end
+    else MemWrite =1'b0;
+  end//ver condicional
+  
+  //alu control
+  case(func[4:1])
+    4'b0000:ALUControl=10;//and
+    4'b0010:ALUControl=01;//resta
+    4'b0100:ALUControl=00;//suma
+    4'b1100:ALUControl=11;//or
+    default:ALUControl=00;
+  endcase
+  
+  if(op == 2'b00 && funct[5]==1)begin 
+      ALUSrc =1'b0;
+    end
+    else ALUSrc =1'b1;
+  
+  //imm
+  case(op)
+    2'b00:ImmSrc=00;//and
+    2'b01:ImmSrc=01;//resta
+    2'b10:ImmSrc=10;//suma
+    2'b11:ImmSrc=11;//or
+  endcase
+  
+//
+  if(op == 2'b01 && funct[0]==0)begin 
+      RegSrc =2'b10;
+    end
+  else if(op == 2'b10)begin 
+      RegSrc =2'bx1;
+    end
+  else if(op == 2'b00)begin 
+      RegSrc =2'b00;
+    end
+  ///
+  always@* begin 
+      if((op == 2'b01||op == 2'b00) && funct[0]==1)begin 
+      RegWrite =1'b1;
+    end
+    
+   else RegWrite =1'b0;
+///
+  always@* begin 
+    if(op == 2'b10 && rd==15 && RegWrite)begin 
+      PCSrc =1'b1;
+    end
+   else PCSrc =1'b0;//condicion
+
+
+
+endmodule
+
+
+
+
+
+
+
+module main_decoder(op,func,rd,MemtoReg,MemWrite,ALUop,ALUSrc,ImmSrc,RegWrite,RegSrc,branch)
+  input [1:0]op;
+  input [5:0]func;
+	always@* begin
+      if(op == 2'b00)begin end
+      else if(op == 2'b01)begin end
+      else if(op == 2'b10)begin end
+    end
+  
+endmodule
+
+module condition_check(ALUflags,cond)
+  input [3:0]ALUflags;
+  input [3:0]cond;
+endmodule
