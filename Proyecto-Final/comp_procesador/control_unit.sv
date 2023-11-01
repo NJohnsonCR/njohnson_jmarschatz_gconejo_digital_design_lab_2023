@@ -1,5 +1,5 @@
 // Code your design here
-module control_unit( clk,cond,op,func,rd,ALUflags,PCSrc,MemtoReg,MemWrite,ALUControl,ALUSrc,ImmSrc,RegWrite,RegSrc);
+module control_unit( clk, reset,cond,op,func,rd,ALUflags,PCSrc,MemtoReg,MemWrite,ALUControl,ALUSrc,ImmSrc,RegWrite,RegSrc);
   input [3:0]cond;
   input [1:0]op;
   input [5:0]func;
@@ -46,13 +46,15 @@ module control_unit( clk,cond,op,func,rd,ALUflags,PCSrc,MemtoReg,MemWrite,ALUCon
 	.PCs(pcs)
 	);
 	
-	condition_check checkCond(
+	condition_logic clogic(
 	.clk(clk),
-	.pcs(pcs),
-	.mmw(mmw),
-	.rgw(rgw),
+	.reset(reset),
+	.FlagW(fw),
+	.PCS(pcs),
+	.MemW(mmw),
+	.RegW(rgw),
 	.ALUflags(ALUflags),
-	.cond(cond),
+	.Cond(cond),
 	.PCSrc(PCSrc),
 	.MemWrite(MemWrite),
 	.RegWrite(RegWrite)
