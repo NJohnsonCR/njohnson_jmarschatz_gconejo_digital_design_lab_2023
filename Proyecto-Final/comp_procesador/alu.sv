@@ -8,30 +8,23 @@ output [3:0] AluFlags;
  always @* begin
   case(AluControl)
   2'b00:begin //suma
-  AluResult=SrcA+srcB;
-  z=~(SrcA||srcB);
-  n=1'b0;
-  c=1'b0;//revisar aqui
-  v=1'b0;
+  {c,AluResult}=SrcA+srcB; 
   end
   2'b01:begin 
-  AluResult=SrcAsrcB;
+  {c,AluResult}=SrcA-srcB; 
   end
   2'b10:begin //and
   AluResult=SrcA&&srcB;
-  z=~(SrcA||srcB);
-  n=1'b0;
-  c=1'b0;//revisar aqui
-  v=1'b0;
+  c=1'b0;
   end
   2'b11:begin //or
   AluResult=SrcA||srcB;
-  z=~(SrcA||srcB);
-  n=1'b0;
   c=1'b0;
-  v=1'b0;
   end
   endcase
+  z=~(|AluResult);
+  n=(AluResult[N-1] == 1 &&  AluControl == 1);
+  v=({c,AluResult[N-1]} == 2'b01);
   end
   assign AluFlags={n,z,c,v};
 endmodule
