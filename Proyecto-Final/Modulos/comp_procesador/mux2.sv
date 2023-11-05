@@ -1,6 +1,6 @@
-module mux2(uno,cero,sel,sal);
-  input [3:0]uno,cero;
+module mux2 #(parameter WIDTH = 8) (uno,cero,sel,sal);
+  input [WIDTH-1:0] uno,cero;
   input sel;
-  output  [3:0]sal;
+  output  [WIDTH-1:0] sal;
   assign sal= sel? uno:cero;
 endmodule

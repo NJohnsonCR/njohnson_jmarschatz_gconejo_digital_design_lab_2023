@@ -6,6 +6,7 @@ module control_unit( clk, reset,cond,op,func,rd,ALUflags,PCSrc,MemtoReg,MemWrite
   input [3:0]rd;
   input [3:0]ALUflags;
   input clk;
+  input reset;
   output PCSrc;
   output MemtoReg;
   output MemWrite;

@@ -1,4 +1,4 @@
-module  alu #(parameter N = 4) (SrcA,srcB,AluFlags,AluResult,AluControl)
+module  alu #(parameter N = 4) (SrcA,srcB,AluFlags,AluResult,AluControl);
 input [N-1:0] SrcA,srcB;
 input [1:0] AluControl;
 output [N-1:0] AluResult;

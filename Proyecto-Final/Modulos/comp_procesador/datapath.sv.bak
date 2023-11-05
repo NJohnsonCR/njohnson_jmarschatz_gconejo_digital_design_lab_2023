@@ -1,0 +1,4 @@
+module datapath(input logic clk, rst, 
+					 input logic);
+
+endmodule 
