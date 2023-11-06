@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Filtro-de-imagenes
-Sat Nov 04 20:01:37 2023
+Sun Nov 05 17:28:43 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -9,10 +9,22 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |mux2
-  5. Analysis & Elaboration Settings
-  6. Analysis & Elaboration Messages
-  7. Analysis & Elaboration Suppressed Messages
+  4. Parameter Settings for User Entity Instance: mux2:pcmux
+  5. Parameter Settings for User Entity Instance: flopr:pcreg
+  6. Parameter Settings for User Entity Instance: adder:pcadd1
+  7. Parameter Settings for User Entity Instance: adder:pcadd2
+  8. Parameter Settings for User Entity Instance: mux2:ra1mux
+  9. Parameter Settings for User Entity Instance: mux2:ra2mux
+ 10. Parameter Settings for User Entity Instance: mux2:resmux
+ 11. Parameter Settings for User Entity Instance: mux2:srcbmux
+ 12. Parameter Settings for User Entity Instance: alu:alu
+ 13. Analysis & Elaboration Settings
+ 14. Port Connectivity Checks: "alu:alu"
+ 15. Port Connectivity Checks: "mux2:ra1mux"
+ 16. Port Connectivity Checks: "adder:pcadd2"
+ 17. Port Connectivity Checks: "adder:pcadd1"
+ 18. Analysis & Elaboration Messages
+ 19. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -39,10 +51,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sat Nov 04 20:01:37 2023       ;
+; Analysis & Elaboration Status ; Successful - Sun Nov 05 17:28:43 2023       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Filtro-de-imagenes                          ;
-; Top-level Entity Name         ; mux2                                        ;
+; Top-level Entity Name         ; datapath                                    ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -70,13 +82,93 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |mux2 ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; WIDTH          ; 8     ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:pcmux ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; WIDTH          ; 32    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: flopr:pcreg ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; WIDTH          ; 32    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: adder:pcadd1 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; WIDTH          ; 32    ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: adder:pcadd2 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; WIDTH          ; 32    ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:ra1mux ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; WIDTH          ; 4     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:ra2mux ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; WIDTH          ; 4     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:resmux ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; WIDTH          ; 32    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:srcbmux ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; WIDTH          ; 32    ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:alu ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; N              ; 32    ; Signed Integer              ;
++----------------+-------+-----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -86,7 +178,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; mux2               ; Filtro-de-imagenes ;
+; Top-level entity name                                                           ; datapath           ; Filtro-de-imagenes ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -167,26 +259,74 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu"                                                                                                                                                                              ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; AluControl ; Input ; Warning  ; Input port expression (3 bits) is wider than the input port (2 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------+
+; Port Connectivity Checks: "mux2:ra1mux" ;
++------+-------+----------+---------------+
+; Port ; Type  ; Severity ; Details       ;
++------+-------+----------+---------------+
+; uno  ; Input ; Info     ; Stuck at VCC  ;
++------+-------+----------+---------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "adder:pcadd2"   ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND ;
+; b[2]     ; Input ; Info     ; Stuck at VCC ;
++----------+-------+----------+--------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "adder:pcadd1"   ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND ;
+; b[2]     ; Input ; Info     ; Stuck at VCC ;
++----------+-------+----------+--------------+
+
+
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Nov 04 20:01:31 2023
+    Info: Processing started: Sun Nov 05 17:28:37 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Filtro-de-imagenes -c Filtro-de-imagenes --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/sumador.sv
     Info (12023): Found entity 1: sumador File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/sumador.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/register_file.sv
+    Info (12023): Found entity 1: register_file File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/register_file.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/pc_logic.sv
     Info (12023): Found entity 1: PC_logic File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/PC_logic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/mux2.sv
     Info (12023): Found entity 1: mux2 File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/mux2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/main_decoder.sv
     Info (12023): Found entity 1: main_decoder File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/main_decoder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/flopr.sv
+    Info (12023): Found entity 1: flopr File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/flopr.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/extend.sv
+    Info (12023): Found entity 1: extend File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/extend.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/deco_alu.sv
     Info (12023): Found entity 1: Deco_ALU File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/Deco_ALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/datapath.sv
+    Info (12023): Found entity 1: datapath File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/d_fflopreg.sv
     Info (12023): Found entity 1: D_fflopReg File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/D_fflopReg.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/control_unit.sv
@@ -197,26 +337,28 @@ Info (12021): Found 1 design units, including 1 entities, in source file modulos
     Info (12023): Found entity 1: condition_check File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/condition_check.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/alu.sv
     Info (12023): Found entity 1: alu File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/alu.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file modulos/memorias/rom/rom.v
-    Info (12023): Found entity 1: rom File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/ROM/rom.v Line: 40
-Info (12021): Found 1 design units, including 1 entities, in source file modulos/memorias/rom/rom_tb.sv
-    Info (12023): Found entity 1: rom_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/ROM/rom_tb.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/datapath.sv
-    Info (12023): Found entity 1: datapath File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/flopr.sv
-    Info (12023): Found entity 1: flopr File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/flopr.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/extend.sv
-    Info (12023): Found entity 1: extend File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/extend.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/adder.sv
     Info (12023): Found entity 1: adder File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/adder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/memorias/rom/rom_tb.sv
+    Info (12023): Found entity 1: rom_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/ROM/rom_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/memorias/rom/rom.v
+    Info (12023): Found entity 1: rom File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/ROM/rom.v Line: 40
 Warning (10236): Verilog HDL Implicit Net warning at rom_tb.sv(9): created implicit net for "adress" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/ROM/rom_tb.sv Line: 9
-Info (12127): Elaborating entity "mux2" for the top level hierarchy
+Info (12127): Elaborating entity "datapath" for the top level hierarchy
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:pcmux" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 20
+Info (12128): Elaborating entity "flopr" for hierarchy "flopr:pcreg" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 21
+Info (12128): Elaborating entity "adder" for hierarchy "adder:pcadd1" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 22
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:ra1mux" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 26
+Info (12128): Elaborating entity "register_file" for hierarchy "register_file:rf" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 30
+Info (12128): Elaborating entity "extend" for hierarchy "extend:ext" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 32
+Info (12128): Elaborating entity "alu" for hierarchy "alu:alu" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 36
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/output_files/Filtro-de-imagenes.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4756 megabytes
-    Info: Processing ended: Sat Nov 04 20:01:37 2023
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4765 megabytes
+    Info: Processing ended: Sun Nov 05 17:28:43 2023
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +--------------------------------------------+
