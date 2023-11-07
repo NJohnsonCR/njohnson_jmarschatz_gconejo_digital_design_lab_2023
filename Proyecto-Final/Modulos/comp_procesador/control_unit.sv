@@ -54,7 +54,7 @@ module control_unit( clk, reset,cond,op,func,rd,ALUflags,PCSrc,MemtoReg,MemWrite
 	.PCS(pcs),
 	.MemW(mmw),
 	.RegW(rgw),
-	.ALUflags(ALUflags),
+	.ALUFlags(ALUflags),
 	.Cond(cond),
 	.PCSrc(PCSrc),
 	.MemWrite(MemWrite),
