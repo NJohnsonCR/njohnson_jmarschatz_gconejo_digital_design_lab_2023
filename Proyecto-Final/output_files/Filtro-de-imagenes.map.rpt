@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Filtro-de-imagenes
-Mon Nov 13 20:25:57 2023
+Tue Nov 14 01:43:34 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -22,13 +22,13 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  14. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:resmux
  15. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:srcbmux
  16. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu
- 17. Parameter Settings for User Entity Instance: rom:rom|altsyncram:altsyncram_component
- 18. Parameter Settings for User Entity Instance: ram:ram|altsyncram:altsyncram_component
- 19. altsyncram Parameter Settings by Entity Instance
- 20. Analysis & Elaboration Settings
- 21. Port Connectivity Checks: "ram:ram"
- 22. Port Connectivity Checks: "rom:rom"
- 23. Port Connectivity Checks: "arm:arm|datapath:dp|alu:alu"
+ 17. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|AluAritmetic:arithmetics
+ 18. Parameter Settings for User Entity Instance: rom:rom|altsyncram:altsyncram_component
+ 19. Parameter Settings for User Entity Instance: ram:ram|altsyncram:altsyncram_component
+ 20. altsyncram Parameter Settings by Entity Instance
+ 21. Analysis & Elaboration Settings
+ 22. Port Connectivity Checks: "ram:ram"
+ 23. Port Connectivity Checks: "rom:rom"
  24. Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux"
  25. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd2"
  26. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd1"
@@ -62,7 +62,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Nov 13 20:25:57 2023       ;
+; Analysis & Elaboration Status ; Successful - Tue Nov 14 01:43:34 2023       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Filtro-de-imagenes                          ;
 ; Top-level Entity Name         ; main                                        ;
@@ -218,6 +218,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------+
 ; N              ; 32    ; Signed Integer                                  ;
 +----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|AluAritmetic:arithmetics ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -479,15 +489,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arm:arm|datapath:dp|alu:alu"                                                                                                                                                          ;
-+------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port       ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; AluControl ; Input ; Warning  ; Input port expression (3 bits) is wider than the input port (2 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +-------------------------------------------------------------+
 ; Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux" ;
 +------+-------+----------+-----------------------------------+
@@ -543,7 +544,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Nov 13 20:25:51 2023
+    Info: Processing started: Tue Nov 14 01:43:27 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Filtro-de-imagenes -c Filtro-de-imagenes --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -596,6 +597,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file modulos
     Info (12023): Found entity 1: arm File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/arm.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/flopenr.sv
     Info (12023): Found entity 1: flopenr File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/flopenr.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/aluaritmetic.sv
+    Info (12023): Found entity 1: AluAritmetic File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/AluAritmetic.sv Line: 1
 Info (12127): Elaborating entity "main" for the top level hierarchy
 Info (12128): Elaborating entity "arm" for hierarchy "arm:arm" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/main.sv Line: 8
 Info (12128): Elaborating entity "controller" for hierarchy "arm:arm|controller:c" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/arm.sv Line: 18
@@ -611,6 +614,7 @@ Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:
 Info (12128): Elaborating entity "register_file" for hierarchy "arm:arm|datapath:dp|register_file:rf" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 30
 Info (12128): Elaborating entity "extend" for hierarchy "arm:arm|datapath:dp|extend:ext" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 32
 Info (12128): Elaborating entity "alu" for hierarchy "arm:arm|datapath:dp|alu:alu" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 36
+Info (12128): Elaborating entity "AluAritmetic" for hierarchy "arm:arm|datapath:dp|alu:alu|AluAritmetic:arithmetics" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/alu.sv Line: 22
 Info (12128): Elaborating entity "rom" for hierarchy "rom:rom" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/main.sv Line: 11
 Info (12128): Elaborating entity "altsyncram" for hierarchy "rom:rom|altsyncram:altsyncram_component" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/ROM/rom.v Line: 82
 Info (12130): Elaborated megafunction instantiation "rom:rom|altsyncram:altsyncram_component" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/ROM/rom.v Line: 82
@@ -665,12 +669,12 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/deco
 Info (12128): Elaborating entity "decode_dla" for hierarchy "ram:ram|altsyncram:altsyncram_component|altsyncram_0uq1:auto_generated|decode_dla:decode3" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_0uq1.tdf Line: 44
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "arm:arm|ALUControl[2]" is missing source, defaulting to GND File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/arm.sv Line: 14
-Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/output_files/Filtro-de-imagenes.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4806 megabytes
-    Info: Processing ended: Mon Nov 13 20:25:57 2023
-    Info: Elapsed time: 00:00:06
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Tue Nov 14 01:43:34 2023
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:14
 
 
