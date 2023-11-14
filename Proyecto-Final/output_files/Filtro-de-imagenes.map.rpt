@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Filtro-de-imagenes
-Sun Nov 05 17:28:43 2023
+Mon Nov 13 20:25:57 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -9,22 +9,33 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: mux2:pcmux
-  5. Parameter Settings for User Entity Instance: flopr:pcreg
-  6. Parameter Settings for User Entity Instance: adder:pcadd1
-  7. Parameter Settings for User Entity Instance: adder:pcadd2
-  8. Parameter Settings for User Entity Instance: mux2:ra1mux
-  9. Parameter Settings for User Entity Instance: mux2:ra2mux
- 10. Parameter Settings for User Entity Instance: mux2:resmux
- 11. Parameter Settings for User Entity Instance: mux2:srcbmux
- 12. Parameter Settings for User Entity Instance: alu:alu
- 13. Analysis & Elaboration Settings
- 14. Port Connectivity Checks: "alu:alu"
- 15. Port Connectivity Checks: "mux2:ra1mux"
- 16. Port Connectivity Checks: "adder:pcadd2"
- 17. Port Connectivity Checks: "adder:pcadd1"
- 18. Analysis & Elaboration Messages
- 19. Analysis & Elaboration Suppressed Messages
+  4. Source assignments for rom:rom|altsyncram:altsyncram_component|altsyncram_cmi1:auto_generated
+  5. Source assignments for ram:ram|altsyncram:altsyncram_component|altsyncram_0uq1:auto_generated
+  6. Parameter Settings for User Entity Instance: arm:arm|controller:c|cond_logic:cl|flopenr:flagreg1
+  7. Parameter Settings for User Entity Instance: arm:arm|controller:c|cond_logic:cl|flopenr:flagreg0
+  8. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:pcmux
+  9. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|flopr:pcreg
+ 10. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd1
+ 11. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd2
+ 12. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra1mux
+ 13. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra2mux
+ 14. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:resmux
+ 15. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:srcbmux
+ 16. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu
+ 17. Parameter Settings for User Entity Instance: rom:rom|altsyncram:altsyncram_component
+ 18. Parameter Settings for User Entity Instance: ram:ram|altsyncram:altsyncram_component
+ 19. altsyncram Parameter Settings by Entity Instance
+ 20. Analysis & Elaboration Settings
+ 21. Port Connectivity Checks: "ram:ram"
+ 22. Port Connectivity Checks: "rom:rom"
+ 23. Port Connectivity Checks: "arm:arm|datapath:dp|alu:alu"
+ 24. Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux"
+ 25. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd2"
+ 26. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd1"
+ 27. Port Connectivity Checks: "arm:arm|controller:c"
+ 28. Port Connectivity Checks: "arm:arm"
+ 29. Analysis & Elaboration Messages
+ 30. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -51,10 +62,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sun Nov 05 17:28:43 2023       ;
+; Analysis & Elaboration Status ; Successful - Mon Nov 13 20:25:57 2023       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Filtro-de-imagenes                          ;
-; Top-level Entity Name         ; datapath                                    ;
+; Top-level Entity Name         ; main                                        ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -82,94 +93,285 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux2:pcmux ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; WIDTH          ; 32    ; Signed Integer                 ;
-+----------------+-------+--------------------------------+
++-----------------------------------------------------------------------------------------------+
+; Source assignments for rom:rom|altsyncram:altsyncram_component|altsyncram_cmi1:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------+
+; Assignment                      ; Value              ; From ; To                              ;
++---------------------------------+--------------------+------+---------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                               ;
++---------------------------------+--------------------+------+---------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Source assignments for ram:ram|altsyncram:altsyncram_component|altsyncram_0uq1:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------+
+; Assignment                      ; Value              ; From ; To                              ;
++---------------------------------+--------------------+------+---------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                               ;
++---------------------------------+--------------------+------+---------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|controller:c|cond_logic:cl|flopenr:flagreg1 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: flopr:pcreg ;
-+----------------+-------+---------------------------------+
-; Parameter Name ; Value ; Type                            ;
-+----------------+-------+---------------------------------+
-; WIDTH          ; 32    ; Signed Integer                  ;
-+----------------+-------+---------------------------------+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|controller:c|cond_logic:cl|flopenr:flagreg0 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: adder:pcadd1 ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; WIDTH          ; 32    ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:pcmux ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: adder:pcadd2 ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; WIDTH          ; 32    ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|flopr:pcreg ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux2:ra1mux ;
-+----------------+-------+---------------------------------+
-; Parameter Name ; Value ; Type                            ;
-+----------------+-------+---------------------------------+
-; WIDTH          ; 4     ; Signed Integer                  ;
-+----------------+-------+---------------------------------+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd1 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux2:ra2mux ;
-+----------------+-------+---------------------------------+
-; Parameter Name ; Value ; Type                            ;
-+----------------+-------+---------------------------------+
-; WIDTH          ; 4     ; Signed Integer                  ;
-+----------------+-------+---------------------------------+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd2 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux2:resmux ;
-+----------------+-------+---------------------------------+
-; Parameter Name ; Value ; Type                            ;
-+----------------+-------+---------------------------------+
-; WIDTH          ; 32    ; Signed Integer                  ;
-+----------------+-------+---------------------------------+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra1mux ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux2:srcbmux ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; WIDTH          ; 32    ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra2mux ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------+
-; Parameter Settings for User Entity Instance: alu:alu ;
-+----------------+-------+-----------------------------+
-; Parameter Name ; Value ; Type                        ;
-+----------------+-------+-----------------------------+
-; N              ; 32    ; Signed Integer              ;
-+----------------+-------+-----------------------------+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:resmux ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:srcbmux ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; N              ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rom:rom|altsyncram:altsyncram_component      ;
++------------------------------------+-------------------------------------+----------------+
+; Parameter Name                     ; Value                               ; Type           ;
++------------------------------------+-------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                   ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                  ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                 ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                  ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                 ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                   ; Untyped        ;
+; OPERATION_MODE                     ; ROM                                 ; Untyped        ;
+; WIDTH_A                            ; 32                                  ; Signed Integer ;
+; WIDTHAD_A                          ; 16                                  ; Signed Integer ;
+; NUMWORDS_A                         ; 65536                               ; Signed Integer ;
+; OUTDATA_REG_A                      ; UNREGISTERED                        ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                ; Untyped        ;
+; WIDTH_B                            ; 1                                   ; Untyped        ;
+; WIDTHAD_B                          ; 1                                   ; Untyped        ;
+; NUMWORDS_B                         ; 1                                   ; Untyped        ;
+; INDATA_REG_B                       ; CLOCK1                              ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                              ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                              ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                              ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                        ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                              ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                   ; Signed Integer ;
+; WIDTH_BYTEENA_B                    ; 1                                   ; Untyped        ;
+; RAM_BLOCK_TYPE                     ; AUTO                                ; Untyped        ;
+; BYTE_SIZE                          ; 8                                   ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                           ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                ; Untyped        ;
+; INIT_FILE                          ; ./Modulos/Memorias/ROM/rom_data.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                              ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                   ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                              ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                              ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                              ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                              ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                     ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                     ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                               ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                               ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                   ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone V                           ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_cmi1                     ; Untyped        ;
++------------------------------------+-------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ram:ram|altsyncram:altsyncram_component      ;
++------------------------------------+-------------------------------------+----------------+
+; Parameter Name                     ; Value                               ; Type           ;
++------------------------------------+-------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                   ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                  ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                 ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                  ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                 ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                   ; Untyped        ;
+; OPERATION_MODE                     ; SINGLE_PORT                         ; Untyped        ;
+; WIDTH_A                            ; 32                                  ; Signed Integer ;
+; WIDTHAD_A                          ; 16                                  ; Signed Integer ;
+; NUMWORDS_A                         ; 65536                               ; Signed Integer ;
+; OUTDATA_REG_A                      ; UNREGISTERED                        ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                ; Untyped        ;
+; WIDTH_B                            ; 1                                   ; Untyped        ;
+; WIDTHAD_B                          ; 1                                   ; Untyped        ;
+; NUMWORDS_B                         ; 1                                   ; Untyped        ;
+; INDATA_REG_B                       ; CLOCK1                              ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                              ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                              ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                              ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                        ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                              ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                   ; Signed Integer ;
+; WIDTH_BYTEENA_B                    ; 1                                   ; Untyped        ;
+; RAM_BLOCK_TYPE                     ; AUTO                                ; Untyped        ;
+; BYTE_SIZE                          ; 8                                   ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                           ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                ; Untyped        ;
+; INIT_FILE                          ; ./Modulos/Memorias/RAM/ram_data.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                              ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                   ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                              ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                              ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                              ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                              ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                     ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                     ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                               ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                               ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                   ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone V                           ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_0uq1                     ; Untyped        ;
++------------------------------------+-------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                    ;
++-------------------------------------------+-----------------------------------------+
+; Name                                      ; Value                                   ;
++-------------------------------------------+-----------------------------------------+
+; Number of entity instances                ; 2                                       ;
+; Entity Instance                           ; rom:rom|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                     ;
+;     -- WIDTH_A                            ; 32                                      ;
+;     -- NUMWORDS_A                         ; 65536                                   ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                            ;
+;     -- WIDTH_B                            ; 1                                       ;
+;     -- NUMWORDS_B                         ; 1                                       ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                  ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                            ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                    ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                               ;
+; Entity Instance                           ; ram:ram|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                             ;
+;     -- WIDTH_A                            ; 32                                      ;
+;     -- NUMWORDS_A                         ; 65536                                   ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                            ;
+;     -- WIDTH_B                            ; 1                                       ;
+;     -- NUMWORDS_B                         ; 1                                       ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                  ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                            ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                    ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                               ;
++-------------------------------------------+-----------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -178,7 +380,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; datapath           ; Filtro-de-imagenes ;
+; Top-level entity name                                                           ; main               ; Filtro-de-imagenes ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -260,7 +462,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "alu:alu"                                                                                                                                                                              ;
+; Port Connectivity Checks: "ram:ram"                                                                                                                                                                              ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                             ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; address ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "rom:rom"                                                                                                                                                                              ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                             ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; address ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arm:arm|datapath:dp|alu:alu"                                                                                                                                                          ;
 +------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port       ; Type  ; Severity ; Details                                                                                                                                                                          ;
 +------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -268,35 +488,53 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------+
-; Port Connectivity Checks: "mux2:ra1mux" ;
-+------+-------+----------+---------------+
-; Port ; Type  ; Severity ; Details       ;
-+------+-------+----------+---------------+
-; uno  ; Input ; Info     ; Stuck at VCC  ;
-+------+-------+----------+---------------+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; uno  ; Input ; Info     ; Stuck at VCC                      ;
++------+-------+----------+-----------------------------------+
 
 
-+--------------------------------------------+
-; Port Connectivity Checks: "adder:pcadd2"   ;
-+----------+-------+----------+--------------+
-; Port     ; Type  ; Severity ; Details      ;
-+----------+-------+----------+--------------+
-; b[31..3] ; Input ; Info     ; Stuck at GND ;
-; b[1..0]  ; Input ; Info     ; Stuck at GND ;
-; b[2]     ; Input ; Info     ; Stuck at VCC ;
-+----------+-------+----------+--------------+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd2" ;
++----------+-------+----------+--------------------------------+
+; Port     ; Type  ; Severity ; Details                        ;
++----------+-------+----------+--------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                   ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                   ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                   ;
++----------+-------+----------+--------------------------------+
 
 
-+--------------------------------------------+
-; Port Connectivity Checks: "adder:pcadd1"   ;
-+----------+-------+----------+--------------+
-; Port     ; Type  ; Severity ; Details      ;
-+----------+-------+----------+--------------+
-; b[31..3] ; Input ; Info     ; Stuck at GND ;
-; b[1..0]  ; Input ; Info     ; Stuck at GND ;
-; b[2]     ; Input ; Info     ; Stuck at VCC ;
-+----------+-------+----------+--------------+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd1" ;
++----------+-------+----------+--------------------------------+
+; Port     ; Type  ; Severity ; Details                        ;
++----------+-------+----------+--------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                   ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                   ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                   ;
++----------+-------+----------+--------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arm:arm|controller:c"                                                                                                                                                       ;
++------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                                                                               ;
++------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; ALUControl ; Output ; Warning  ; Output or bidir port (2 bits) is smaller than the port expression (3 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arm:arm"                                                                                  ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; PC[31..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -305,10 +543,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Nov 05 17:28:37 2023
+    Info: Processing started: Mon Nov 13 20:25:51 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Filtro-de-imagenes -c Filtro-de-imagenes --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/memorias/ram/ram.v
+    Info (12023): Found entity 1: ram File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/RAM/ram.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/decoder.sv
+    Info (12023): Found entity 1: decoder File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/decoder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/controller.sv
+    Info (12023): Found entity 1: controller File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/controller.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/cond_logic.sv
+    Info (12023): Found entity 1: cond_logic File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/cond_logic.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/cond_check.sv
+    Info (12023): Found entity 1: cond_check File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/cond_check.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/sumador.sv
     Info (12023): Found entity 1: sumador File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/sumador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/register_file.sv
@@ -339,24 +587,89 @@ Info (12021): Found 1 design units, including 1 entities, in source file modulos
     Info (12023): Found entity 1: alu File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/alu.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/adder.sv
     Info (12023): Found entity 1: adder File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/adder.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file modulos/memorias/rom/rom_tb.sv
-    Info (12023): Found entity 1: rom_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/ROM/rom_tb.sv Line: 1
+Warning (12019): Can't analyze file -- file Modulos/Memorias/ROM/rom_tb.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/memorias/rom/rom.v
     Info (12023): Found entity 1: rom File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/ROM/rom.v Line: 40
-Warning (10236): Verilog HDL Implicit Net warning at rom_tb.sv(9): created implicit net for "adress" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/ROM/rom_tb.sv Line: 9
-Info (12127): Elaborating entity "datapath" for the top level hierarchy
-Info (12128): Elaborating entity "mux2" for hierarchy "mux2:pcmux" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 20
-Info (12128): Elaborating entity "flopr" for hierarchy "flopr:pcreg" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 21
-Info (12128): Elaborating entity "adder" for hierarchy "adder:pcadd1" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 22
-Info (12128): Elaborating entity "mux2" for hierarchy "mux2:ra1mux" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 26
-Info (12128): Elaborating entity "register_file" for hierarchy "register_file:rf" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 30
-Info (12128): Elaborating entity "extend" for hierarchy "extend:ext" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 32
-Info (12128): Elaborating entity "alu" for hierarchy "alu:alu" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 36
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/main.sv
+    Info (12023): Found entity 1: main File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/main.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/arm.sv
+    Info (12023): Found entity 1: arm File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/arm.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/comp_procesador/flopenr.sv
+    Info (12023): Found entity 1: flopenr File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/flopenr.sv Line: 1
+Info (12127): Elaborating entity "main" for the top level hierarchy
+Info (12128): Elaborating entity "arm" for hierarchy "arm:arm" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/main.sv Line: 8
+Info (12128): Elaborating entity "controller" for hierarchy "arm:arm|controller:c" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/arm.sv Line: 18
+Info (12128): Elaborating entity "decoder" for hierarchy "arm:arm|controller:c|decoder:dec" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/controller.sv Line: 13
+Info (12128): Elaborating entity "cond_logic" for hierarchy "arm:arm|controller:c|cond_logic:cl" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/controller.sv Line: 14
+Info (12128): Elaborating entity "flopenr" for hierarchy "arm:arm|controller:c|cond_logic:cl|flopenr:flagreg1" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/cond_logic.sv Line: 11
+Info (12128): Elaborating entity "cond_check" for hierarchy "arm:arm|controller:c|cond_logic:cl|cond_check:cc" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/cond_logic.sv Line: 14
+Info (12128): Elaborating entity "datapath" for hierarchy "arm:arm|datapath:dp" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/arm.sv Line: 22
+Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:pcmux" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 20
+Info (12128): Elaborating entity "flopr" for hierarchy "arm:arm|datapath:dp|flopr:pcreg" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 21
+Info (12128): Elaborating entity "adder" for hierarchy "arm:arm|datapath:dp|adder:pcadd1" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 22
+Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:ra1mux" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 26
+Info (12128): Elaborating entity "register_file" for hierarchy "arm:arm|datapath:dp|register_file:rf" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 30
+Info (12128): Elaborating entity "extend" for hierarchy "arm:arm|datapath:dp|extend:ext" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 32
+Info (12128): Elaborating entity "alu" for hierarchy "arm:arm|datapath:dp|alu:alu" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/datapath.sv Line: 36
+Info (12128): Elaborating entity "rom" for hierarchy "rom:rom" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/main.sv Line: 11
+Info (12128): Elaborating entity "altsyncram" for hierarchy "rom:rom|altsyncram:altsyncram_component" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/ROM/rom.v Line: 82
+Info (12130): Elaborated megafunction instantiation "rom:rom|altsyncram:altsyncram_component" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/ROM/rom.v Line: 82
+Info (12133): Instantiated megafunction "rom:rom|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/ROM/rom.v Line: 82
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "./Modulos/Memorias/ROM/rom_data.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "65536"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "widthad_a" = "16"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_cmi1.tdf
+    Info (12023): Found entity 1: altsyncram_cmi1 File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_cmi1.tdf Line: 32
+Info (12128): Elaborating entity "altsyncram_cmi1" for hierarchy "rom:rom|altsyncram:altsyncram_component|altsyncram_cmi1:auto_generated" File: d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_61a.tdf
+    Info (12023): Found entity 1: decode_61a File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/decode_61a.tdf Line: 23
+Info (12128): Elaborating entity "decode_61a" for hierarchy "rom:rom|altsyncram:altsyncram_component|altsyncram_cmi1:auto_generated|decode_61a:rden_decode" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_cmi1.tdf Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_ahb.tdf
+    Info (12023): Found entity 1: mux_ahb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/mux_ahb.tdf Line: 23
+Info (12128): Elaborating entity "mux_ahb" for hierarchy "rom:rom|altsyncram:altsyncram_component|altsyncram_cmi1:auto_generated|mux_ahb:mux2" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_cmi1.tdf Line: 41
+Info (12128): Elaborating entity "ram" for hierarchy "ram:ram" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/main.sv Line: 13
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ram:ram|altsyncram:altsyncram_component" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/RAM/ram.v Line: 86
+Info (12130): Elaborated megafunction instantiation "ram:ram|altsyncram:altsyncram_component" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/RAM/ram.v Line: 86
+Info (12133): Instantiated megafunction "ram:ram|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Memorias/RAM/ram.v Line: 86
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "./Modulos/Memorias/RAM/ram_data.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "65536"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "widthad_a" = "16"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_0uq1.tdf
+    Info (12023): Found entity 1: altsyncram_0uq1 File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_0uq1.tdf Line: 34
+Info (12128): Elaborating entity "altsyncram_0uq1" for hierarchy "ram:ram|altsyncram:altsyncram_component|altsyncram_0uq1:auto_generated" File: d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_dla.tdf
+    Info (12023): Found entity 1: decode_dla File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/decode_dla.tdf Line: 23
+Info (12128): Elaborating entity "decode_dla" for hierarchy "ram:ram|altsyncram:altsyncram_component|altsyncram_0uq1:auto_generated|decode_dla:decode3" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_0uq1.tdf Line: 44
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "arm:arm|ALUControl[2]" is missing source, defaulting to GND File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/comp_procesador/arm.sv Line: 14
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/output_files/Filtro-de-imagenes.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4765 megabytes
-    Info: Processing ended: Sun Nov 05 17:28:43 2023
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4806 megabytes
+    Info: Processing ended: Mon Nov 13 20:25:57 2023
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:14
 
