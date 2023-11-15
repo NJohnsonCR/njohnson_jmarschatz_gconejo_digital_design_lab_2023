@@ -1,0 +1,56 @@
+module VGA_tb;
+
+  // Parámetros de simulación
+  reg clk;
+  reg [7:0] red;
+  reg [7:0] green;
+  reg [7:0] blue;
+  reg clk_25MHz;
+  reg sync_n,h_sync,v_sync;
+  reg blank_n;
+
+  // Instancia del módulo de video_controller
+  video_controller #(640, 480) dut (
+    .clk(clk),
+    .h_sync(h_sync),
+    .v_sync(v_sync),
+    .red(red),
+    .green(green),
+    .blue(blue),
+    .clk_25MHz(clk_25MHz),
+    .sync_n(sync_n),
+    .blank_n(blank_n)
+  );
+
+  // Generador de clock
+  always begin
+    #5 clk = ~clk; // Invertir el reloj cada 5 unidades de tiempo
+  end
+
+  // Estímulos de prueba
+  initial begin
+    // Inicializar señales
+    clk = 0;
+    red = 8'h00;
+    green = 8'h00;
+    blue = 8'h00;
+    clk_25MHz = 0;
+    sync_n = 1;
+    blank_n = 1;
+
+    // Esperar un poco antes de habilitar el módulo
+    #100;
+
+    // Habilitar el módulo
+    enable = 1;
+
+    // Generar una simulación de señal VGA
+    // (Debes agregar aquí las señales VGA adecuadas según tu diseño)
+    // Por ejemplo, puedes cambiar red, green y blue en función de la posición en la pantalla.
+
+    // Finalizar la simulación después de un tiempo
+    #1000;
+    $finish;
+  end
+
+endmodule

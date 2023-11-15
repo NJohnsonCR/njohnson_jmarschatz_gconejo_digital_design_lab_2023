@@ -1,0 +1,80 @@
+module video_controller #(
+    parameter ANCHO = 640,
+    parameter ALTO = 480,
+    parameter FILAS = 8,
+    parameter COLUMNAS = 8
+)
+(
+    input logic clk,
+	 input reg [8:0] Matriz [7:0][7:0],
+    output logic h_sync,
+    output logic v_sync,
+    output logic [7:0] red,
+    output logic [7:0] green,
+    output logic [7:0] blue,
+    output logic clk_25MHz,
+    output logic sync_n,
+    output logic blank_n
+);
+
+    // Dimensiones de las celdas
+    localparam ANCHO_CELDA = ANCHO / COLUMNAS;
+    localparam ALTO_CELDA = ALTO / FILAS;
+    //localparam BOMB_R = 8'b00000000;
+    //localparam BOMB_G = 8'b00000000;
+    //localparam BOMB_B = 8'b00000000;
+
+    // VGA variables de control
+    logic enable;
+    logic [15:0] V_horizontal;
+    logic [15:0] V_vertical;
+		wire txt_num =1;
+    // pll
+    VGA_pll vga_clock_gen(clk, clk_25MHz);
+
+    // contadores pata sincronizadores
+    sincronizador_horizontal vga_h (clk_25MHz, enable, V_horizontal);
+    sincronizador_vertical vga_v (clk_25MHz, enable, V_vertical);
+
+    // Sincronización vertical y horizontal 
+    assign h_sync = (V_horizontal < 96) ? 1'b1 : 1'b0;
+    assign v_sync = (V_vertical < 2) ? 1'b1 : 1'b0;
+
+    
+
+    // Zona activa de la pantalla (pantalla en blanco)
+    assign blank_n = (V_horizontal >= 96) && (V_horizontal < 799) && (V_vertical >= 2) && (V_vertical < 524);
+    
+
+    // Asignar colores a la cuadrícula o al fondo
+
+
+
+
+
+
+    always begin
+        draw_game_screen();
+    end
+
+	 
+
+
+
+    task draw_game_screen;
+    for (int i = 7; i >= 0; i = i - 1) begin // Cambio en la declaración de i
+        for (int j = 7; j >= 0; j = j - 1) begin // Cambio en la declaración de j
+            if (V_vertical >= (i * ALTO_CELDA + 35) && V_vertical < ((i+1) * ALTO_CELDA + 35) &&
+                V_horizontal >= (j * ANCHO_CELDA + 144) && V_horizontal < ((j+1) * ANCHO_CELDA + 144)) begin
+					end
+        end
+    end
+endtask
+
+	 
+	/* task draw_win_screen;
+	 endtask
+	 
+	 task draw_lose_screen;
+	 endtask*/
+endmodule
