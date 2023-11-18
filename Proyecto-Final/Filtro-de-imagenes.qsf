@@ -45,7 +45,7 @@ set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:56:21  OCTOBER 24, 20
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name BOARD "DE1-SoC Board"
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (SystemVerilog)"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
@@ -56,36 +56,88 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name VERILOG_FILE Modulos/Memorias/RAM/ram.v
-set_global_assignment -name SOURCE_FILE rom
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/decoder.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/controller.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/cond_logic.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/cond_check.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/sumador.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/register_file.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/PC_logic.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/mux2.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/main_decoder.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/flopr.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/extend.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/Deco_ALU.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/datapath.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/D_fflopReg.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/control_unit.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/condition_logic.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/condition_check.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/alu.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/adder.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Memorias/ROM/rom_tb.sv
-set_global_assignment -name VERILOG_FILE Modulos/Memorias/ROM/rom.v
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/main.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/arm.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/flopenr.sv
-set_global_assignment -name MIF_FILE Modulos/Memorias/RAM/ram_data.mif
-set_global_assignment -name MIF_FILE Modulos/Memorias/ROM/rom_data.mif
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH main_tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME main_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id main_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME main_tb -section_id main_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME dmem_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id dmem_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME dmem_tb -section_id dmem_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME topRam_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id topRam_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME topRam_tb -section_id topRam_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE main_tb.sv -section_id main_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE dmem_tb.sv -section_id dmem_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE topRam_tb.sv -section_id topRam_tb
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name SYSTEMVERILOG_FILE Modulos/comp_procesador/AluAritmetic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/write_mem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/topRam_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/topRam.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/top_module.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/sumador.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/register_file.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/PC_logic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/mux2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/mux_21.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/main_decoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/imem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/hhclock.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/flopr.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/flopenr.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/extend.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/dmem_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/dmem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/decoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/Deco_ALU.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/datapath.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/D_fflopReg.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/Counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/control_unit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/condition_logic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/condition_check.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/cond_logic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/cond_check.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/arm.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/AluAritmetic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/alu.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/adder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE write_mem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE topRam_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE topRam.sv
+set_global_assignment -name SYSTEMVERILOG_FILE top_module.sv
+set_global_assignment -name SYSTEMVERILOG_FILE sumador.sv
+set_global_assignment -name SYSTEMVERILOG_FILE register_file.sv
+set_global_assignment -name QIP_FILE ram.qip
+set_global_assignment -name SYSTEMVERILOG_FILE PC_logic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux_21.sv
+set_global_assignment -name SYSTEMVERILOG_FILE main_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE main_decoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE main.sv
+set_global_assignment -name SYSTEMVERILOG_FILE imem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE hhclock.sv
+set_global_assignment -name SYSTEMVERILOG_FILE flopr.sv
+set_global_assignment -name SYSTEMVERILOG_FILE flopenr.sv
+set_global_assignment -name SYSTEMVERILOG_FILE extend.sv
+set_global_assignment -name SYSTEMVERILOG_FILE dmem_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE dmem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE decoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Deco_ALU.sv
+set_global_assignment -name SYSTEMVERILOG_FILE datapath.sv
+set_global_assignment -name SYSTEMVERILOG_FILE D_fflopReg.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE control_unit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE condition_logic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE condition_check.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cond_logic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cond_check.sv
+set_global_assignment -name SYSTEMVERILOG_FILE arm.sv
+set_global_assignment -name SYSTEMVERILOG_FILE AluAritmetic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE alu.sv
+set_global_assignment -name SYSTEMVERILOG_FILE adder.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
