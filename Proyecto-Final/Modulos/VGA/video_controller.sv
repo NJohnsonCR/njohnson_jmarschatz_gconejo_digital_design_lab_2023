@@ -1,6 +1,7 @@
 module video_controller 
 (
     input logic clk,reset,
+	 input logic [7:0] pixel,
     output logic h_sync,
     output logic v_sync,
     output logic [7:0] red,
@@ -42,9 +43,9 @@ module video_controller
 	  always@(posedge clk_25MHz) begin
 	  
 	  //rebir el pixel y mostralo
-		  red <= 8'h10;
-		  green <= 8'hFF;
-		  blue <= 8'h01;
+		  red <= 2'h00;
+		  green <= 2'h00;
+		  blue <= 2'hFF;
     end
 
 	 

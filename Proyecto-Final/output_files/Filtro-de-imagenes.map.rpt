@@ -1,6 +1,6 @@
 Analysis & Elaboration report for Filtro-de-imagenes
-Sun Nov 19 18:43:20 2023
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Sun Nov 19 20:34:37 2023
+Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
 ---------------------
@@ -23,7 +23,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -40,22 +40,22 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sun Nov 19 18:43:20 2023       ;
-; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                 ; Filtro-de-imagenes                          ;
-; Top-level Entity Name         ; topRam                                      ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                 ;
++-------------------------------+------------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Sun Nov 19 20:34:37 2023          ;
+; Quartus Prime Version         ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
+; Revision Name                 ; Filtro-de-imagenes                             ;
+; Top-level Entity Name         ; topRam                                         ;
+; Family                        ; Cyclone V                                      ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
+; Total registers               ; N/A until Partition Merge                      ;
+; Total pins                    ; N/A until Partition Merge                      ;
+; Total virtual pins            ; N/A until Partition Merge                      ;
+; Total block memory bits       ; N/A until Partition Merge                      ;
+; Total PLLs                    ; N/A until Partition Merge                      ;
+; Total DLLs                    ; N/A until Partition Merge                      ;
++-------------------------------+------------------------------------------------+
 
 
 +------------------------------------------+
@@ -64,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -276,88 +276,100 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Nov 19 18:43:13 2023
+    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+    Info: Processing started: Sun Nov 19 20:34:30 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Filtro-de-imagenes -c Filtro-de-imagenes --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ram.v
-    Info (12023): Found entity 1: ram File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 40
+    Info (12023): Found entity 1: ram File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file main_tb.sv
-    Info (12023): Found entity 1: main_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main_tb.sv Line: 2
+    Info (12023): Found entity 1: main_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main_tb.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file main.sv
-    Info (12023): Found entity 1: main File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 1
+    Info (12023): Found entity 1: main File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/write_mem.sv
-    Info (12023): Found entity 1: write_mem File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 1
+    Info (12023): Found entity 1: write_mem File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/topram_tb.sv
-    Info (12023): Found entity 1: topRam_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam_tb.sv Line: 2
+    Info (12023): Found entity 1: topRam_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam_tb.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/topram.sv
-    Info (12023): Found entity 1: topRam File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 4
-Warning (10275): Verilog HDL Module Instantiation warning at top_module.sv(38): ignored dangling comma in List of Port Connections File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/top_module.sv Line: 38
+    Info (12023): Found entity 1: topRam File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 4
+Warning (10275): Verilog HDL Module Instantiation warning at top_module.sv(38): ignored dangling comma in List of Port Connections File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/top_module.sv Line: 38
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/top_module.sv
-    Info (12023): Found entity 1: top_module File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/top_module.sv Line: 1
+    Info (12023): Found entity 1: top_module File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/top_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/sumador.sv
-    Info (12023): Found entity 1: sumador File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/sumador.sv Line: 1
+    Info (12023): Found entity 1: sumador File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/sumador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/register_file.sv
-    Info (12023): Found entity 1: register_file File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/register_file.sv Line: 1
+    Info (12023): Found entity 1: register_file File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/register_file.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/pc_logic.sv
-    Info (12023): Found entity 1: PC_logic File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/PC_logic.sv Line: 1
+    Info (12023): Found entity 1: PC_logic File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/PC_logic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/mux2.sv
-    Info (12023): Found entity 1: mux2 File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/mux2.sv Line: 1
+    Info (12023): Found entity 1: mux2 File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/mux2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/mux_21.sv
-    Info (12023): Found entity 1: mux_21 File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/mux_21.sv Line: 1
+    Info (12023): Found entity 1: mux_21 File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/mux_21.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/main_decoder.sv
-    Info (12023): Found entity 1: main_decoder File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/main_decoder.sv Line: 1
+    Info (12023): Found entity 1: main_decoder File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/main_decoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/imem.sv
-    Info (12023): Found entity 1: imem File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/imem.sv Line: 1
+    Info (12023): Found entity 1: imem File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/imem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/hhclock.sv
-    Info (12023): Found entity 1: hhclock File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/hhclock.sv Line: 1
+    Info (12023): Found entity 1: hhclock File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/hhclock.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/flopr.sv
-    Info (12023): Found entity 1: flopr File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/flopr.sv Line: 1
+    Info (12023): Found entity 1: flopr File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/flopr.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/flopenr.sv
-    Info (12023): Found entity 1: flopenr File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/flopenr.sv Line: 1
+    Info (12023): Found entity 1: flopenr File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/flopenr.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/extend.sv
-    Info (12023): Found entity 1: extend File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/extend.sv Line: 1
+    Info (12023): Found entity 1: extend File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/extend.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/dmem_tb.sv
-    Info (12023): Found entity 1: dmem_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/dmem_tb.sv Line: 3
+    Info (12023): Found entity 1: dmem_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/dmem_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/dmem.sv
-    Info (12023): Found entity 1: dmem File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/dmem.sv Line: 1
+    Info (12023): Found entity 1: dmem File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/dmem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/decoder.sv
-    Info (12023): Found entity 1: decoder File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/decoder.sv Line: 1
+    Info (12023): Found entity 1: decoder File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/decoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/deco_alu.sv
-    Info (12023): Found entity 1: Deco_ALU File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/Deco_ALU.sv Line: 1
+    Info (12023): Found entity 1: Deco_ALU File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/Deco_ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/datapath.sv
-    Info (12023): Found entity 1: datapath File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/datapath.sv Line: 1
+    Info (12023): Found entity 1: datapath File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/datapath.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/d_fflopreg.sv
-    Info (12023): Found entity 1: D_fflopReg File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/D_fflopReg.sv Line: 1
+    Info (12023): Found entity 1: D_fflopReg File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/D_fflopReg.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/controller.sv
-    Info (12023): Found entity 1: controller File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/controller.sv Line: 1
+    Info (12023): Found entity 1: controller File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/control_unit.sv
-    Info (12023): Found entity 1: control_unit File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/control_unit.sv Line: 2
+    Info (12023): Found entity 1: control_unit File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/control_unit.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/condition_logic.sv
-    Info (12023): Found entity 1: condition_logic File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/condition_logic.sv Line: 1
+    Info (12023): Found entity 1: condition_logic File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/condition_logic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/condition_check.sv
-    Info (12023): Found entity 1: condition_check File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/condition_check.sv Line: 1
+    Info (12023): Found entity 1: condition_check File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/condition_check.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/cond_logic.sv
-    Info (12023): Found entity 1: condlogic File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/cond_logic.sv Line: 1
+    Info (12023): Found entity 1: condlogic File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/cond_logic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/cond_check.sv
-    Info (12023): Found entity 1: cond_check File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/cond_check.sv Line: 1
+    Info (12023): Found entity 1: cond_check File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/cond_check.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/arm.sv
-    Info (12023): Found entity 1: arm File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/arm.sv Line: 1
+    Info (12023): Found entity 1: arm File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/arm.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/aluaritmetic.sv
-    Info (12023): Found entity 1: AluAritmetic File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/AluAritmetic.sv Line: 1
+    Info (12023): Found entity 1: AluAritmetic File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/AluAritmetic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/alu.sv
-    Info (12023): Found entity 1: alu File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/alu.sv Line: 1
+    Info (12023): Found entity 1: alu File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/alu.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/adder.sv
-    Info (12023): Found entity 1: adder File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/adder.sv Line: 1
+    Info (12023): Found entity 1: adder File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/vga/counter.sv
-    Info (12023): Found entity 1: Counter File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/Counter.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at top_module.sv(17): created implicit net for "addr_cont" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/top_module.sv Line: 17
+    Info (12023): Found entity 1: Counter File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/Counter.sv Line: 1
+Warning (10229): Verilog HDL Expression warning at video_controller.sv(48): truncated literal to match 2 bits File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/video_controller.sv Line: 48
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/vga/video_controller.sv
+    Info (12023): Found entity 1: video_controller File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/video_controller.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/vga/vga_tb.sv
+    Info (12023): Found entity 1: VGA_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/VGA_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/vga/vga_pll.sv
+    Info (12023): Found entity 1: VGA_pll File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/VGA_pll.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/vga/sincronizador_vertical.sv
+    Info (12023): Found entity 1: sincronizador_vertical File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/sincronizador_vertical.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/vga/sincronizador_horizontal.sv
+    Info (12023): Found entity 1: sincronizador_horizontal File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/sincronizador_horizontal.sv Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at main.sv(28): created implicit net for "adress" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at top_module.sv(17): created implicit net for "addr_cont" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/top_module.sv Line: 17
 Info (12127): Elaborating entity "topRam" for the top level hierarchy
-Info (12128): Elaborating entity "ram" for hierarchy "ram:mem" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 13
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ram:mem|altsyncram:altsyncram_component" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 86
-Info (12130): Elaborated megafunction instantiation "ram:mem|altsyncram:altsyncram_component" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 86
-Info (12133): Instantiated megafunction "ram:mem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 86
+Info (12128): Elaborating entity "ram" for hierarchy "ram:mem" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 13
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ram:mem|altsyncram:altsyncram_component" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 86
+Info (12130): Elaborated megafunction instantiation "ram:mem|altsyncram:altsyncram_component" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 86
+Info (12133): Instantiated megafunction "ram:mem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 86
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "ram_data.mif"
@@ -374,66 +386,66 @@ Info (12133): Instantiated megafunction "ram:mem|altsyncram:altsyncram_component
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mpo1.tdf
-    Info (12023): Found entity 1: altsyncram_mpo1 File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 34
-Info (12128): Elaborating entity "altsyncram_mpo1" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated" File: d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+    Info (12023): Found entity 1: altsyncram_mpo1 File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 34
+Info (12128): Elaborating entity "altsyncram_mpo1" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_dla.tdf
-    Info (12023): Found entity 1: decode_dla File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/decode_dla.tdf Line: 23
-Info (12128): Elaborating entity "decode_dla" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|decode_dla:decode3" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 44
+    Info (12023): Found entity 1: decode_dla File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/decode_dla.tdf Line: 23
+Info (12128): Elaborating entity "decode_dla" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|decode_dla:decode3" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_61a.tdf
-    Info (12023): Found entity 1: decode_61a File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/decode_61a.tdf Line: 23
-Info (12128): Elaborating entity "decode_61a" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|decode_61a:rden_decode" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 45
+    Info (12023): Found entity 1: decode_61a File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/decode_61a.tdf Line: 23
+Info (12128): Elaborating entity "decode_61a" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|decode_61a:rden_decode" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 45
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_ahb.tdf
-    Info (12023): Found entity 1: mux_ahb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/mux_ahb.tdf Line: 23
-Info (12128): Elaborating entity "mux_ahb" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|mux_ahb:mux2" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 46
-Info (12128): Elaborating entity "Counter" for hierarchy "Counter:cont" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 14
-Warning (10230): Verilog HDL assignment warning at Counter.sv(18): truncated value with size 32 to match size of target (16) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/Counter.sv Line: 18
-Info (12128): Elaborating entity "write_mem" for hierarchy "write_mem:escribir" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 15
-Warning (10240): Verilog HDL Always Construct warning at write_mem.sv(8): inferring latch(es) for variable "data", which holds its previous value in one or more paths through the always construct File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[0]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[1]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[2]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[3]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[4]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[5]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[6]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[7]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[8]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[9]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[10]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[11]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[12]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[13]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[14]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[15]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[16]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[17]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[18]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[19]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[20]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[21]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[22]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[23]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[24]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[25]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[26]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[27]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[28]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[29]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[30]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[31]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (12128): Elaborating entity "mux_21" for hierarchy "mux_21:mux_21" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 16
+    Info (12023): Found entity 1: mux_ahb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/mux_ahb.tdf Line: 23
+Info (12128): Elaborating entity "mux_ahb" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|mux_ahb:mux2" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 46
+Info (12128): Elaborating entity "Counter" for hierarchy "Counter:cont" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 14
+Warning (10230): Verilog HDL assignment warning at Counter.sv(18): truncated value with size 32 to match size of target (16) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/Counter.sv Line: 18
+Info (12128): Elaborating entity "write_mem" for hierarchy "write_mem:escribir" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 15
+Warning (10240): Verilog HDL Always Construct warning at write_mem.sv(8): inferring latch(es) for variable "data", which holds its previous value in one or more paths through the always construct File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[0]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[1]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[2]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[3]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[4]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[5]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[6]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[7]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[8]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[9]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[10]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[11]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[12]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[13]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[14]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[15]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[16]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[17]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[18]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[19]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[20]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[21]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[22]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[23]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[24]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[25]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[26]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[27]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[28]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[29]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[30]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[31]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (12128): Elaborating entity "mux_21" for hierarchy "mux_21:mux_21" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 16
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (144001): Generated suppressed messages file C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/output_files/Filtro-de-imagenes.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4794 megabytes
-    Info: Processing ended: Sun Nov 19 18:43:20 2023
+Info (144001): Generated suppressed messages file C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/output_files/Filtro-de-imagenes.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4816 megabytes
+    Info: Processing ended: Sun Nov 19 20:34:37 2023
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Total CPU time (on all processors): 00:00:18
 
 
 +--------------------------------------------+
 ; Analysis & Elaboration Suppressed Messages ;
 +--------------------------------------------+
-The suppressed messages can be found in C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/output_files/Filtro-de-imagenes.map.smsg.
+The suppressed messages can be found in C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/output_files/Filtro-de-imagenes.map.smsg.
 
 

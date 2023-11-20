@@ -1,7 +1,7 @@
 `timescale 1 ps / 1 ps
 module topRam_tb;
 
-  logic clk, rst;
+  logic clk, rst, switch;
   logic [2:0] btn;
   logic [31:0] q;
   logic [15:0] address;
@@ -25,14 +25,12 @@ module topRam_tb;
   initial begin
     rst = 0;
     #5 rst = 1; // Aplicar un pulso de reset después de 5 unidades de tiempo
-	 #5 rst = 0; // Aplicar un pulso de reset después de 5 unidades de tiempo
+ //    #5 rst = 0; // Aplicar un pulso de reset después de 5 unidades de tiempo
   end
 
   // Estímulos del botón
   initial begin
-    #20 btn = 3'b011; // Cambiar el valor de btn después de 20 unidades de tiempo
-	 #20 btn = 3'b101; // Cambiar el valor de btn después de 20 unidades de tiempo
-    #20 btn = 3'b110; // Cambiar nuevamente el valor de btn después de 20 unidades de tiempo
+    #20 switch = 1'b1; // Cambiar el valor de btn después de 20 unidades de tiempo
     #100 $finish; // Finalizar la simulación después de 100 unidades de tiempo
   end
 

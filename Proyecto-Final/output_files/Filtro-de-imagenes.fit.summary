@@ -1,16 +1,16 @@
-Fitter Status : Successful - Fri Oct 27 13:40:10 2023
+Fitter Status : Successful - Sun Nov 19 20:31:38 2023
 Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 Revision Name : Filtro-de-imagenes
-Top-level Entity Name : top_module
+Top-level Entity Name : main
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 27 / 32,070 ( < 1 % )
-Total registers : 44
-Total pins : 21 / 457 ( 5 % )
+Logic utilization (in ALMs) : 156 / 32,070 ( < 1 % )
+Total registers : 100
+Total pins : 67 / 457 ( 15 % )
 Total virtual pins : 0
-Total block memory bits : 64 / 4,065,280 ( < 1 % )
-Total RAM Blocks : 1 / 397 ( < 1 % )
+Total block memory bits : 2,097,152 / 4,065,280 ( 52 % )
+Total RAM Blocks : 256 / 397 ( 64 % )
 Total DSP Blocks : 0 / 87 ( 0 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
