@@ -6,17 +6,18 @@ module dmem(input logic clk, we,
 	assign rd = RAM[a[31:2]]; // word aligned
 	always_ff @(posedge clk)
 		if (we) RAM[a[31:2]] <= wd;
+	
 	*/
 	
 	logic [15:0] _a;
 	
 	always_comb begin
-		if(a[17:2] < 0 | a[17:2] >= 65535) _a = 16'd_0;
+		if(a[17:2] < 0 | a[17:2] >= 65535) _a = 16'd0;
 		else _a = a[17:2];
 	end
 	
 	
+	
 	ram ram(_a, clk, wd, we, rd);
-		
 		
 endmodule

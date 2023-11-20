@@ -12,223 +12,60 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:56 on Nov 17,2023
+# Start time: 17:43:41 on Nov 19,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v 
 # -- Compiling module ram
 # 
 # Top level modules:
 # 	ram
-# End time: 18:25:56 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 17:43:41 on Nov 19,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/register_file.sv}
+# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:56 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/register_file.sv 
-# -- Compiling module register_file
+# Start time: 17:43:41 on Nov 19,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv 
+# -- Compiling module write_mem
 # 
 # Top level modules:
-# 	register_file
-# End time: 18:25:56 on Nov 17,2023, Elapsed time: 0:00:00
+# 	write_mem
+# End time: 17:43:41 on Nov 19,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/mux2.sv}
+# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:56 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/mux2.sv 
-# -- Compiling module mux2
+# Start time: 17:43:41 on Nov 19,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv 
+# -- Compiling module topRam
 # 
 # Top level modules:
-# 	mux2
-# End time: 18:25:56 on Nov 17,2023, Elapsed time: 0:00:00
+# 	topRam
+# End time: 17:43:41 on Nov 19,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/flopr.sv}
+# 
+# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:56 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/flopr.sv 
-# -- Compiling module flopr
+# Start time: 17:43:41 on Nov 19,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam_tb.sv 
+# -- Compiling module topRam_tb
 # 
 # Top level modules:
-# 	flopr
-# End time: 18:25:56 on Nov 17,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/flopenr.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:56 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/flopenr.sv 
-# -- Compiling module flopenr
-# 
-# Top level modules:
-# 	flopenr
-# End time: 18:25:56 on Nov 17,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/extend.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:56 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/extend.sv 
-# -- Compiling module extend
-# 
-# Top level modules:
-# 	extend
-# End time: 18:25:56 on Nov 17,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/dmem.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:56 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/dmem.sv 
-# -- Compiling module dmem
-# 
-# Top level modules:
-# 	dmem
-# End time: 18:25:56 on Nov 17,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/decoder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:56 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/decoder.sv 
-# -- Compiling module decoder
-# 
-# Top level modules:
-# 	decoder
-# End time: 18:25:56 on Nov 17,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/datapath.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:56 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/datapath.sv 
-# -- Compiling module datapath
-# 
-# Top level modules:
-# 	datapath
-# End time: 18:25:56 on Nov 17,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/controller.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:57 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/controller.sv 
-# -- Compiling module controller
-# 
-# Top level modules:
-# 	controller
-# End time: 18:25:57 on Nov 17,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/cond_logic.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:57 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/cond_logic.sv 
-# -- Compiling module condlogic
-# 
-# Top level modules:
-# 	condlogic
-# End time: 18:25:57 on Nov 17,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/cond_check.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:57 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/cond_check.sv 
-# -- Compiling module cond_check
-# 
-# Top level modules:
-# 	cond_check
-# End time: 18:25:57 on Nov 17,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/arm.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:57 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/arm.sv 
-# -- Compiling module arm
-# 
-# Top level modules:
-# 	arm
-# End time: 18:25:57 on Nov 17,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/AluAritmetic.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:57 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/AluAritmetic.sv 
-# -- Compiling module AluAritmetic
-# 
-# Top level modules:
-# 	AluAritmetic
-# End time: 18:25:57 on Nov 17,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/alu.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:57 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/alu.sv 
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# End time: 18:25:57 on Nov 17,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/adder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:57 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/adder.sv 
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	adder
-# End time: 18:25:57 on Nov 17,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:57 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv 
-# -- Compiling module main
-# 
-# Top level modules:
-# 	main
-# End time: 18:25:57 on Nov 17,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/imem.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:57 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/imem.sv 
-# -- Compiling module imem
-# 
-# Top level modules:
-# 	imem
-# End time: 18:25:57 on Nov 17,2023, Elapsed time: 0:00:00
+# 	topRam_tb
+# End time: 17:43:41 on Nov 19,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final {C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:57 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final" C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main_tb.sv 
-# -- Compiling module main_tb
-# 
-# Top level modules:
-# 	main_tb
-# End time: 18:25:57 on Nov 17,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  main_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" main_tb 
-# Start time: 18:25:57 on Nov 17,2023
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  topRam_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" topRam_tb 
+# Start time: 17:43:41 on Nov 19,2023
 # Loading sv_std.std
-# Loading work.main_tb
-# Loading work.main
-# Loading work.arm
-# Loading work.controller
-# Loading work.decoder
-# Loading work.condlogic
-# Loading work.flopenr
-# Loading work.cond_check
-# Loading work.datapath
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.adder
-# Loading work.register_file
-# Loading work.extend
-# Loading work.alu
-# Loading work.AluAritmetic
-# Loading work.imem
-# Loading work.dmem
+# Loading work.topRam_tb
+# Loading work.topRam
 # Loading work.ram
 # Loading altera_mf_ver.altsyncram
+# Loading work.write_mem
 # Loading altera_mf_ver.altsyncram_body
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (16) for port 'addr'. The port definition is at: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /topRam_tb/uut/escribir File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 14
 # 
 # add wave *
 # view structure
@@ -236,7 +73,9 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Break key hit
-# Break in Module register_file at C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/register_file.sv line 15
-# End time: 18:26:36 on Nov 17,2023, Elapsed time: 0:00:39
-# Errors: 0, Warnings: 0
+# ** Note: $finish    : C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam_tb.sv(36)
+#    Time: 160 ps  Iteration: 0  Instance: /topRam_tb
+# 1
+# Break in Module topRam_tb at C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam_tb.sv line 36
+# End time: 17:45:36 on Nov 19,2023, Elapsed time: 0:01:55
+# Errors: 0, Warnings: 1

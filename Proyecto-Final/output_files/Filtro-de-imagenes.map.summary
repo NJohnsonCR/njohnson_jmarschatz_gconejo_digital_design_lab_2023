@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Fri Nov 17 18:25:48 2023
+Analysis & Elaboration Status : Successful - Sun Nov 19 18:43:20 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Filtro-de-imagenes
-Top-level Entity Name : main
+Top-level Entity Name : topRam
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
