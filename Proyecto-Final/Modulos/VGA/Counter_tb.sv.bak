@@ -1,0 +1,44 @@
+module tb_Counter;
+
+  // Definir parámetros
+  parameter CLK_PERIOD = 10; // Periodo de reloj en unidades de tiempo de simulación
+
+  // Definir señales
+  reg switch;
+  reg clk;
+  reg rst;
+  wire [15:0] count;
+
+  // Instanciar el módulo Counter
+  Counter uut (
+    .switch(switch),
+    .clk(clk),
+    .rst(rst),
+    .count(count)
+  );
+
+  // Generación de clock
+  initial begin
+    clk = 0;
+    forever #10 clk = ~clk;
+  end
+  // Generar estímulo
+  initial begin
+    switch = 0;
+    clk = 0;
+    rst = 1; // Iniciar con rst activado
+
+    // Esperar un tiempo antes de activar switch
+    #10;
+
+    // Activar switch
+    switch = 1;
+
+    // Esperar un tiempo antes de terminar la simulación
+    #50;
+
+    // Terminar simulación
+    $finish;
+  end
+
+endmodule

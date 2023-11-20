@@ -10,6 +10,7 @@ module topRam_tb;
   topRam uut (
     .clk(clk),
     .rst(rst),
+	 .switch(switch),
     .btn(btn),
     .q(q),
     .address(address)
@@ -23,15 +24,16 @@ module topRam_tb;
 
   // Inicialización de señales
   initial begin
-    rst = 0;
-    #5 rst = 1; // Aplicar un pulso de reset después de 5 unidades de tiempo
- //    #5 rst = 0; // Aplicar un pulso de reset después de 5 unidades de tiempo
-  end
+    clk = 0;
+    rst = 1;
+	 switch = 1;
 
-  // Estímulos del botón
-  initial begin
-    #20 switch = 1'b1; // Cambiar el valor de btn después de 20 unidades de tiempo
-    #100 $finish; // Finalizar la simulación después de 100 unidades de tiempo
+    #10 rst = 0; 
+     // Esperar un tiempo antes de terminar la simulación
+    #100;
+
+    // Terminar simulación
+    $finish;
   end
 
 endmodule
