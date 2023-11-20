@@ -29,7 +29,7 @@ def generate_mif_file(grey_image_array):
 
     string_datos += "END;\n"
 
-    with open("../image_hex_data.mif", "w") as mif_file:
+    with open("../ram_data.mif", "w") as mif_file:
         mif_file.write(string_datos)
 
 
@@ -37,13 +37,13 @@ def generate_mif_file(grey_image_array):
 def save_grey_image(grey_image_array, name):
     grey_image = Image.fromarray(grey_image_array)
     grey_image = grey_image.convert("L")
-    grey_image.save(name + ".png")
+    grey_image.save(name + ".jpg")
 
 
 # Convierte una imagen a una matriz de numpy en escala de grises, rango [0 (negro), 255 (blanco)]
 def convert(file_name):
     image = Image.open(file_name)
-    new_image = image.resize((256, 256))
+    new_image = image.resize((100, 100))
     image_array = np.array(new_image)
     grey_image_array = np.empty([len(image_array), len(image_array[0])])
 
@@ -59,7 +59,7 @@ def convert(file_name):
     return grey_image_array
 
 
-grey_image_array = convert('')
+grey_image_array = convert('img100x100.jpg')
 
-save_grey_image(grey_image_array)
+save_grey_image(grey_image_array, "nueva_imagen")
 generate_mif_file(grey_image_array)
