@@ -3,147 +3,195 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'clk'
-Slack : -5.634
-TNS   : -11643.037
+Slack : -5.269
+TNS   : -200.397
+
+Type  : Slow 1100mV 85C Model Setup 'topRam:topR|hhclock:hhclock|seconds'
+Slack : -5.139
+TNS   : -11751.089
 
 Type  : Slow 1100mV 85C Model Setup 'btn[0]'
-Slack : -4.434
-TNS   : -8.514
+Slack : -4.083
+TNS   : -8.127
 
 Type  : Slow 1100mV 85C Model Setup 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
-Slack : -2.085
-TNS   : -97.899
-
-Type  : Slow 1100mV 85C Model Hold 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
-Slack : 0.283
-TNS   : 0.000
+Slack : -1.957
+TNS   : -91.146
 
 Type  : Slow 1100mV 85C Model Hold 'clk'
-Slack : 0.367
+Slack : 0.238
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'btn[0]'
-Slack : 1.736
+Type  : Slow 1100mV 85C Model Hold 'topRam:topR|hhclock:hhclock|seconds'
+Slack : 0.277
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
-Slack : -2.174
-TNS   : -25408.418
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
-Slack : -0.727
-TNS   : -56.334
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'btn[0]'
-Slack : -0.179
-TNS   : -0.385
-
-Type  : Slow 1100mV 0C Model Setup 'clk'
-Slack : -5.681
-TNS   : -10859.323
-
-Type  : Slow 1100mV 0C Model Setup 'btn[0]'
-Slack : -4.317
-TNS   : -8.287
-
-Type  : Slow 1100mV 0C Model Setup 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
-Slack : -2.063
-TNS   : -96.627
-
-Type  : Slow 1100mV 0C Model Hold 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
+Type  : Slow 1100mV 85C Model Hold 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
 Slack : 0.285
 TNS   : 0.000
 
+Type  : Slow 1100mV 85C Model Hold 'btn[0]'
+Slack : 1.470
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'topRam:topR|hhclock:hhclock|seconds'
+Slack : -2.174
+TNS   : -25715.356
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.517
+TNS   : -41.824
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
+Slack : -0.494
+TNS   : -41.470
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'btn[0]'
+Slack : -0.200
+TNS   : -0.664
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -5.313
+TNS   : -196.919
+
+Type  : Slow 1100mV 0C Model Setup 'topRam:topR|hhclock:hhclock|seconds'
+Slack : -4.954
+TNS   : -11139.451
+
+Type  : Slow 1100mV 0C Model Setup 'btn[0]'
+Slack : -4.073
+TNS   : -8.070
+
+Type  : Slow 1100mV 0C Model Setup 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
+Slack : -1.926
+TNS   : -89.504
+
 Type  : Slow 1100mV 0C Model Hold 'clk'
-Slack : 0.368
+Slack : 0.223
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'topRam:topR|hhclock:hhclock|seconds'
+Slack : 0.239
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
+Slack : 0.287
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'btn[0]'
-Slack : 1.550
+Slack : 1.329
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'topRam:topR|hhclock:hhclock|seconds'
 Slack : -2.174
-TNS   : -25351.662
+TNS   : -25743.484
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.526
+TNS   : -45.006
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
-Slack : -0.742
-TNS   : -58.496
+Slack : -0.506
+TNS   : -42.252
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'btn[0]'
-Slack : -0.183
-TNS   : -0.373
+Slack : -0.194
+TNS   : -0.590
+
+Type  : Fast 1100mV 85C Model Setup 'topRam:topR|hhclock:hhclock|seconds'
+Slack : -3.396
+TNS   : -7270.700
 
 Type  : Fast 1100mV 85C Model Setup 'clk'
-Slack : -3.258
-TNS   : -6558.702
+Slack : -3.132
+TNS   : -84.558
 
 Type  : Fast 1100mV 85C Model Setup 'btn[0]'
-Slack : -2.633
-TNS   : -5.004
+Slack : -2.354
+TNS   : -4.653
 
 Type  : Fast 1100mV 85C Model Setup 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
-Slack : -0.964
-TNS   : -42.594
+Slack : -0.905
+TNS   : -38.536
 
 Type  : Fast 1100mV 85C Model Hold 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
-Slack : 0.097
+Slack : 0.098
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'topRam:topR|hhclock:hhclock|seconds'
+Slack : 0.120
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'clk'
-Slack : 0.199
+Slack : 0.133
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'btn[0]'
-Slack : 0.938
+Slack : 0.780
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'topRam:topR|hhclock:hhclock|seconds'
 Slack : -2.174
-TNS   : -25288.275
+TNS   : -25636.318
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
-Slack : -0.400
-TNS   : -19.865
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.503
+TNS   : -8.124
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'btn[0]'
-Slack : -0.331
-TNS   : -1.537
+Slack : -0.350
+TNS   : -1.686
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
+Slack : -0.229
+TNS   : -9.996
+
+Type  : Fast 1100mV 0C Model Setup 'topRam:topR|hhclock:hhclock|seconds'
+Slack : -3.144
+TNS   : -6598.495
 
 Type  : Fast 1100mV 0C Model Setup 'clk'
-Slack : -2.927
-TNS   : -5501.029
+Slack : -2.817
+TNS   : -73.086
 
 Type  : Fast 1100mV 0C Model Setup 'btn[0]'
-Slack : -2.229
-TNS   : -4.228
+Slack : -1.990
+TNS   : -3.952
 
 Type  : Fast 1100mV 0C Model Setup 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
-Slack : -0.817
-TNS   : -36.748
+Slack : -0.781
+TNS   : -33.620
 
 Type  : Fast 1100mV 0C Model Hold 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
-Slack : 0.084
+Slack : 0.085
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'topRam:topR|hhclock:hhclock|seconds'
+Slack : 0.122
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'clk'
-Slack : 0.118
+Slack : 0.125
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'btn[0]'
-Slack : 0.761
+Slack : 0.640
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'topRam:topR|hhclock:hhclock|seconds'
 Slack : -2.174
-TNS   : -25303.021
+TNS   : -25602.462
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
-Slack : -0.333
-TNS   : -15.167
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.494
+TNS   : -7.892
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'btn[0]'
-Slack : -0.300
-TNS   : -1.389
+Slack : -0.306
+TNS   : -1.472
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'video_controller:vc|VGA_pll:vga_clock_gen|vga_clk'
+Slack : -0.188
+TNS   : -8.280
 
 ------------------------------------------------------------

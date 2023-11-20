@@ -16,6 +16,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "sync_n",
+					"strict" : false
+				},
+				{
 					"name" : "blank_n",
 					"strict" : false
 				},

@@ -1,61 +1,131 @@
-|topRam
+|main
 clk => clk.IN2
+reset => reset.IN2
+switch => switch.IN1
+btn[0] => btn[0].IN1
+btn[1] => btn[1].IN1
+btn[2] => btn[2].IN1
+h_sync << video_controller:vc.port3
+v_sync << video_controller:vc.port4
+red[0] << video_controller:vc.port5
+red[1] << video_controller:vc.port5
+red[2] << video_controller:vc.port5
+red[3] << video_controller:vc.port5
+red[4] << video_controller:vc.port5
+red[5] << video_controller:vc.port5
+red[6] << video_controller:vc.port5
+red[7] << video_controller:vc.port5
+green[0] << video_controller:vc.port6
+green[1] << video_controller:vc.port6
+green[2] << video_controller:vc.port6
+green[3] << video_controller:vc.port6
+green[4] << video_controller:vc.port6
+green[5] << video_controller:vc.port6
+green[6] << video_controller:vc.port6
+green[7] << video_controller:vc.port6
+blue[0] << video_controller:vc.port7
+blue[1] << video_controller:vc.port7
+blue[2] << video_controller:vc.port7
+blue[3] << video_controller:vc.port7
+blue[4] << video_controller:vc.port7
+blue[5] << video_controller:vc.port7
+blue[6] << video_controller:vc.port7
+blue[7] << video_controller:vc.port7
+clk_25MHz << video_controller:vc.port8
+sync_n << video_controller:vc.port9
+blank_n << video_controller:vc.port10
+q[0] << q[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] << q[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] << q[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] << q[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] << q[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] << q[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] << q[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] << q[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] << q[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] << q[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] << q[10].DB_MAX_OUTPUT_PORT_TYPE
+q[11] << q[11].DB_MAX_OUTPUT_PORT_TYPE
+q[12] << q[12].DB_MAX_OUTPUT_PORT_TYPE
+q[13] << q[13].DB_MAX_OUTPUT_PORT_TYPE
+q[14] << q[14].DB_MAX_OUTPUT_PORT_TYPE
+q[15] << q[15].DB_MAX_OUTPUT_PORT_TYPE
+q[16] << q[16].DB_MAX_OUTPUT_PORT_TYPE
+q[17] << q[17].DB_MAX_OUTPUT_PORT_TYPE
+q[18] << q[18].DB_MAX_OUTPUT_PORT_TYPE
+q[19] << q[19].DB_MAX_OUTPUT_PORT_TYPE
+q[20] << q[20].DB_MAX_OUTPUT_PORT_TYPE
+q[21] << q[21].DB_MAX_OUTPUT_PORT_TYPE
+q[22] << q[22].DB_MAX_OUTPUT_PORT_TYPE
+q[23] << q[23].DB_MAX_OUTPUT_PORT_TYPE
+q[24] << q[24].DB_MAX_OUTPUT_PORT_TYPE
+q[25] << q[25].DB_MAX_OUTPUT_PORT_TYPE
+q[26] << q[26].DB_MAX_OUTPUT_PORT_TYPE
+q[27] << q[27].DB_MAX_OUTPUT_PORT_TYPE
+q[28] << q[28].DB_MAX_OUTPUT_PORT_TYPE
+q[29] << q[29].DB_MAX_OUTPUT_PORT_TYPE
+q[30] << q[30].DB_MAX_OUTPUT_PORT_TYPE
+q[31] << q[31].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|topRam:topR
+clk => clk.IN1
 rst => rst.IN2
 switch => switch.IN1
 btn[0] => btn[0].IN1
 btn[1] => btn[1].IN1
 btn[2] => btn[2].IN1
-q[0] << ram:mem.port4
-q[1] << ram:mem.port4
-q[2] << ram:mem.port4
-q[3] << ram:mem.port4
-q[4] << ram:mem.port4
-q[5] << ram:mem.port4
-q[6] << ram:mem.port4
-q[7] << ram:mem.port4
-q[8] << ram:mem.port4
-q[9] << ram:mem.port4
-q[10] << ram:mem.port4
-q[11] << ram:mem.port4
-q[12] << ram:mem.port4
-q[13] << ram:mem.port4
-q[14] << ram:mem.port4
-q[15] << ram:mem.port4
-q[16] << ram:mem.port4
-q[17] << ram:mem.port4
-q[18] << ram:mem.port4
-q[19] << ram:mem.port4
-q[20] << ram:mem.port4
-q[21] << ram:mem.port4
-q[22] << ram:mem.port4
-q[23] << ram:mem.port4
-q[24] << ram:mem.port4
-q[25] << ram:mem.port4
-q[26] << ram:mem.port4
-q[27] << ram:mem.port4
-q[28] << ram:mem.port4
-q[29] << ram:mem.port4
-q[30] << ram:mem.port4
-q[31] << ram:mem.port4
-address[0] << address[0].DB_MAX_OUTPUT_PORT_TYPE
-address[1] << address[1].DB_MAX_OUTPUT_PORT_TYPE
-address[2] << address[2].DB_MAX_OUTPUT_PORT_TYPE
-address[3] << address[3].DB_MAX_OUTPUT_PORT_TYPE
-address[4] << address[4].DB_MAX_OUTPUT_PORT_TYPE
-address[5] << address[5].DB_MAX_OUTPUT_PORT_TYPE
-address[6] << address[6].DB_MAX_OUTPUT_PORT_TYPE
-address[7] << address[7].DB_MAX_OUTPUT_PORT_TYPE
-address[8] << address[8].DB_MAX_OUTPUT_PORT_TYPE
-address[9] << address[9].DB_MAX_OUTPUT_PORT_TYPE
-address[10] << address[10].DB_MAX_OUTPUT_PORT_TYPE
-address[11] << address[11].DB_MAX_OUTPUT_PORT_TYPE
-address[12] << address[12].DB_MAX_OUTPUT_PORT_TYPE
-address[13] << address[13].DB_MAX_OUTPUT_PORT_TYPE
-address[14] << address[14].DB_MAX_OUTPUT_PORT_TYPE
-address[15] << address[15].DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= ram:mem.port4
+q[1] <= ram:mem.port4
+q[2] <= ram:mem.port4
+q[3] <= ram:mem.port4
+q[4] <= ram:mem.port4
+q[5] <= ram:mem.port4
+q[6] <= ram:mem.port4
+q[7] <= ram:mem.port4
+q[8] <= ram:mem.port4
+q[9] <= ram:mem.port4
+q[10] <= ram:mem.port4
+q[11] <= ram:mem.port4
+q[12] <= ram:mem.port4
+q[13] <= ram:mem.port4
+q[14] <= ram:mem.port4
+q[15] <= ram:mem.port4
+q[16] <= ram:mem.port4
+q[17] <= ram:mem.port4
+q[18] <= ram:mem.port4
+q[19] <= ram:mem.port4
+q[20] <= ram:mem.port4
+q[21] <= ram:mem.port4
+q[22] <= ram:mem.port4
+q[23] <= ram:mem.port4
+q[24] <= ram:mem.port4
+q[25] <= ram:mem.port4
+q[26] <= ram:mem.port4
+q[27] <= ram:mem.port4
+q[28] <= ram:mem.port4
+q[29] <= ram:mem.port4
+q[30] <= ram:mem.port4
+q[31] <= ram:mem.port4
+address[0] <= address[0].DB_MAX_OUTPUT_PORT_TYPE
+address[1] <= address[1].DB_MAX_OUTPUT_PORT_TYPE
+address[2] <= address[2].DB_MAX_OUTPUT_PORT_TYPE
+address[3] <= address[3].DB_MAX_OUTPUT_PORT_TYPE
+address[4] <= address[4].DB_MAX_OUTPUT_PORT_TYPE
+address[5] <= address[5].DB_MAX_OUTPUT_PORT_TYPE
+address[6] <= address[6].DB_MAX_OUTPUT_PORT_TYPE
+address[7] <= address[7].DB_MAX_OUTPUT_PORT_TYPE
+address[8] <= address[8].DB_MAX_OUTPUT_PORT_TYPE
+address[9] <= address[9].DB_MAX_OUTPUT_PORT_TYPE
+address[10] <= address[10].DB_MAX_OUTPUT_PORT_TYPE
+address[11] <= address[11].DB_MAX_OUTPUT_PORT_TYPE
+address[12] <= address[12].DB_MAX_OUTPUT_PORT_TYPE
+address[13] <= address[13].DB_MAX_OUTPUT_PORT_TYPE
+address[14] <= address[14].DB_MAX_OUTPUT_PORT_TYPE
+address[15] <= address[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topRam|ram:mem
+|main|topRam:topR|ram:mem
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -140,7 +210,7 @@ q[30] <= altsyncram:altsyncram_component.q_a
 q[31] <= altsyncram:altsyncram_component.q_a
 
 
-|topRam|ram:mem|altsyncram:altsyncram_component
+|main|topRam:topR|ram:mem|altsyncram:altsyncram_component
 wren_a => altsyncram_mpo1:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -245,7 +315,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|topRam|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated
+|main|topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -4133,7 +4203,7 @@ q_a[31] <= mux_ahb:mux2.result[31]
 wren_a => decode_dla:decode3.enable
 
 
-|topRam|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|decode_dla:decode3
+|main|topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|decode_dla:decode3
 data[0] => w_anode1607w[1].IN0
 data[0] => w_anode1624w[1].IN1
 data[0] => w_anode1634w[1].IN0
@@ -4176,7 +4246,7 @@ eq[6] <= w_anode1674w[3].DB_MAX_OUTPUT_PORT_TYPE
 eq[7] <= w_anode1684w[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topRam|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|decode_61a:rden_decode
+|main|topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|decode_61a:rden_decode
 data[0] => w_anode1695w[1].IN0
 data[0] => w_anode1713w[1].IN1
 data[0] => w_anode1724w[1].IN0
@@ -4211,7 +4281,7 @@ eq[6] <= w_anode1768w[3].DB_MAX_OUTPUT_PORT_TYPE
 eq[7] <= w_anode1779w[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topRam|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|mux_ahb:mux2
+|main|topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|mux_ahb:mux2
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w1_n0_mux_dataout.IN1
 data[2] => l1_w2_n0_mux_dataout.IN1
@@ -4950,7 +5020,7 @@ sel[2] => l3_w9_n0_mux_dataout.IN0
 sel[2] => _.IN0
 
 
-|topRam|Counter:cont
+|main|topRam:topR|Counter:cont
 switch => count[0]~reg0.ENA
 switch => count[15]~reg0.ENA
 switch => count[14]~reg0.ENA
@@ -5017,7 +5087,7 @@ count[14] <= count[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 count[15] <= count[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topRam|write_mem:escribir
+|main|topRam:topR|write_mem:escribir
 btn[0] => Decoder0.IN2
 btn[0] => Mux2.IN10
 btn[0] => Mux1.IN10
@@ -5097,7 +5167,7 @@ data[30] <= <GND>
 data[31] <= <GND>
 
 
-|topRam|mux_21:mux_21
+|main|topRam:topR|mux_21:mux_21
 A[0] => C.DATAB
 A[1] => C.DATAB
 A[2] => C.DATAB
@@ -5162,5 +5232,242 @@ C[12] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[13] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[14] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[15] <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|topRam:topR|hhclock:hhclock
+seconds <= seconds~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => seconds~reg0.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+clk => count[27].CLK
+clk => count[28].CLK
+clk => count[29].CLK
+clk => count[30].CLK
+clk => count[31].CLK
+
+
+|main|video_controller:vc
+clk => clk.IN1
+reset => reset.IN1
+pixel[0] => ~NO_FANOUT~
+pixel[1] => ~NO_FANOUT~
+pixel[2] => ~NO_FANOUT~
+pixel[3] => ~NO_FANOUT~
+pixel[4] => ~NO_FANOUT~
+pixel[5] => ~NO_FANOUT~
+pixel[6] => ~NO_FANOUT~
+pixel[7] => ~NO_FANOUT~
+h_sync <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+v_sync <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+red[0] <= red[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+red[1] <= red[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+red[2] <= red[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+red[3] <= red[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+red[4] <= red[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+red[5] <= red[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+red[6] <= red[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+red[7] <= red[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+green[0] <= green[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+green[1] <= green[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+green[2] <= green[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+green[3] <= green[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+green[4] <= green[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+green[5] <= green[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+green[6] <= green[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+green[7] <= green[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+blue[0] <= blue[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+blue[1] <= blue[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+blue[2] <= blue[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+blue[3] <= blue[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+blue[4] <= blue[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+blue[5] <= blue[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+blue[6] <= blue[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+blue[7] <= blue[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_25MHz <= clk_25MHz.DB_MAX_OUTPUT_PORT_TYPE
+sync_n <= sync_n.DB_MAX_OUTPUT_PORT_TYPE
+blank_n <= blank_n.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|video_controller:vc|VGA_pll:vga_clock_gen
+clk => vga_clk~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => counter[20].CLK
+clk => counter[21].CLK
+clk => counter[22].CLK
+clk => counter[23].CLK
+clk => counter[24].CLK
+clk => counter[25].CLK
+clk => counter[26].CLK
+clk => counter[27].CLK
+clk => counter[28].CLK
+clk => counter[29].CLK
+clk => counter[30].CLK
+clk => counter[31].CLK
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => counter.OUTPUTSELECT
+reset => vga_clk.OUTPUTSELECT
+vga_clk <= vga_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|video_controller:vc|sincronizador_horizontal:vga_h
+clk_25MHz => enable~reg0.CLK
+clk_25MHz => V_horizontal[0]~reg0.CLK
+clk_25MHz => V_horizontal[1]~reg0.CLK
+clk_25MHz => V_horizontal[2]~reg0.CLK
+clk_25MHz => V_horizontal[3]~reg0.CLK
+clk_25MHz => V_horizontal[4]~reg0.CLK
+clk_25MHz => V_horizontal[5]~reg0.CLK
+clk_25MHz => V_horizontal[6]~reg0.CLK
+clk_25MHz => V_horizontal[7]~reg0.CLK
+clk_25MHz => V_horizontal[8]~reg0.CLK
+clk_25MHz => V_horizontal[9]~reg0.CLK
+clk_25MHz => V_horizontal[10]~reg0.CLK
+clk_25MHz => V_horizontal[11]~reg0.CLK
+clk_25MHz => V_horizontal[12]~reg0.CLK
+clk_25MHz => V_horizontal[13]~reg0.CLK
+clk_25MHz => V_horizontal[14]~reg0.CLK
+clk_25MHz => V_horizontal[15]~reg0.CLK
+enable <= enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[0] <= V_horizontal[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[1] <= V_horizontal[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[2] <= V_horizontal[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[3] <= V_horizontal[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[4] <= V_horizontal[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[5] <= V_horizontal[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[6] <= V_horizontal[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[7] <= V_horizontal[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[8] <= V_horizontal[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[9] <= V_horizontal[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[10] <= V_horizontal[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[11] <= V_horizontal[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[12] <= V_horizontal[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[13] <= V_horizontal[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[14] <= V_horizontal[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[15] <= V_horizontal[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|video_controller:vc|sincronizador_vertical:vga_v
+clk_25MHz => V_horizontal[0]~reg0.CLK
+clk_25MHz => V_horizontal[1]~reg0.CLK
+clk_25MHz => V_horizontal[2]~reg0.CLK
+clk_25MHz => V_horizontal[3]~reg0.CLK
+clk_25MHz => V_horizontal[4]~reg0.CLK
+clk_25MHz => V_horizontal[5]~reg0.CLK
+clk_25MHz => V_horizontal[6]~reg0.CLK
+clk_25MHz => V_horizontal[7]~reg0.CLK
+clk_25MHz => V_horizontal[8]~reg0.CLK
+clk_25MHz => V_horizontal[9]~reg0.CLK
+clk_25MHz => V_horizontal[10]~reg0.CLK
+clk_25MHz => V_horizontal[11]~reg0.CLK
+clk_25MHz => V_horizontal[12]~reg0.CLK
+clk_25MHz => V_horizontal[13]~reg0.CLK
+clk_25MHz => V_horizontal[14]~reg0.CLK
+clk_25MHz => V_horizontal[15]~reg0.CLK
+enable => V_horizontal[0]~reg0.ENA
+enable => V_horizontal[1]~reg0.ENA
+enable => V_horizontal[2]~reg0.ENA
+enable => V_horizontal[3]~reg0.ENA
+enable => V_horizontal[4]~reg0.ENA
+enable => V_horizontal[5]~reg0.ENA
+enable => V_horizontal[6]~reg0.ENA
+enable => V_horizontal[7]~reg0.ENA
+enable => V_horizontal[8]~reg0.ENA
+enable => V_horizontal[9]~reg0.ENA
+enable => V_horizontal[10]~reg0.ENA
+enable => V_horizontal[11]~reg0.ENA
+enable => V_horizontal[12]~reg0.ENA
+enable => V_horizontal[13]~reg0.ENA
+enable => V_horizontal[14]~reg0.ENA
+enable => V_horizontal[15]~reg0.ENA
+V_horizontal[0] <= V_horizontal[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[1] <= V_horizontal[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[2] <= V_horizontal[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[3] <= V_horizontal[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[4] <= V_horizontal[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[5] <= V_horizontal[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[6] <= V_horizontal[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[7] <= V_horizontal[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[8] <= V_horizontal[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[9] <= V_horizontal[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[10] <= V_horizontal[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[11] <= V_horizontal[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[12] <= V_horizontal[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[13] <= V_horizontal[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[14] <= V_horizontal[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+V_horizontal[15] <= V_horizontal[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

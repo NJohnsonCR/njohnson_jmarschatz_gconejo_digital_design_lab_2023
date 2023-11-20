@@ -36,8 +36,7 @@ module video_controller
 
     // Zona activa de la pantalla (pantalla en blanco)
     assign blank_n = (V_horizontal >= 96) && (V_horizontal < 799) && (V_vertical >= 2) && (V_vertical < 524);
-	 assign sync_n = 1'b0;
-
+	 assign sync_n = h_sync && v_sync;
     
 
 	  always@(posedge clk_25MHz) begin

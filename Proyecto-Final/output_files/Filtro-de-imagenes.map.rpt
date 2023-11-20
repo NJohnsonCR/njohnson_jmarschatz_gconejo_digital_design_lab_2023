@@ -1,28 +1,41 @@
-Analysis & Elaboration report for Filtro-de-imagenes
-Sun Nov 19 21:49:22 2023
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Analysis & Synthesis report for Filtro-de-imagenes
+Sun Nov 19 22:51:15 2023
+Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Source assignments for ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated
-  5. Parameter Settings for User Entity Instance: ram:mem|altsyncram:altsyncram_component
-  6. altsyncram Parameter Settings by Entity Instance
-  7. Analysis & Elaboration Settings
-  8. Port Connectivity Checks: "write_mem:escribir"
-  9. Analysis & Elaboration Messages
- 10. Analysis & Elaboration Suppressed Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated
+ 15. Parameter Settings for User Entity Instance: topRam:topR|ram:mem|altsyncram:altsyncram_component
+ 16. altsyncram Parameter Settings by Entity Instance
+ 17. Port Connectivity Checks: "video_controller:vc"
+ 18. Port Connectivity Checks: "topRam:topR|write_mem:escribir"
+ 19. Port Connectivity Checks: "topRam:topR"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+ 23. Analysis & Synthesis Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -39,137 +52,36 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sun Nov 19 21:49:21 2023       ;
-; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                 ; Filtro-de-imagenes                          ;
-; Top-level Entity Name         ; topRam                                      ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+-----------------------------------------------------------------------------------------------+
-; Source assignments for ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated ;
-+---------------------------------+--------------------+------+---------------------------------+
-; Assignment                      ; Value              ; From ; To                              ;
-+---------------------------------+--------------------+------+---------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                               ;
-+---------------------------------+--------------------+------+---------------------------------+
-
-
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ram:mem|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+--------------------------+
-; Parameter Name                     ; Value                ; Type                     ;
-+------------------------------------+----------------------+--------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                  ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY               ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY             ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE             ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE           ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                  ;
-; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                  ;
-; WIDTH_A                            ; 32                   ; Signed Integer           ;
-; WIDTHAD_A                          ; 16                   ; Signed Integer           ;
-; NUMWORDS_A                         ; 65536                ; Signed Integer           ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                  ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                  ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                  ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                  ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                  ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                  ;
-; WIDTH_B                            ; 1                    ; Untyped                  ;
-; WIDTHAD_B                          ; 1                    ; Untyped                  ;
-; NUMWORDS_B                         ; 1                    ; Untyped                  ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                  ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                  ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                  ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                  ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                  ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                  ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                  ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                  ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                  ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                  ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                  ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                  ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer           ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                  ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                  ;
-; BYTE_SIZE                          ; 8                    ; Untyped                  ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                  ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                  ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                  ;
-; INIT_FILE                          ; ram_data.mif         ; Untyped                  ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                  ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                  ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                  ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                  ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                  ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                  ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                  ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                  ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                  ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                  ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                  ;
-; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                  ;
-; CBXI_PARAMETER                     ; altsyncram_mpo1      ; Untyped                  ;
-+------------------------------------+----------------------+--------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                    ;
-+-------------------------------------------+-----------------------------------------+
-; Name                                      ; Value                                   ;
-+-------------------------------------------+-----------------------------------------+
-; Number of entity instances                ; 1                                       ;
-; Entity Instance                           ; ram:mem|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; SINGLE_PORT                             ;
-;     -- WIDTH_A                            ; 32                                      ;
-;     -- NUMWORDS_A                         ; 65536                                   ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                            ;
-;     -- WIDTH_B                            ; 1                                       ;
-;     -- NUMWORDS_B                         ; 1                                       ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                  ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                            ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                    ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                               ;
-+-------------------------------------------+-----------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++---------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Nov 19 22:51:15 2023          ;
+; Quartus Prime Version           ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
+; Revision Name                   ; Filtro-de-imagenes                             ;
+; Top-level Entity Name           ; main                                           ;
+; Family                          ; Cyclone V                                      ;
+; Logic utilization (in ALMs)     ; N/A                                            ;
+; Total registers                 ; 118                                            ;
+; Total pins                      ; 67                                             ;
+; Total virtual pins              ; 0                                              ;
+; Total block memory bits         ; 2,097,152                                      ;
+; Total DSP Blocks                ; 0                                              ;
+; Total HSSI RX PCSs              ; 0                                              ;
+; Total HSSI PMA RX Deserializers ; 0                                              ;
+; Total HSSI TX PCSs              ; 0                                              ;
+; Total HSSI PMA TX Serializers   ; 0                                              ;
+; Total PLLs                      ; 0                                              ;
+; Total DLLs                      ; 0                                              ;
++---------------------------------+------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; topRam             ; Filtro-de-imagenes ;
+; Top-level entity name                                                           ; main               ; Filtro-de-imagenes ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -250,8 +162,284 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                            ;
++-----------------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path        ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                                                                             ; Library ;
++-----------------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ram_data.mif                            ; yes             ; User Memory Initialization File  ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram_data.mif                            ;         ;
+; ram.v                                   ; yes             ; User Wizard-Generated File       ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v                                   ;         ;
+; main.sv                                 ; yes             ; User SystemVerilog HDL File      ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv                                 ;         ;
+; Modulos/Procesador/write_mem.sv         ; yes             ; User SystemVerilog HDL File      ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv         ;         ;
+; Modulos/Procesador/topRam.sv            ; yes             ; User SystemVerilog HDL File      ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv            ;         ;
+; Modulos/Procesador/mux_21.sv            ; yes             ; User SystemVerilog HDL File      ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/mux_21.sv            ;         ;
+; Modulos/Procesador/hhclock.sv           ; yes             ; User SystemVerilog HDL File      ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/hhclock.sv           ;         ;
+; Modulos/VGA/Counter.sv                  ; yes             ; User SystemVerilog HDL File      ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/Counter.sv                  ;         ;
+; Modulos/VGA/video_controller.sv         ; yes             ; User SystemVerilog HDL File      ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/video_controller.sv         ;         ;
+; Modulos/VGA/VGA_pll.sv                  ; yes             ; User SystemVerilog HDL File      ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/VGA_pll.sv                  ;         ;
+; Modulos/VGA/sincronizador_vertical.sv   ; yes             ; User SystemVerilog HDL File      ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/sincronizador_vertical.sv   ;         ;
+; Modulos/VGA/sincronizador_horizontal.sv ; yes             ; User SystemVerilog HDL File      ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/sincronizador_horizontal.sv ;         ;
+; altsyncram.tdf                          ; yes             ; Megafunction                     ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf                                                                 ;         ;
+; stratix_ram_block.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/stratix_ram_block.inc                                                          ;         ;
+; lpm_mux.inc                             ; yes             ; Megafunction                     ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_mux.inc                                                                    ;         ;
+; lpm_decode.inc                          ; yes             ; Megafunction                     ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_decode.inc                                                                 ;         ;
+; aglobal221.inc                          ; yes             ; Megafunction                     ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc                                                                 ;         ;
+; a_rdenreg.inc                           ; yes             ; Megafunction                     ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/a_rdenreg.inc                                                                  ;         ;
+; altrom.inc                              ; yes             ; Megafunction                     ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altrom.inc                                                                     ;         ;
+; altram.inc                              ; yes             ; Megafunction                     ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altram.inc                                                                     ;         ;
+; altdpram.inc                            ; yes             ; Megafunction                     ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altdpram.inc                                                                   ;         ;
+; db/altsyncram_mpo1.tdf                  ; yes             ; Auto-Generated Megafunction      ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf                  ;         ;
+; db/decode_dla.tdf                       ; yes             ; Auto-Generated Megafunction      ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/decode_dla.tdf                       ;         ;
+; db/decode_61a.tdf                       ; yes             ; Auto-Generated Megafunction      ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/decode_61a.tdf                       ;         ;
+; db/mux_ahb.tdf                          ; yes             ; Auto-Generated Megafunction      ; C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/mux_ahb.tdf                          ;         ;
++-----------------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                       ;
++---------------------------------------------+-------------------------------------+
+; Resource                                    ; Usage                               ;
++---------------------------------------------+-------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 179                                 ;
+;                                             ;                                     ;
+; Combinational ALUT usage for logic          ; 278                                 ;
+;     -- 7 input functions                    ; 0                                   ;
+;     -- 6 input functions                    ; 80                                  ;
+;     -- 5 input functions                    ; 17                                  ;
+;     -- 4 input functions                    ; 11                                  ;
+;     -- <=3 input functions                  ; 170                                 ;
+;                                             ;                                     ;
+; Dedicated logic registers                   ; 118                                 ;
+;                                             ;                                     ;
+; I/O pins                                    ; 67                                  ;
+; Total MLAB memory bits                      ; 0                                   ;
+; Total block memory bits                     ; 2097152                             ;
+;                                             ;                                     ;
+; Total DSP Blocks                            ; 0                                   ;
+;                                             ;                                     ;
+; Maximum fan-out node                        ; topRam:topR|hhclock:hhclock|seconds ;
+; Maximum fan-out                             ; 276                                 ;
+; Total fan-out                               ; 5829                                ;
+; Average fan-out                             ; 7.42                                ;
++---------------------------------------------+-------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                               ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                             ; Entity Name              ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
+; |main                                        ; 278 (1)             ; 118 (0)                   ; 2097152           ; 0          ; 67   ; 0            ; |main                                                                                                           ; main                     ; work         ;
+;    |topRam:topR|                             ; 192 (0)             ; 52 (0)                    ; 2097152           ; 0          ; 0    ; 0            ; |main|topRam:topR                                                                                               ; topRam                   ; work         ;
+;       |Counter:cont|                         ; 20 (20)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |main|topRam:topR|Counter:cont                                                                                  ; Counter                  ; work         ;
+;       |hhclock:hhclock|                      ; 41 (41)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |main|topRam:topR|hhclock:hhclock                                                                               ; hhclock                  ; work         ;
+;       |mux_21:mux_21|                        ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|topRam:topR|mux_21:mux_21                                                                                 ; mux_21                   ; work         ;
+;       |ram:mem|                              ; 112 (0)             ; 3 (0)                     ; 2097152           ; 0          ; 0    ; 0            ; |main|topRam:topR|ram:mem                                                                                       ; ram                      ; work         ;
+;          |altsyncram:altsyncram_component|   ; 112 (0)             ; 3 (0)                     ; 2097152           ; 0          ; 0    ; 0            ; |main|topRam:topR|ram:mem|altsyncram:altsyncram_component                                                       ; altsyncram               ; work         ;
+;             |altsyncram_mpo1:auto_generated| ; 112 (0)             ; 3 (3)                     ; 2097152           ; 0          ; 0    ; 0            ; |main|topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated                        ; altsyncram_mpo1          ; work         ;
+;                |decode_61a:rden_decode|      ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|decode_61a:rden_decode ; decode_61a               ; work         ;
+;                |decode_dla:decode3|          ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|decode_dla:decode3     ; decode_dla               ; work         ;
+;                |mux_ahb:mux2|                ; 96 (96)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|mux_ahb:mux2           ; mux_ahb                  ; work         ;
+;       |write_mem:escribir|                   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|topRam:topR|write_mem:escribir                                                                            ; write_mem                ; work         ;
+;    |video_controller:vc|                     ; 85 (12)             ; 66 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|video_controller:vc                                                                                       ; video_controller         ; work         ;
+;       |VGA_pll:vga_clock_gen|                ; 41 (41)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |main|video_controller:vc|VGA_pll:vga_clock_gen                                                                 ; VGA_pll                  ; work         ;
+;       |sincronizador_horizontal:vga_h|       ; 16 (16)             ; 17 (17)                   ; 0                 ; 0          ; 0    ; 0            ; |main|video_controller:vc|sincronizador_horizontal:vga_h                                                        ; sincronizador_horizontal ; work         ;
+;       |sincronizador_vertical:vga_v|         ; 16 (16)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |main|video_controller:vc|sincronizador_vertical:vga_v                                                          ; sincronizador_vertical   ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                        ;
++-----------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+---------+--------------+
+; Name                                                                                          ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size    ; MIF          ;
++-----------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+---------+--------------+
+; topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 65536        ; 32           ; --           ; --           ; 2097152 ; ram_data.mif ;
++-----------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+---------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                 ;
++----------------------------------------------------+---------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                   ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------------------------+------------------------+
+; topRam:topR|write_mem:escribir|data[0]             ; topRam:topR|write_mem:escribir|enable ; yes                    ;
+; topRam:topR|write_mem:escribir|data[1]             ; topRam:topR|write_mem:escribir|enable ; yes                    ;
+; Number of user-specified and inferred latches = 2  ;                                       ;                        ;
++----------------------------------------------------+---------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; video_controller:vc|blue[0,1]          ; Stuck at VCC due to stuck port data_in ;
+; video_controller:vc|blue[2..7]         ; Stuck at GND due to stuck port data_in ;
+; video_controller:vc|green[0..7]        ; Stuck at GND due to stuck port data_in ;
+; video_controller:vc|red[0..7]          ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 24 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 118   ;
+; Number of registers using Synchronous Clear  ; 112   ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 16    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; topRam:topR|hhclock:hhclock|count[0]   ; 2       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |main|video_controller:vc|VGA_pll:vga_clock_gen|counter[30]                                                                ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |main|topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|mux_ahb:mux2|l3_w1_n0_mux_dataout ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Source assignments for topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                          ;
++---------------------------------+--------------------+------+---------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                           ;
++---------------------------------+--------------------+------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topRam:topR|ram:mem|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+--------------------------------------+
+; Parameter Name                     ; Value                ; Type                                 ;
++------------------------------------+----------------------+--------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                              ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                           ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                         ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                         ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                       ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                              ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                              ;
+; WIDTH_A                            ; 32                   ; Signed Integer                       ;
+; WIDTHAD_A                          ; 16                   ; Signed Integer                       ;
+; NUMWORDS_A                         ; 65536                ; Signed Integer                       ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                              ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                              ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                              ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                              ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                              ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                              ;
+; WIDTH_B                            ; 1                    ; Untyped                              ;
+; WIDTHAD_B                          ; 1                    ; Untyped                              ;
+; NUMWORDS_B                         ; 1                    ; Untyped                              ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                              ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                              ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                              ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                              ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                              ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                              ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                              ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                              ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                              ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                              ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                              ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                              ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                       ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                              ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                              ;
+; BYTE_SIZE                          ; 8                    ; Untyped                              ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                              ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                              ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                              ;
+; INIT_FILE                          ; ram_data.mif         ; Untyped                              ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                              ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                              ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                              ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                              ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                              ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                              ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                              ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                              ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                              ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                              ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                              ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                              ;
+; CBXI_PARAMETER                     ; altsyncram_mpo1      ; Untyped                              ;
++------------------------------------+----------------------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                ;
++-------------------------------------------+-----------------------------------------------------+
+; Name                                      ; Value                                               ;
++-------------------------------------------+-----------------------------------------------------+
+; Number of entity instances                ; 1                                                   ;
+; Entity Instance                           ; topRam:topR|ram:mem|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                         ;
+;     -- WIDTH_A                            ; 32                                                  ;
+;     -- NUMWORDS_A                         ; 65536                                               ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                        ;
+;     -- WIDTH_B                            ; 1                                                   ;
+;     -- NUMWORDS_B                         ; 1                                                   ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                              ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                        ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                           ;
++-------------------------------------------+-----------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "video_controller:vc"                                                                                                                                                               ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; pixel ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "write_mem:escribir"                                                                                                         ;
+; Port Connectivity Checks: "topRam:topR|write_mem:escribir"                                                                                             ;
 +------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                                     ;
 +------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
@@ -259,107 +447,156 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "topRam:topR"                                                                                                                    ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                      ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; address ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "address[15..1]" have no fanouts ;
+; address ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                          ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 118                         ;
+;     ENA CLR SCLR      ; 16                          ;
+;     ENA SCLR          ; 16                          ;
+;     SCLR              ; 80                          ;
+;     plain             ; 6                           ;
+; arriav_lcell_comb     ; 280                         ;
+;     arith             ; 112                         ;
+;         1 data inputs ; 112                         ;
+;     normal            ; 168                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 20                          ;
+;         3 data inputs ; 36                          ;
+;         4 data inputs ; 11                          ;
+;         5 data inputs ; 17                          ;
+;         6 data inputs ; 80                          ;
+; boundary_port         ; 67                          ;
+; stratixv_ram_block    ; 256                         ;
+;                       ;                             ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 2.36                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Nov 19 21:49:15 2023
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Filtro-de-imagenes -c Filtro-de-imagenes --analysis_and_elaboration
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+    Info: Processing started: Sun Nov 19 22:51:06 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Filtro-de-imagenes -c Filtro-de-imagenes
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ram.v
-    Info (12023): Found entity 1: ram File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 40
+    Info (12023): Found entity 1: ram File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file main_tb.sv
-    Info (12023): Found entity 1: main_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main_tb.sv Line: 2
+    Info (12023): Found entity 1: main_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main_tb.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file main.sv
-    Info (12023): Found entity 1: main File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 1
+    Info (12023): Found entity 1: main File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/write_mem.sv
-    Info (12023): Found entity 1: write_mem File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 1
+    Info (12023): Found entity 1: write_mem File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/topram_tb.sv
-    Info (12023): Found entity 1: topRam_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam_tb.sv Line: 2
+    Info (12023): Found entity 1: topRam_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam_tb.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/topram.sv
-    Info (12023): Found entity 1: topRam File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 4
-Warning (10275): Verilog HDL Module Instantiation warning at top_module.sv(38): ignored dangling comma in List of Port Connections File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/top_module.sv Line: 38
+    Info (12023): Found entity 1: topRam File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 4
+Warning (10275): Verilog HDL Module Instantiation warning at top_module.sv(38): ignored dangling comma in List of Port Connections File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/top_module.sv Line: 38
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/top_module.sv
-    Info (12023): Found entity 1: top_module File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/top_module.sv Line: 1
+    Info (12023): Found entity 1: top_module File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/top_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/sumador.sv
-    Info (12023): Found entity 1: sumador File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/sumador.sv Line: 1
+    Info (12023): Found entity 1: sumador File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/sumador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/register_file.sv
-    Info (12023): Found entity 1: register_file File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/register_file.sv Line: 1
+    Info (12023): Found entity 1: register_file File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/register_file.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/pc_logic.sv
-    Info (12023): Found entity 1: PC_logic File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/PC_logic.sv Line: 1
+    Info (12023): Found entity 1: PC_logic File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/PC_logic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/mux2.sv
-    Info (12023): Found entity 1: mux2 File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/mux2.sv Line: 1
+    Info (12023): Found entity 1: mux2 File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/mux2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/mux_21.sv
-    Info (12023): Found entity 1: mux_21 File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/mux_21.sv Line: 1
+    Info (12023): Found entity 1: mux_21 File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/mux_21.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/main_decoder.sv
-    Info (12023): Found entity 1: main_decoder File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/main_decoder.sv Line: 1
+    Info (12023): Found entity 1: main_decoder File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/main_decoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/imem.sv
-    Info (12023): Found entity 1: imem File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/imem.sv Line: 1
+    Info (12023): Found entity 1: imem File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/imem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/hhclock.sv
-    Info (12023): Found entity 1: hhclock File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/hhclock.sv Line: 1
+    Info (12023): Found entity 1: hhclock File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/hhclock.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/flopr.sv
-    Info (12023): Found entity 1: flopr File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/flopr.sv Line: 1
+    Info (12023): Found entity 1: flopr File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/flopr.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/flopenr.sv
-    Info (12023): Found entity 1: flopenr File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/flopenr.sv Line: 1
+    Info (12023): Found entity 1: flopenr File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/flopenr.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/extend.sv
-    Info (12023): Found entity 1: extend File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/extend.sv Line: 1
+    Info (12023): Found entity 1: extend File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/extend.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/dmem_tb.sv
-    Info (12023): Found entity 1: dmem_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/dmem_tb.sv Line: 3
+    Info (12023): Found entity 1: dmem_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/dmem_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/dmem.sv
-    Info (12023): Found entity 1: dmem File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/dmem.sv Line: 1
+    Info (12023): Found entity 1: dmem File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/dmem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/decoder.sv
-    Info (12023): Found entity 1: decoder File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/decoder.sv Line: 1
+    Info (12023): Found entity 1: decoder File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/decoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/deco_alu.sv
-    Info (12023): Found entity 1: Deco_ALU File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/Deco_ALU.sv Line: 1
+    Info (12023): Found entity 1: Deco_ALU File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/Deco_ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/datapath.sv
-    Info (12023): Found entity 1: datapath File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/datapath.sv Line: 1
+    Info (12023): Found entity 1: datapath File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/datapath.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/d_fflopreg.sv
-    Info (12023): Found entity 1: D_fflopReg File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/D_fflopReg.sv Line: 1
+    Info (12023): Found entity 1: D_fflopReg File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/D_fflopReg.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/controller.sv
-    Info (12023): Found entity 1: controller File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/controller.sv Line: 1
+    Info (12023): Found entity 1: controller File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/control_unit.sv
-    Info (12023): Found entity 1: control_unit File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/control_unit.sv Line: 2
+    Info (12023): Found entity 1: control_unit File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/control_unit.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/condition_logic.sv
-    Info (12023): Found entity 1: condition_logic File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/condition_logic.sv Line: 1
+    Info (12023): Found entity 1: condition_logic File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/condition_logic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/condition_check.sv
-    Info (12023): Found entity 1: condition_check File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/condition_check.sv Line: 1
+    Info (12023): Found entity 1: condition_check File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/condition_check.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/cond_logic.sv
-    Info (12023): Found entity 1: condlogic File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/cond_logic.sv Line: 1
+    Info (12023): Found entity 1: condlogic File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/cond_logic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/cond_check.sv
-    Info (12023): Found entity 1: cond_check File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/cond_check.sv Line: 1
+    Info (12023): Found entity 1: cond_check File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/cond_check.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/arm.sv
-    Info (12023): Found entity 1: arm File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/arm.sv Line: 1
+    Info (12023): Found entity 1: arm File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/arm.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/aluaritmetic.sv
-    Info (12023): Found entity 1: AluAritmetic File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/AluAritmetic.sv Line: 1
+    Info (12023): Found entity 1: AluAritmetic File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/AluAritmetic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/alu.sv
-    Info (12023): Found entity 1: alu File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/alu.sv Line: 1
+    Info (12023): Found entity 1: alu File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/alu.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/procesador/adder.sv
-    Info (12023): Found entity 1: adder File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/adder.sv Line: 1
+    Info (12023): Found entity 1: adder File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/vga/counter.sv
-    Info (12023): Found entity 1: Counter File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/Counter.sv Line: 1
-Warning (10229): Verilog HDL Expression warning at video_controller.sv(48): truncated literal to match 2 bits File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/video_controller.sv Line: 48
+    Info (12023): Found entity 1: Counter File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/Counter.sv Line: 1
+Warning (10229): Verilog HDL Expression warning at video_controller.sv(47): truncated literal to match 2 bits File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/video_controller.sv Line: 47
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/vga/video_controller.sv
-    Info (12023): Found entity 1: video_controller File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/video_controller.sv Line: 1
+    Info (12023): Found entity 1: video_controller File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/video_controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/vga/vga_tb.sv
-    Info (12023): Found entity 1: VGA_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/VGA_tb.sv Line: 1
+    Info (12023): Found entity 1: VGA_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/VGA_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/vga/vga_pll.sv
-    Info (12023): Found entity 1: VGA_pll File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/VGA_pll.sv Line: 2
+    Info (12023): Found entity 1: VGA_pll File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/VGA_pll.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/vga/sincronizador_vertical.sv
-    Info (12023): Found entity 1: sincronizador_vertical File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/sincronizador_vertical.sv Line: 2
+    Info (12023): Found entity 1: sincronizador_vertical File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/sincronizador_vertical.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/vga/sincronizador_horizontal.sv
-    Info (12023): Found entity 1: sincronizador_horizontal File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/sincronizador_horizontal.sv Line: 2
+    Info (12023): Found entity 1: sincronizador_horizontal File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/sincronizador_horizontal.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file modulos/vga/counter_tb.sv
-    Info (12023): Found entity 1: Counter_tb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/Counter_tb.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at main.sv(28): created implicit net for "adress" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 28
-Warning (10236): Verilog HDL Implicit Net warning at top_module.sv(17): created implicit net for "addr_cont" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/top_module.sv Line: 17
-Info (12127): Elaborating entity "topRam" for the top level hierarchy
-Info (12128): Elaborating entity "ram" for hierarchy "ram:mem" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 13
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ram:mem|altsyncram:altsyncram_component" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 86
-Info (12130): Elaborated megafunction instantiation "ram:mem|altsyncram:altsyncram_component" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 86
-Info (12133): Instantiated megafunction "ram:mem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 86
+    Info (12023): Found entity 1: Counter_tb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/Counter_tb.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at main.sv(28): created implicit net for "adress" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at top_module.sv(17): created implicit net for "addr_cont" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/top_module.sv Line: 17
+Info (12127): Elaborating entity "main" for the top level hierarchy
+Info (12128): Elaborating entity "topRam" for hierarchy "topRam:topR" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 28
+Info (12128): Elaborating entity "ram" for hierarchy "topRam:topR|ram:mem" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 14
+Info (12128): Elaborating entity "altsyncram" for hierarchy "topRam:topR|ram:mem|altsyncram:altsyncram_component" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 86
+Info (12130): Elaborated megafunction instantiation "topRam:topR|ram:mem|altsyncram:altsyncram_component" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 86
+Info (12133): Instantiated megafunction "topRam:topR|ram:mem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v Line: 86
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "ram_data.mif"
@@ -376,65 +613,111 @@ Info (12133): Instantiated megafunction "ram:mem|altsyncram:altsyncram_component
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mpo1.tdf
-    Info (12023): Found entity 1: altsyncram_mpo1 File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 34
-Info (12128): Elaborating entity "altsyncram_mpo1" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated" File: d:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+    Info (12023): Found entity 1: altsyncram_mpo1 File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 34
+Info (12128): Elaborating entity "altsyncram_mpo1" for hierarchy "topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_dla.tdf
-    Info (12023): Found entity 1: decode_dla File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/decode_dla.tdf Line: 23
-Info (12128): Elaborating entity "decode_dla" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|decode_dla:decode3" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 44
+    Info (12023): Found entity 1: decode_dla File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/decode_dla.tdf Line: 23
+Info (12128): Elaborating entity "decode_dla" for hierarchy "topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|decode_dla:decode3" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_61a.tdf
-    Info (12023): Found entity 1: decode_61a File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/decode_61a.tdf Line: 23
-Info (12128): Elaborating entity "decode_61a" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|decode_61a:rden_decode" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 45
+    Info (12023): Found entity 1: decode_61a File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/decode_61a.tdf Line: 23
+Info (12128): Elaborating entity "decode_61a" for hierarchy "topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|decode_61a:rden_decode" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 45
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_ahb.tdf
-    Info (12023): Found entity 1: mux_ahb File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/mux_ahb.tdf Line: 23
-Info (12128): Elaborating entity "mux_ahb" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|mux_ahb:mux2" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 46
-Info (12128): Elaborating entity "Counter" for hierarchy "Counter:cont" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 14
-Info (12128): Elaborating entity "write_mem" for hierarchy "write_mem:escribir" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 15
-Warning (10240): Verilog HDL Always Construct warning at write_mem.sv(8): inferring latch(es) for variable "data", which holds its previous value in one or more paths through the always construct File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[0]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[1]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[2]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[3]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[4]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[5]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[6]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[7]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[8]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[9]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[10]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[11]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[12]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[13]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[14]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[15]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[16]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[17]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[18]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[19]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[20]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[21]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[22]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[23]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[24]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[25]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[26]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[27]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[28]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[29]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[30]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (10041): Inferred latch for "data[31]" at write_mem.sv(8) File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
-Info (12128): Elaborating entity "mux_21" for hierarchy "mux_21:mux_21" File: C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 16
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (144001): Generated suppressed messages file C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/output_files/Filtro-de-imagenes.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4801 megabytes
-    Info: Processing ended: Sun Nov 19 21:49:22 2023
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:14
+    Info (12023): Found entity 1: mux_ahb File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/mux_ahb.tdf Line: 23
+Info (12128): Elaborating entity "mux_ahb" for hierarchy "topRam:topR|ram:mem|altsyncram:altsyncram_component|altsyncram_mpo1:auto_generated|mux_ahb:mux2" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/db/altsyncram_mpo1.tdf Line: 46
+Info (12128): Elaborating entity "Counter" for hierarchy "topRam:topR|Counter:cont" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 15
+Info (12128): Elaborating entity "write_mem" for hierarchy "topRam:topR|write_mem:escribir" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 16
+Warning (10240): Verilog HDL Always Construct warning at write_mem.sv(8): inferring latch(es) for variable "data", which holds its previous value in one or more paths through the always construct File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[0]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[1]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[2]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[3]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[4]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[5]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[6]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[7]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[8]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[9]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[10]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[11]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[12]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[13]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[14]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[15]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[16]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[17]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[18]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[19]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[20]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[21]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[22]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[23]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[24]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[25]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[26]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[27]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[28]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[29]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[30]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (10041): Inferred latch for "data[31]" at write_mem.sv(8) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+Info (12128): Elaborating entity "mux_21" for hierarchy "topRam:topR|mux_21:mux_21" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 17
+Info (12128): Elaborating entity "hhclock" for hierarchy "topRam:topR|hhclock:hhclock" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv Line: 18
+Info (12128): Elaborating entity "video_controller" for hierarchy "video_controller:vc" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 31
+Warning (10036): Verilog HDL or VHDL warning at video_controller.sv(21): object "ancho" assigned a value but never read File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/video_controller.sv Line: 21
+Warning (10036): Verilog HDL or VHDL warning at video_controller.sv(22): object "alto" assigned a value but never read File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/video_controller.sv Line: 22
+Info (12128): Elaborating entity "VGA_pll" for hierarchy "video_controller:vc|VGA_pll:vga_clock_gen" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/video_controller.sv Line: 25
+Info (12128): Elaborating entity "sincronizador_horizontal" for hierarchy "video_controller:vc|sincronizador_horizontal:vga_h" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/video_controller.sv Line: 28
+Warning (10230): Verilog HDL assignment warning at sincronizador_horizontal.sv(12): truncated value with size 32 to match size of target (16) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/sincronizador_horizontal.sv Line: 12
+Info (12128): Elaborating entity "sincronizador_vertical" for hierarchy "video_controller:vc|sincronizador_vertical:vga_v" File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/video_controller.sv Line: 29
+Warning (10230): Verilog HDL assignment warning at sincronizador_vertical.sv(13): truncated value with size 32 to match size of target (16) File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/sincronizador_vertical.sv Line: 13
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13012): Latch topRam:topR|write_mem:escribir|data[0] has unsafe behavior File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal btn[0] File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 2
+Warning (13012): Latch topRam:topR|write_mem:escribir|data[1] has unsafe behavior File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv Line: 8
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal btn[0] File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 2
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "red[0]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 5
+    Warning (13410): Pin "red[1]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 5
+    Warning (13410): Pin "red[2]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 5
+    Warning (13410): Pin "red[3]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 5
+    Warning (13410): Pin "red[4]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 5
+    Warning (13410): Pin "red[5]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 5
+    Warning (13410): Pin "red[6]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 5
+    Warning (13410): Pin "red[7]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 5
+    Warning (13410): Pin "green[0]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 6
+    Warning (13410): Pin "green[1]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 6
+    Warning (13410): Pin "green[2]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 6
+    Warning (13410): Pin "green[3]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 6
+    Warning (13410): Pin "green[4]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 6
+    Warning (13410): Pin "green[5]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 6
+    Warning (13410): Pin "green[6]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 6
+    Warning (13410): Pin "green[7]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 6
+    Warning (13410): Pin "blue[0]" is stuck at VCC File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 7
+    Warning (13410): Pin "blue[1]" is stuck at VCC File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 7
+    Warning (13410): Pin "blue[2]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 7
+    Warning (13410): Pin "blue[3]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 7
+    Warning (13410): Pin "blue[4]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 7
+    Warning (13410): Pin "blue[5]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 7
+    Warning (13410): Pin "blue[6]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 7
+    Warning (13410): Pin "blue[7]" is stuck at GND File: C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv Line: 7
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/output_files/Filtro-de-imagenes.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 602 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 61 output pins
+    Info (21061): Implemented 279 logic cells
+    Info (21064): Implemented 256 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
+    Info: Peak virtual memory: 4893 megabytes
+    Info: Processing ended: Sun Nov 19 22:51:15 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:19
 
 
-+--------------------------------------------+
-; Analysis & Elaboration Suppressed Messages ;
-+--------------------------------------------+
-The suppressed messages can be found in C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/output_files/Filtro-de-imagenes.map.smsg.
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/output_files/Filtro-de-imagenes.map.smsg.
 
 

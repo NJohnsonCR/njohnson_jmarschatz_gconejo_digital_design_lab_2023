@@ -7,13 +7,14 @@ module topRam(input logic clk, rst, switch,
 				  output [15:0] address);
 				  
 logic wren;
+logic seconds;
 logic [31:0] data; 
 logic [15:0] addressRead, addressWrite;
 
-ram mem(address, clk, data, wren, q);
-Counter cont(switch, clk, rst, addressRead);
+ram mem(address, seconds, data, wren, q);
+Counter cont(switch, seconds, rst, addressRead);
 write_mem escribir(btn, wren, addressWrite, data);
 mux_21 mux_21(addressWrite, addressRead, rst, address);
-
+hhclock hhclock(seconds, clk);
 
 endmodule
