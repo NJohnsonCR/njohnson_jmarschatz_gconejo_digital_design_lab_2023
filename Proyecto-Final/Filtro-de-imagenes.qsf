@@ -39,15 +39,15 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY main
+set_global_assignment -name TOP_LEVEL_ENTITY Procesador
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:56:21  OCTOBER 24, 2023"
-set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.1 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name BOARD "DE1-SoC Board"
-set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (SystemVerilog)"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
@@ -57,11 +57,10 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH topRam_tb -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Procesador_tb -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME main_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id main_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME main_tb -section_id main_tb
-set_global_assignment -name EDA_TEST_BENCH_NAME topRam_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id topRam_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME topRam_tb -section_id topRam_tb
 set_global_assignment -name MIF_FILE ram_data.mif
@@ -142,10 +141,8 @@ set_location_assignment PIN_AA15 -to btn[1]
 set_location_assignment PIN_W15 -to btn[2]
 set_location_assignment PIN_V16 -to q[0]
 set_global_assignment -name SYSTEMVERILOG_FILE Modulos/VGA/Counter_tb.sv
-set_global_assignment -name EDA_TEST_BENCH_NAME Counter_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Counter_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Counter_tb -section_id Counter_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE main_tb.sv -section_id main_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE Modulos/Procesador/topRam_tb.sv -section_id topRam_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE Modulos/VGA/Counter_tb.sv -section_id Counter_tb
 set_location_assignment PIN_W21 -to q[8]
@@ -156,6 +153,13 @@ set_location_assignment PIN_W17 -to q[4]
 set_location_assignment PIN_V18 -to q[3]
 set_location_assignment PIN_V17 -to q[2]
 set_location_assignment PIN_W16 -to q[1]
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/Procesador.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modulos/Procesador/Procesador_tb.sv
+set_global_assignment -name EDA_TEST_BENCH_FILE main_tb.sv -section_id main_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME Procesador_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Procesador_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Procesador_tb -section_id Procesador_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Modulos/Procesador/Procesador_tb.sv -section_id Procesador_tb
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

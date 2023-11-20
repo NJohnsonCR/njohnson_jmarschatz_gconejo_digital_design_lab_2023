@@ -8,24 +8,18 @@ module main(input logic clk, reset, switch,
 			output logic clk_25MHz,
 			output logic sync_n,
 			output logic blank_n,
-			output logic [31:0] q
+			output logic [31:0] q,
+			output logic [31:0] WriteData, DataAdr,
+			output logic MemWrite
 );
 			
-	logic [31:0] PC, Instr, ReadData, ReadRamData;
 	
-	logic [31:0]  WriteData, DataAdr;
-	logic MemWrite;
+		logic [15:0]  address;
 	
-	// instantiate processor and memories
-	// arm arm(clk, reset, PC, Instr, MemWrite, DataAdr,
-	//				WriteData, ReadData);
-					
-				
-	// imem imem(PC, Instr);
 	
-	// dmem dmem(clk, MemWrite, DataAdr, WriteData, ReadData);
-	
-		topRam topR(clk, reset, switch, btn, q, adress);
+		Procesador proce(clk, reset, WriteData, DataAdr, MemWrite);
+		
+		topRam topR(clk, reset, switch, btn, q, address);
 
 		video_controller vc(clk, reset, q, h_sync,
 		v_sync, red, green, blue, clk_25MHz, sync_n, blank_n);
