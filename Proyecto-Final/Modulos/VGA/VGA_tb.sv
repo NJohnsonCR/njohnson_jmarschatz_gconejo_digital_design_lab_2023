@@ -41,7 +41,7 @@ module VGA_tb;
 
 	 #5 reset=1;
 	 #5 reset=0;
-	 #1000;
+	 #150000;
     $finish;
   end
 

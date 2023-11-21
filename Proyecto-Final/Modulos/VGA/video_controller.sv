@@ -47,6 +47,7 @@ module video_controller
 		  blue <= 2'hFF;
     end
 
+
 	 
 
 endmodule
