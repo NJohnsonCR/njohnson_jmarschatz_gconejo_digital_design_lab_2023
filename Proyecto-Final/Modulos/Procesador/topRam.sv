@@ -11,10 +11,12 @@ logic seconds;
 logic [31:0] data; 
 logic [15:0] addressRead, addressWrite;
 
+
+hhclock hhclock(clk, seconds);
 ram mem(address, seconds, data, wren, q);
 Counter cont(switch, seconds, rst, addressRead);
 write_mem escribir(btn, wren, addressWrite, data);
 mux_21 mux_21(addressWrite, addressRead, rst, address);
-hhclock hhclock(seconds, clk);
+
 
 endmodule

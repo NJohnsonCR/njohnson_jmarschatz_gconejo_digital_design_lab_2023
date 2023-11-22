@@ -37,7 +37,7 @@ def generate_mif_file(grey_image_array):
 def save_grey_image(grey_image_array, name):
     grey_image = Image.fromarray(grey_image_array)
     grey_image = grey_image.convert("L")
-    grey_image.save(name + ".jpg")
+    grey_image.save(name + ".png")
 
 
 # Convierte una imagen a una matriz de numpy en escala de grises, rango [0 (negro), 255 (blanco)]
@@ -59,7 +59,7 @@ def convert(file_name):
     return grey_image_array
 
 
-grey_image_array = convert('img100x100.jpg')
+grey_image_array = convert('minion.png')
 
 save_grey_image(grey_image_array, "nueva_imagen")
 generate_mif_file(grey_image_array)

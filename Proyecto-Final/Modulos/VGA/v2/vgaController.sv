@@ -1,12 +1,12 @@
 module vgaController #(
-	parameter HACTIVE = 10'd100,
+	parameter HACTIVE = 10'd640,
 				 HFP = 10'd16,
 				 HSYN = 10'd96,
 				 HBP = 10'd48,
 				 HMAX = HACTIVE + HFP + HSYN + HBP,
-				 VBP = 10'd33,
-				 VACTIVE = 10'd100,
-				 VFP = 10'd10,
+				 VBP = 10'd32,
+				 VACTIVE = 10'd480,
+				 VFP = 10'd11,
 				 VSYN = 10'd2,
 				 VMAX = VBP + VACTIVE + VFP + VSYN
 	)
@@ -15,6 +15,13 @@ module vgaController #(
 				 output logic hsync, vsync, sync_b, blank_b,
 				 output logic [9:0] x, y
 	);
+	
+	initial begin 
+		
+		x = 0;
+		y = 0;
+		
+	end
 	
 	always @(posedge vgaclk) begin
 		x++;

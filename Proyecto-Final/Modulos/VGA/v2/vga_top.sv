@@ -1,5 +1,5 @@
 module vga_top(
-	input clk,
+	input logic clk,
 	input logic [7:0] ram_data,
 	output logic vgaclk,
 	output logic hsync, vsync,
@@ -22,13 +22,23 @@ module vga_top(
 		.y(y)
 	);
 	
-	videoGen vgaVideoGen(
+//	videoGen vgaVideoGen(
+//		.x(x),
+//		.y(y),
+//		.ram_data(ram_data),
+//		.r(r),
+//		.g(g),
+//		.b(b)
+//	);
+	
+	generate_graphic generar_g(
 		.x(x),
 		.y(y),
-		.ram_data(ram_data),
-		.r(r),
-		.g(g),
-		.b(b)
+		.ReadData(ram_data),
+		.red(r),
+		.green(g),
+		.blue(b)
 	);
+	
 
 endmodule
