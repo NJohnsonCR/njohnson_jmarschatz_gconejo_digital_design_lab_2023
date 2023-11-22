@@ -28,9 +28,11 @@ module topRam_tb;
     rst = 1;
 	 switch = 1;
 
-    #10 rst = 0; 
+    #100 rst = 0; 
      // Esperar un tiempo antes de terminar la simulación
-    #100;
+	 #50 rst = 1;   btn = 110; 
+	 #50 rst = 1;   btn = 011; 
+    #200;
 
     // Terminar simulación
     $finish;

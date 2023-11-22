@@ -18,11 +18,11 @@ module main(input logic clk, reset, //switch,
 		logic seconds;
 		logic enable;
 	
-		//Procesador proce(clk, reset, WriteData, DataAdr, MemWrite);
+		Procesador proce(clk, reset, WriteData, DataAdr, MemWrite);
 	
-		//assign enable = (x < 100 & x >= 0) & (y < 100 & y >= 0);
+		assign enable = (x < 100 & x >= 0) & (y < 100 & y >= 0);
 		
-		topRam topR(clk, reset, 1'b1, btn, q, address);
+		topRam topR(clk, reset, enable, btn, q, address);
 
 		vga_top vgat(clk, q, clk_25MHz, h_sync, v_sync,sync_n, blank_n, red, green, blue);
     

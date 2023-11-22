@@ -8,292 +8,84 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/simulation/modelsim
-vCounter
+Z0 dC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/simulation/modelsim
+valu
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1700540298
+Z2 !s110 1700637450
 !i10b 1
-!s100 ZHEj3H3HQWlZ;YN2f`=_z0
+!s100 mBKEGS_;@IZ<KUH13M8mR0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-ILM:0:hfUna[2=;IjR>;J[3
+ISXDcg_IR86V[;:DZJ0nH<1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1700452412
-8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/Counter.sv
-FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/Counter.sv
-!i122 9
-Z5 L0 1 25
-Z6 OV;L;2020.1;71
-r1
-!s85 0
-31
-Z7 !s108 1700540298.000000
-!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/Counter.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/Counter.sv|
-!i113 1
-Z8 o-sv -work work
-!s92 -sv -work work +incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA
-Z9 tCvgOpt 0
-n@counter
-vmain
-R1
-R2
-!i10b 1
-!s100 ><P>E1>fb6j5DMW0^>]]W1
-R3
-InMhTW@47gg?>@YRY=NK831
-R4
-S1
-R0
-w1700539190
-8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv
-FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv
-!i122 5
-R5
-R6
-r1
-!s85 0
-31
-R7
-!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main.sv|
-!i113 1
-R8
-Z10 !s92 -sv -work work +incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final
-R9
-vmain_tb
-R1
-R2
-!i10b 1
-!s100 blCLEUbO2lg^a?aBIA3DD1
-R3
-IPa[^262gTi<3MX653Q2n71
-R4
-S1
-R0
-w1700539659
-8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main_tb.sv
-FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main_tb.sv
-!i122 10
-L0 2 36
-R6
-r1
-!s85 0
-31
-R7
-!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/main_tb.sv|
-!i113 1
-R8
-R10
-R9
-vmux_21
-R1
-R2
-!i10b 1
-!s100 l3zg[?9DJg[ded:j`IoCd0
-R3
-I4=mOE0Km1JjzoH2652[o_1
-R4
-S1
-R0
-w1700447832
-8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/mux_21.sv
-FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/mux_21.sv
-!i122 8
-L0 1 10
-R6
-r1
-!s85 0
-31
-R7
-!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/mux_21.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/mux_21.sv|
-!i113 1
-R8
-Z11 !s92 -sv -work work +incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador
-R9
-vpll
-R1
-R2
-!i10b 1
-!s100 cDYiWenzbmRDH:n6Ze?=A2
-R3
-IQ7MWhIT8J25F_O:HZbOJK3
-R4
-S1
-R0
-Z12 w1700535550
-8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/pll.sv
-FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/pll.sv
-!i122 4
-L0 1 15
-R6
-r1
-!s85 0
-31
-R7
-!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/pll.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/pll.sv|
-!i113 1
-R8
-Z13 !s92 -sv -work work +incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2
-R9
-vram
-Z14 !s110 1700540297
-!i10b 1
-!s100 VS`XF0V8Lz05Di2BZUX>d3
-R3
-IcO4Uc<_OLX_=gDLTzUYJ13
-R4
-R0
-Z15 w1700440031
-8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v
-FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v
-!i122 0
-L0 40 66
-R6
-r1
-!s85 0
-31
-Z16 !s108 1700540297.000000
-!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/ram.v|
-!i113 1
-o-vlog01compat -work work
-!s92 -vlog01compat -work work +incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final
-R9
-vtopRam
-R1
-R2
-!i10b 1
-!s100 ;6Z8TaT;PabX6ai6;h`fC1
-R3
-IkBWFWQaDz35ZHMkLH53TY0
-R4
-S1
-R0
-w1700540162
-8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv
-FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv
-!i122 7
-L0 4 17
-R6
-r1
-!s85 0
-31
-R7
-!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/topRam.sv|
-!i113 1
-R8
-R11
-R9
-ntop@ram
-vvga_top
-R1
-R2
-!i10b 1
-!s100 h3aUUa?B^0hcmLNc^bCOB1
-R3
-Imj`ZTO`K5kMjk4N4KzPBc2
-R4
-S1
-R0
-R12
-8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/vga_top.sv
-FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/vga_top.sv
-!i122 3
-L0 1 34
-R6
-r1
-!s85 0
-31
-R7
-!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/vga_top.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/vga_top.sv|
-!i113 1
-R8
-R13
-R9
-vvgaController
-R1
-R2
-!i10b 1
-!s100 1bfYAXBCPeT4jG9=CaiM@0
-R3
-ILY71gSQL@Pe_c0fXa95UR2
-R4
-S1
-R0
-w1700536970
-8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/vgaController.sv
-FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/vgaController.sv
-!i122 2
-L0 1 41
-R6
-r1
-!s85 0
-31
-R16
-!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/vgaController.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/vgaController.sv|
-!i113 1
-R8
-R13
-R9
-nvga@controller
-vvideoGen
-R1
-R14
-!i10b 1
-!s100 UbnQ0=;QfLkU[Qmf^@NVc0
-R3
-I@kcKG@bC2KRJ2kKDT9H`k2
-R4
-S1
-R0
-R12
-8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/videoGen.sv
-FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/videoGen.sv
+w1699947745
+8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/alu.sv
+FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/alu.sv
 !i122 1
-L0 1 14
-R6
+L0 1 38
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-R16
-!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/videoGen.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/VGA/v2/videoGen.sv|
+Z6 !s108 1700637450.000000
+!s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/alu.sv|
 !i113 1
-R8
-R13
-R9
-nvideo@gen
-vwrite_mem
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador
+Z9 tCvgOpt 0
+vALU_tb
 R1
 R2
 !i10b 1
-!s100 z_5Kh3[cIzP0;VO:0HVdX3
+!s100 nKz;OHj:V21L3<l;<H>RB1
 R3
-IOFWiO_k[WH1BbaZ3gbacK3
+I58jElGcDW20iSam?`IEP_3
 R4
 S1
 R0
-R15
-8C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv
-FC:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv
-!i122 6
-L0 1 32
-R6
+w1700637434
+8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/ALU_tb.sv
+FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/ALU_tb.sv
+!i122 2
+Z10 L0 1 45
+R5
 r1
 !s85 0
 31
-R7
-!s107 C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador|C:/Users/XPC/Documents/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/write_mem.sv|
+R6
+!s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/ALU_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/ALU_tb.sv|
 !i113 1
+R7
 R8
-R11
 R9
+n@a@l@u_tb
+vAluAritmetic
+R1
+R2
+!i10b 1
+!s100 @TzkALfMSkRXiIA`=MAJl0
+R3
+Ie=2DZgZ>RU1zmC6R[5h493
+R4
+S1
+R0
+w1699947709
+8C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/AluAritmetic.sv
+FC:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/AluAritmetic.sv
+!i122 0
+R10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/AluAritmetic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador|C:/Users/Naheem/Documents/TEC/GitHub/njohnson_jmarschatz_gconejo_digital_design_lab_2023/Proyecto-Final/Modulos/Procesador/AluAritmetic.sv|
+!i113 1
+R7
+R8
+R9
+n@alu@aritmetic
